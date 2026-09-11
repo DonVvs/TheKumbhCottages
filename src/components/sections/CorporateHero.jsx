@@ -52,7 +52,7 @@ export default function CorporateHero({ onOpenInquiry }) {
 
   return (
     <section 
-      className="relative w-full h-[calc(100dvh-80px)] min-h-[520px] max-h-[920px] flex flex-col justify-between overflow-hidden bg-[#0A0704] text-white"
+      className="relative w-full min-h-[100dvh] pt-[92px] sm:pt-[96px] flex flex-col justify-between overflow-hidden bg-[#0A0704] text-white"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >

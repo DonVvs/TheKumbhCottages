@@ -31,8 +31,10 @@ export default function LuxuryHeader({
 
   return (
     <header
-      className={`sticky top-0 z-40 bg-[#0E0B08] border-b border-[#231A12] py-3 transition-shadow duration-300 ${
-        isScrolled ? 'shadow-xl' : 'shadow-none'
+      className={`sticky top-0 z-40 py-3.5 transition-all duration-500 ease-out ${
+        isScrolled
+          ? 'bg-black/45 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.35)]'
+          : 'bg-gradient-to-b from-black/50 via-black/20 to-transparent backdrop-blur-md border-b border-white/[0.06]'
       }`}
     >
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,27 +45,27 @@ export default function LuxuryHeader({
             <img
               src="/assets/brand/emblem.webp"
               alt="The Kumbh Cottages Seal"
-              className="w-8 h-8 rounded-full border border-swarna-400/40 object-cover flex-shrink-0 group-hover:border-swarna-300 transition-colors"
+              className="w-8 h-8 rounded-full border border-swarna-400/50 object-cover flex-shrink-0 group-hover:border-swarna-300 transition-colors shadow-xs"
             />
             <div>
-              <span className="block font-serif text-sm sm:text-base font-light tracking-wide text-white group-hover:text-swarna-200 transition-colors">
+              <span className="block font-serif text-sm sm:text-base font-normal tracking-wide text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)] group-hover:text-swarna-200 transition-colors">
                 The Kumbh Cottages
               </span>
-              <span className="block text-[8px] font-sans text-stone-400 font-normal tracking-[0.2em] uppercase">
+              <span className="block text-[8px] sm:text-[9px] font-sans text-stone-200 font-medium tracking-[0.2em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
                 Est. 2001 · Parent Group
               </span>
             </div>
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-[11px] xl:text-xs font-sans tracking-[0.14em] uppercase font-normal text-stone-300">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-[11px] xl:text-xs font-sans tracking-[0.14em] uppercase font-medium text-stone-200">
             
             {/* Overview */}
             <Link
               to="/"
-              className={`transition-colors py-1.5 whitespace-nowrap relative ${
+              className={`transition-colors py-1.5 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
                 location.pathname === '/'
-                  ? 'text-swarna-300 after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-swarna-400'
+                  ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
                   : 'hover:text-white'
               }`}
             >
@@ -78,23 +80,23 @@ export default function LuxuryHeader({
             >
               <Link
                 to="/destinations"
-                className={`transition-colors flex items-center gap-1 whitespace-nowrap relative ${
+                className={`transition-colors flex items-center gap-1 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
                   location.pathname.startsWith('/destinations')
-                    ? 'text-swarna-300 after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-swarna-400'
+                    ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
                     : 'hover:text-white'
                 }`}
               >
                 <span>Destinations</span>
-                <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${destinationsDropdown ? 'rotate-180 text-swarna-300' : 'text-stone-400'}`} />
+                <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${destinationsDropdown ? 'rotate-180 text-swarna-300' : 'text-stone-300'}`} />
               </Link>
 
               {destinationsDropdown && (
-                <div className="absolute top-full left-0 w-64 bg-[#120E0A]/98 backdrop-blur-xl border border-swarna-500/20 rounded-lg shadow-2xl p-2 z-50 animate-fadeIn normal-case tracking-normal">
+                <div className="absolute top-full left-0 w-64 bg-black/85 backdrop-blur-2xl border border-white/15 rounded-xl shadow-2xl p-2 z-50 animate-fadeIn normal-case tracking-normal">
                   <a
                     href="https://kumbhcottagesnashik.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2.5 rounded-md hover:bg-white/5 transition-colors flex items-center justify-between text-xs text-swarna-300 hover:text-white font-serif"
+                    className="p-2.5 rounded-md hover:bg-white/10 transition-colors flex items-center justify-between text-xs text-swarna-300 hover:text-white font-serif"
                   >
                     <div>
                       <div className="font-medium text-swarna-200">Nashik Simhastha 2027</div>
@@ -105,19 +107,19 @@ export default function LuxuryHeader({
                   <div className="h-px bg-white/10 my-1" />
                   <Link
                     to="/destinations#ujjain"
-                    className="p-2 rounded-md hover:bg-white/5 transition-colors block text-xs text-stone-300 hover:text-white"
+                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
                   >
                     Ujjain (Shipra Riverfront)
                   </Link>
                   <Link
                     to="/destinations#haridwar"
-                    className="p-2 rounded-md hover:bg-white/5 transition-colors block text-xs text-stone-300 hover:text-white"
+                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
                   >
                     Haridwar (Ganga Sanctuary)
                   </Link>
                   <Link
                     to="/destinations#prayagraj"
-                    className="p-2 rounded-md hover:bg-white/5 transition-colors block text-xs text-stone-400 hover:text-white border-t border-white/5 mt-1 pt-1.5"
+                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-300 hover:text-white border-t border-white/10 mt-1 pt-1.5"
                   >
                     Prayagraj Foundation (Est. 2001)
                   </Link>
@@ -133,57 +135,57 @@ export default function LuxuryHeader({
             >
               <Link
                 to="/kumbh-directory"
-                className={`transition-colors flex items-center gap-1 whitespace-nowrap relative ${
+                className={`transition-colors flex items-center gap-1 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
                   location.pathname.startsWith('/kumbh-directory')
-                    ? 'text-swarna-300 after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-swarna-400'
+                    ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
                     : 'hover:text-white'
                 }`}
               >
                 <span>Directory</span>
-                <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${directoryDropdown ? 'rotate-180 text-swarna-300' : 'text-stone-400'}`} />
+                <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${directoryDropdown ? 'rotate-180 text-swarna-300' : 'text-stone-300'}`} />
               </Link>
 
               {directoryDropdown && (
-                <div className="absolute top-full left-0 w-72 bg-[#120E0A]/98 backdrop-blur-xl border border-swarna-500/20 rounded-lg shadow-2xl p-2 z-50 animate-fadeIn normal-case tracking-normal">
+                <div className="absolute top-full left-0 w-72 bg-black/85 backdrop-blur-2xl border border-white/15 rounded-xl shadow-2xl p-2 z-50 animate-fadeIn normal-case tracking-normal">
                   <Link
                     to="/kumbh-directory"
-                    className="p-2.5 rounded-md hover:bg-white/5 transition-colors block text-xs text-swarna-300 font-serif font-medium border-b border-white/5 mb-1"
+                    className="p-2.5 rounded-md hover:bg-white/10 transition-colors block text-xs text-swarna-300 font-serif font-medium border-b border-white/10 mb-1"
                   >
                     Universal Kumbh Almanac
                   </Link>
                   <Link
                     to="/kumbh-directory/prayagraj-maha-kumbh"
-                    className="p-2 rounded-md hover:bg-white/5 transition-colors block text-xs text-stone-300 hover:text-white"
+                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
                   >
                     Prayagraj Maha Kumbh Guide
                   </Link>
                   <Link
                     to="/kumbh-directory/nashik-simhastha-kumbh"
-                    className="p-2 rounded-md hover:bg-white/5 transition-colors block text-xs text-stone-300 hover:text-white"
+                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
                   >
                     Nashik Simhastha 2027 Guide
                   </Link>
                   <Link
                     to="/kumbh-directory/haridwar-maha-kumbh"
-                    className="p-2 rounded-md hover:bg-white/5 transition-colors block text-xs text-stone-300 hover:text-white"
+                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
                   >
                     Haridwar Maha Kumbh Guide
                   </Link>
                   <Link
                     to="/kumbh-directory/ujjain-simhastha-kumbh"
-                    className="p-2 rounded-md hover:bg-white/5 transition-colors block text-xs text-stone-300 hover:text-white"
+                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
                   >
                     Ujjain Simhastha Guide
                   </Link>
                   <Link
                     to="/kumbh-directory/akharas-and-traditions"
-                    className="p-2 rounded-md hover:bg-white/5 transition-colors block text-xs text-stone-300 hover:text-white border-t border-white/5 mt-1 pt-1.5"
+                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white border-t border-white/10 mt-1 pt-1.5"
                   >
                     The 13 Sacred Akharas
                   </Link>
                   <Link
                     to="/kumbh-directory/shahi-snan-rituals-guide"
-                    className="p-2 rounded-md hover:bg-white/5 transition-colors block text-xs text-stone-300 hover:text-white"
+                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
                   >
                     Shahi Snan Rituals & Science
                   </Link>
@@ -194,9 +196,9 @@ export default function LuxuryHeader({
             {/* Capabilities */}
             <Link
               to="/capabilities-infrastructure"
-              className={`transition-colors py-1.5 whitespace-nowrap relative ${
+              className={`transition-colors py-1.5 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
                 location.pathname === '/capabilities-infrastructure'
-                  ? 'text-swarna-300 after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-swarna-400'
+                  ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
                   : 'hover:text-white'
               }`}
             >
@@ -206,21 +208,21 @@ export default function LuxuryHeader({
             {/* Heritage */}
             <Link
               to="/heritage-since-2001"
-              className={`transition-colors py-1.5 whitespace-nowrap relative ${
+              className={`transition-colors py-1.5 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
                 location.pathname === '/heritage-since-2001'
-                  ? 'text-swarna-300 after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-swarna-400'
+                  ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
                   : 'hover:text-white'
               }`}
             >
               Heritage
             </Link>
 
-            {/* Guides & Journal (Single-line whitespace nowrap) */}
+            {/* Guides & Journal */}
             <Link
               to="/sacred-travel-and-kumbh-guides"
-              className={`transition-colors py-1.5 whitespace-nowrap relative ${
+              className={`transition-colors py-1.5 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
                 location.pathname.startsWith('/sacred-travel-and-kumbh-guides') || location.pathname.startsWith('/guides')
-                  ? 'text-swarna-300 after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-swarna-400'
+                  ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
                   : 'hover:text-white'
               }`}
             >
@@ -230,9 +232,9 @@ export default function LuxuryHeader({
             {/* Contact */}
             <Link
               to="/corporate-contact"
-              className={`transition-colors py-1.5 whitespace-nowrap relative ${
+              className={`transition-colors py-1.5 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
                 location.pathname === '/corporate-contact'
-                  ? 'text-swarna-300 after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-swarna-400'
+                  ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
                   : 'hover:text-white'
               }`}
             >
@@ -244,24 +246,24 @@ export default function LuxuryHeader({
           <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
             
             {/* Language Switcher Pill */}
-            <div className="flex items-center border border-white/15 bg-white/[0.04] rounded-full px-2 py-1 text-[10px] font-sans tracking-wider text-stone-400">
+            <div className="flex items-center border border-white/20 bg-black/30 backdrop-blur-md rounded-full px-2 py-1 text-[10px] font-sans tracking-wider text-stone-200 shadow-xs">
               <button
                 onClick={() => setLang('en')}
-                className={`px-1.5 py-0.5 rounded-full transition-colors cursor-pointer ${lang === 'en' ? 'text-swarna-300 font-medium' : 'hover:text-white'}`}
+                className={`px-1.5 py-0.5 rounded-full transition-colors cursor-pointer ${lang === 'en' ? 'text-swarna-300 font-bold bg-white/10' : 'hover:text-white'}`}
               >
                 EN
               </button>
-              <span className="text-white/20 mx-0.5">|</span>
+              <span className="text-white/30 mx-0.5">|</span>
               <button
                 onClick={() => setLang('hi')}
-                className={`px-1.5 py-0.5 rounded-full transition-colors cursor-pointer ${lang === 'hi' ? 'text-swarna-300 font-medium' : 'hover:text-white'}`}
+                className={`px-1.5 py-0.5 rounded-full transition-colors cursor-pointer ${lang === 'hi' ? 'text-swarna-300 font-bold bg-white/10' : 'hover:text-white'}`}
               >
                 हिं
               </button>
-              <span className="text-white/20 mx-0.5">|</span>
+              <span className="text-white/30 mx-0.5">|</span>
               <button
                 onClick={() => setLang('mr')}
-                className={`px-1.5 py-0.5 rounded-full transition-colors cursor-pointer ${lang === 'mr' ? 'text-swarna-300 font-medium' : 'hover:text-white'}`}
+                className={`px-1.5 py-0.5 rounded-full transition-colors cursor-pointer ${lang === 'mr' ? 'text-swarna-300 font-bold bg-white/10' : 'hover:text-white'}`}
               >
                 मरा
               </button>
@@ -270,7 +272,7 @@ export default function LuxuryHeader({
             {/* Inquire Button */}
             <button
               onClick={() => onOpenInquiry()}
-              className="px-4 xl:px-5 py-2 rounded-full border border-swarna-400/60 bg-swarna-400/10 hover:bg-swarna-400 hover:text-stone-950 text-swarna-300 text-[11px] uppercase tracking-[0.14em] font-medium transition-all duration-300 shadow-xs cursor-pointer whitespace-nowrap"
+              className="px-4 xl:px-5 py-2 rounded-full border border-swarna-400/80 bg-swarna-400/20 hover:bg-swarna-400 hover:text-stone-950 text-swarna-200 hover:text-stone-950 text-[11px] uppercase tracking-[0.14em] font-semibold transition-all duration-300 backdrop-blur-sm shadow-[0_2px_12px_rgba(217,170,74,0.25)] hover:shadow-[0_4px_20px_rgba(217,170,74,0.5)] cursor-pointer whitespace-nowrap"
             >
               Inquire
             </button>
@@ -280,13 +282,13 @@ export default function LuxuryHeader({
           <div className="flex lg:hidden items-center gap-2">
             <button
               onClick={() => onOpenInquiry()}
-              className="px-3 py-1.5 rounded-full border border-swarna-400/60 bg-swarna-400/10 text-swarna-300 text-[10px] uppercase tracking-wider font-medium"
+              className="px-3 py-1.5 rounded-full border border-swarna-400/80 bg-swarna-400/20 text-swarna-200 text-[10px] uppercase tracking-wider font-semibold shadow-xs"
             >
               Inquire
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-1.5 text-stone-300 hover:text-white"
+              className="p-1.5 text-stone-200 hover:text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]"
               aria-label="Toggle Menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -298,7 +300,7 @@ export default function LuxuryHeader({
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#0E0B08] border-b border-[#231A12] px-6 py-6 space-y-3.5 text-xs animate-fadeIn font-light shadow-2xl">
+        <div className="lg:hidden bg-black/90 backdrop-blur-2xl border-b border-white/10 px-6 py-6 space-y-3.5 text-xs animate-fadeIn font-light shadow-2xl">
           
           {/* Mobile Language Switcher */}
           <div className="flex items-center justify-between pb-3 border-b border-white/10 text-stone-400">
