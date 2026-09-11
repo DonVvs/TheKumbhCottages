@@ -121,6 +121,11 @@ export default function SEOHead({
         "name": "The Kumbh Cottages",
         "alternateName": ["TheKumbhCottages", "The Kumbh Cottages Group"],
         "legalName": "TheKumbhCottages Sacred Infrastructure & Hospitality Group",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Arc Media",
+          "legalName": "Arc Media Group"
+        },
         "foundingDate": "2001",
         "founder": {
           "@type": "Person",
