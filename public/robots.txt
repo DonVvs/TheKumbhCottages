@@ -1,0 +1,35 @@
+# robots.txt for https://thekumbhcottages.com
+# Allow all search engines and AI crawlers for maximum global indexability
+
+User-agent: *
+Allow: /
+
+# Google Crawlers
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Googlebot-News
+User-agent: Google-Extended
+Allow: /
+
+# Bing / Microsoft Crawlers
+User-agent: Bingbot
+User-agent: msnbot
+Allow: /
+
+# AI Crawlers & LLM Agents
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: anthropic-ai
+User-agent: CCBot
+User-agent: cohere-ai
+User-agent: Bytespider
+User-agent: FacebookBot
+User-agent: Applebot
+Allow: /
+
+# Sitemaps & AI Index
+Sitemap: https://thekumbhcottages.com/sitemap.xml
+LLMs-Txt: https://thekumbhcottages.com/llms.txt

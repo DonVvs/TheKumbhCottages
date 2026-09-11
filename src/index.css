@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, ::before, ::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #FAF8F5;
+    color: #1A1410;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #FAF8F5;
+    color: #241D17;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+    line-height: 1.65;
+    font-weight: 350;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+  }
+
+  #root, main {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    background-color: #FAF8F5;
+    color: #1A1410;
+    min-height: 100dvh;
+  }
+
+  ::selection {
+    background-color: rgba(197, 160, 89, 0.25);
+    color: #1A1410;
+  }
+
+  p, li, dd, dt, td, th, input, select, textarea, button, a {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+
+  .font-mono {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: "tnum" 1;
+    letter-spacing: 0.03em;
+  }
+}
+
+/* Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDD5C9;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+/* 1. Sleek Minimalist Gold Action Button */
+.btn-darbar-gold {
+  background: #140E0A;
+  color: #F8F5F0;
+  border: 1px solid rgba(197, 160, 89, 0.5);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-darbar-gold:hover {
+  background: #C5A059;
+  color: #0E0A07;
+  border-color: #C5A059;
+}
+
+/* 2. Sleek Outline Button */
+.btn-temple-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #F8F5F0;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-temple-outline:hover {
+  border-color: #C5A059;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* 3. Sleek Card Surface */
+.temple-panel {
+  background: #FFFFFF;
+  border: 1px solid rgba(215, 203, 185, 0.6);
+  transition: border-color 0.25s ease;
+}
+.temple-panel:hover {
+  border-color: rgba(197, 160, 89, 0.4);
+}
+
+/* 4. Auspicious Top Ribbon */
+.auspicious-patti {
+  background: #0E0A07;
+  color: #D6B265;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
