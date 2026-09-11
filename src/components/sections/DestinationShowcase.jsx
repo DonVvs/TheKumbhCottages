@@ -22,29 +22,29 @@ export default function DestinationShowcase({ onOpenInquiry }) {
         </div>
 
         {/* Clean Editorial Destinations List */}
-        <div className="space-y-12 sm:space-y-16">
+        <div className="space-y-16 sm:space-y-20">
           {DESTINATIONS_PORTFOLIO.map((dest, index) => {
             const isEven = index % 2 === 0;
             return (
               <div
                 key={dest.id}
                 id={dest.id}
-                className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center pb-12 sm:pb-16 border-b border-stone-200/80 last:border-b-0 last:pb-0"
+                className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center pb-14 sm:pb-18 border-b border-stone-200 last:border-b-0 last:pb-0"
               >
                 
                 {/* Visual */}
                 <div className={`lg:col-span-6 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
-                  <div className="relative rounded-lg overflow-hidden aspect-[16/10] border border-stone-300/80 shadow-xs group">
+                  <div className="relative rounded-sm overflow-hidden aspect-[16/10] border border-stone-200 shadow-xs group">
                     <img
                       src={dest.image}
                       alt={dest.name}
-                      className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                      className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
-                    <div className="absolute top-3 left-3 text-[10px] uppercase tracking-wider font-mono bg-[#0D0906]/90 text-swarna-300 px-3 py-1 rounded border border-swarna-400/20">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+                    <div className="absolute top-4 left-4 text-[10px] uppercase tracking-[0.18em] font-sans font-medium bg-[#0E0C0A]/90 text-swarna-300 px-3 py-1 rounded-sm border border-white/10 backdrop-blur-xs">
                       {dest.badge}
                     </div>
-                    <div className="absolute bottom-3 left-3 text-xs text-stone-200 font-serif">
+                    <div className="absolute bottom-4 left-4 text-xs text-stone-200 font-serif tracking-wide">
                       {dest.river} · {dest.city}
                     </div>
                   </div>
@@ -53,10 +53,10 @@ export default function DestinationShowcase({ onOpenInquiry }) {
                 {/* Details */}
                 <div className={`lg:col-span-6 space-y-4 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
                   <div>
-                    <div className="text-[10px] uppercase font-sans tracking-[0.2em] text-swarna-700 font-medium">
+                    <div className="text-[10px] uppercase font-sans tracking-[0.22em] text-swarna-700 font-semibold">
                       {dest.circuit}
                     </div>
-                    <h3 className="font-serif text-xl sm:text-2xl font-light text-stone-900 mt-1 leading-snug">
+                    <h3 className="font-serif text-2xl sm:text-3xl font-normal text-stone-900 mt-1.5 leading-snug">
                       {dest.headline}
                     </h3>
                   </div>
@@ -65,11 +65,11 @@ export default function DestinationShowcase({ onOpenInquiry }) {
                     {dest.details}
                   </p>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-xs text-stone-700 font-sans font-light">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-xs text-stone-700 font-sans">
                     {dest.highlights.map((h, hIdx) => (
                       <div key={hIdx} className="flex items-start gap-2">
-                        <span className="text-swarna-600 text-xs">✦</span>
-                        <span>{h}</span>
+                        <span className="text-swarna-700 text-xs">―</span>
+                        <span className="font-light">{h}</span>
                       </div>
                     ))}
                   </div>
@@ -81,7 +81,7 @@ export default function DestinationShowcase({ onOpenInquiry }) {
                         href={dest.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-5 py-2.5 rounded bg-stone-900 text-white hover:bg-swarna-500 hover:text-stone-950 transition-colors text-xs uppercase tracking-wider font-medium inline-flex items-center gap-2 shadow-xs"
+                        className="px-6 py-2.5 rounded-sm bg-stone-950 text-white hover:bg-swarna-500 hover:text-stone-950 transition-all duration-300 text-[11px] uppercase tracking-[0.16em] font-medium inline-flex items-center gap-2 shadow-xs cursor-pointer"
                       >
                         <span>Visit {dest.websiteDisplay}</span>
                         <ExternalLink className="w-3.5 h-3.5" />
@@ -89,7 +89,7 @@ export default function DestinationShowcase({ onOpenInquiry }) {
                     ) : (
                       <button
                         onClick={() => onOpenInquiry(dest.name)}
-                        className="px-5 py-2.5 rounded bg-stone-900 text-white hover:bg-swarna-500 hover:text-stone-950 transition-colors text-xs uppercase tracking-wider font-medium inline-flex items-center gap-2 shadow-xs"
+                        className="px-6 py-2.5 rounded-sm bg-stone-950 text-white hover:bg-swarna-500 hover:text-stone-950 transition-all duration-300 text-[11px] uppercase tracking-[0.16em] font-medium inline-flex items-center gap-2 shadow-xs cursor-pointer"
                       >
                         <span>Request Campus Dossier</span>
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -98,7 +98,7 @@ export default function DestinationShowcase({ onOpenInquiry }) {
 
                     <button
                       onClick={() => onOpenInquiry(dest.name)}
-                      className="px-5 py-2.5 rounded border border-stone-300 text-stone-700 hover:text-stone-950 hover:border-stone-500 text-xs uppercase tracking-wider font-normal transition-colors"
+                      className="px-6 py-2.5 rounded-sm border border-stone-300 text-stone-700 hover:text-stone-950 hover:border-stone-900 text-[11px] uppercase tracking-[0.16em] font-medium transition-all duration-300 cursor-pointer"
                     >
                       Corporate Liaison
                     </button>

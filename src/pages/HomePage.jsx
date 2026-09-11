@@ -10,7 +10,7 @@ import RelatedGuidesWidget from '../components/common/RelatedGuidesWidget';
 
 export default function HomePage({ lang = 'en', onOpenInquiry }) {
   return (
-    <main className="-mt-[92px] sm:-mt-[96px]">
+    <main className="relative">
       <SEOHead
         title="TheKumbhCottages | Sovereign Heritage & Sacred Infrastructure Group (Est. 2001)"
         description="The parent hospitality institution engineering luxury riverfront sanctuaries, turnkey tented infrastructure, and consecrated 100% Desi Ghee Annakshetra across Nashik, Ujjain, Haridwar, and Prayagraj."

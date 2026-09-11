@@ -6,28 +6,32 @@ export default function AuspiciousTopRibbon({ lang = 'en' }) {
   const t = TRANSLATIONS[lang] || TRANSLATIONS.en;
 
   return (
-    <div className="bg-black/30 backdrop-blur-md border-b border-white/[0.08] py-1.5 px-4 sm:px-6 lg:px-8 text-[10px] sm:text-[11px] font-sans text-stone-300 z-50 relative transition-all duration-300">
-      <div className="max-w-[1400px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 text-center sm:text-left">
+    <div className="bg-[#0B0907]/90 backdrop-blur-md border-b border-white/[0.08] py-2 px-4 sm:px-6 lg:px-8 text-[10px] font-sans text-stone-300 z-50 relative">
+      <div className="max-w-[1400px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
         
-        {/* Sacred Lineage Inscription */}
-        <div className="flex items-center justify-center gap-2">
-          <span className="font-serif tracking-[0.15em] text-swarna-300 uppercase text-[10px] drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] font-medium">
-            {t.ribbon_text}
+        {/* Corporate Group Attribution */}
+        <div className="flex items-center justify-center gap-3">
+          <span className="font-sans font-medium tracking-[0.2em] text-white/90 uppercase text-[9px] sm:text-[10px]">
+            Arc Media · Sacred Hospitality & Infrastructure Group
+          </span>
+          <span className="hidden sm:inline text-stone-600">·</span>
+          <span className="hidden sm:inline font-serif italic text-swarna-400 text-[11px]">
+            Est. 2001
           </span>
         </div>
 
         {/* Right Circuits & Direct Helpline */}
-        <div className="flex items-center gap-3 text-[10px] text-stone-300 drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
-          <span className="hidden lg:inline text-stone-300/90 font-light tracking-wide">
-            Nashik · Ujjain · Haridwar · Prayagraj
+        <div className="flex items-center gap-4 text-[10px] text-stone-300">
+          <span className="hidden lg:inline text-stone-400 tracking-[0.12em] uppercase font-light text-[9px]">
+            Nashik 2027 · Ujjain 2028 · Haridwar · Prayagraj
           </span>
-          <span className="hidden lg:inline text-stone-500">|</span>
+          <span className="hidden lg:inline text-stone-700">|</span>
           <a
             href="tel:+919889933333"
-            className="inline-flex items-center gap-1.5 text-stone-200 hover:text-swarna-300 transition-colors font-mono font-medium"
+            className="inline-flex items-center gap-1.5 text-stone-200 hover:text-swarna-300 transition-colors font-mono tracking-wider"
           >
             <Phone className="w-2.5 h-2.5 text-swarna-400 flex-shrink-0" />
-            <span className="tracking-normal">+91 98899 33333</span>
+            <span>+91 98899 33333</span>
           </a>
         </div>
 

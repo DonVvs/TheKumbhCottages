@@ -64,29 +64,34 @@ export default function HeritagePage() {
           {MILESTONES_CHRONOLOGY.map((milestone, idx) => (
             <div
               key={idx}
-              className="bg-white p-4 rounded-lg border border-stone-200/90 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3"
+              className="bg-white p-5 rounded-lg border border-stone-200/90 flex flex-col sm:flex-row items-start justify-between gap-4"
             >
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded bg-stone-100 text-stone-800 flex items-center justify-center font-mono text-xs font-medium flex-shrink-0">
-                  {milestone.year}
+              <div className="flex items-start gap-3.5">
+                <div className="px-2.5 py-1.5 rounded bg-stone-900 text-swarna-300 font-mono text-xs font-semibold flex-shrink-0 text-center">
+                  {milestone.shortYear || milestone.year}
                 </div>
 
-                <div>
-                  <div className="flex items-center gap-2">
-                    <h4 className="font-serif font-medium text-xs sm:text-sm text-stone-900">
+                <div className="space-y-1">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h4 className="font-serif font-medium text-sm text-stone-900">
                       {milestone.event}
                     </h4>
-                    <span className="text-[10px] text-stone-500 font-mono">
-                      · {milestone.location}
-                    </span>
+                    {milestone.badge && (
+                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-swarna-100/70 border border-swarna-300 text-swarna-900 font-sans font-medium">
+                        {milestone.badge}
+                      </span>
+                    )}
                   </div>
-                  <p className="text-xs text-stone-600 font-sans font-light mt-0.5 leading-relaxed">
+                  <div className="text-[11px] text-stone-500 font-mono">
+                    {milestone.circuit} Circuit · {milestone.location}
+                  </div>
+                  <p className="text-xs text-stone-600 font-sans font-light leading-relaxed pt-0.5">
                     {milestone.description}
                   </p>
                 </div>
               </div>
 
-              <div className="sm:text-right flex-shrink-0 text-[10px] font-mono text-stone-500">
+              <div className="sm:text-right flex-shrink-0 text-[10px] font-mono text-stone-500 bg-stone-50 px-2.5 py-1 rounded border border-stone-100">
                 {milestone.scale}
               </div>
             </div>

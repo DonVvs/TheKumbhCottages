@@ -13,7 +13,7 @@ export default function InstitutionalAuthority() {
             <span className="w-6 h-px bg-swarna-600/60" />
             <span>Institutional Trust & Seva Lineage</span>
           </div>
-          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-light text-stone-900 leading-[1.2] tracking-tight">
+          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-normal text-stone-900 leading-[1.2] tracking-tight">
             A Quarter-Century of Sanctified Trust (2001–Present)
           </h2>
           <p className="text-sm text-stone-600 font-sans font-light mt-3 leading-relaxed">

@@ -22,9 +22,9 @@ export default function RelatedGuidesWidget({
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 text-[10px] uppercase font-sans tracking-[0.25em] text-swarna-700 font-medium mb-3">
               <span className="w-6 h-px bg-swarna-600/60" />
-              <span>Pilgrim Knowledge Base</span>
+              <span>Pilgrim Knowledge Base & Editorial</span>
             </div>
-            <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-light text-stone-900 leading-[1.2] tracking-tight">
+            <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-normal text-stone-900 leading-[1.2] tracking-tight">
               {title}
             </h2>
             <p className="text-sm text-stone-600 font-sans font-light mt-3 leading-relaxed">
@@ -34,7 +34,7 @@ export default function RelatedGuidesWidget({
 
           <Link
             to="/sacred-travel-and-kumbh-guides"
-            className="px-5 py-2.5 rounded border border-stone-300 text-stone-900 hover:border-stone-900 transition-colors text-xs uppercase tracking-wider font-medium flex items-center gap-2 flex-shrink-0"
+            className="px-6 py-2.5 rounded-sm border border-stone-300 text-stone-900 hover:border-stone-900 transition-all duration-300 text-[11px] uppercase tracking-[0.16em] font-medium flex items-center gap-2 flex-shrink-0 cursor-pointer"
           >
             <span>View All Guides</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -46,20 +46,20 @@ export default function RelatedGuidesWidget({
           {filteredBlogs.map((blog) => (
             <article
               key={blog.slug}
-              className="bg-white rounded-lg border border-stone-200/90 overflow-hidden flex flex-col justify-between hover:border-stone-400 transition-colors shadow-xs group"
+              className="bg-white rounded-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:border-stone-400 transition-all duration-300 shadow-xs group"
             >
-              <div className="p-6 sm:p-7 space-y-3">
+              <div className="p-6 sm:p-8 space-y-3.5">
                 <div className="flex items-center justify-between text-[11px] font-mono">
-                  <span className="text-swarna-700 uppercase bg-stone-100 px-2.5 py-0.5 rounded font-medium">
+                  <span className="text-swarna-700 uppercase tracking-wider text-[10px] font-sans font-medium">
                     {blog.badge}
                   </span>
-                  <span className="text-stone-400 flex items-center gap-1">
+                  <span className="text-stone-400 flex items-center gap-1 text-[11px]">
                     <Clock className="w-3.5 h-3.5" />
                     {blog.readTime}
                   </span>
                 </div>
 
-                <h3 className="font-serif text-lg font-light text-stone-900 leading-snug">
+                <h3 className="font-serif text-xl font-normal text-stone-900 leading-snug">
                   <Link
                     to={`/guides/${blog.slug}`}
                     className="hover:text-swarna-700 transition-colors"
@@ -73,14 +73,14 @@ export default function RelatedGuidesWidget({
                 </p>
               </div>
 
-              <div className="p-6 sm:p-7 pt-0 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500">
-                <span>By {blog.author.split(' ')[0]} Seva</span>
+              <div className="p-6 sm:p-8 pt-0 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500">
+                <span className="text-[11px] font-mono">Curated Advisory</span>
                 <Link
                   to={`/guides/${blog.slug}`}
-                  className="font-medium text-stone-900 hover:text-swarna-700 flex items-center gap-1.5"
+                  className="font-medium text-stone-900 hover:text-swarna-700 flex items-center gap-1.5 uppercase text-[11px] tracking-wider"
                 >
                   <span>Read Guide</span>
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </article>

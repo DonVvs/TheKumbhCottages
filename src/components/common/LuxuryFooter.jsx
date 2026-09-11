@@ -20,11 +20,11 @@ export default function LuxuryFooter() {
               className="w-7 h-7 rounded-full border border-swarna-400/40 object-cover"
             />
             <div>
-              <div className="font-serif text-sm text-stone-100 font-light tracking-wide">
+              <div className="font-serif text-sm text-stone-100 font-normal tracking-wide">
                 The Kumbh Cottages
               </div>
-              <div className="text-[9px] text-stone-500 uppercase tracking-widest font-normal">
-                Parent Hospitality & Sacred Infrastructure Group · Est. 2001
+              <div className="text-[9px] text-stone-400 uppercase tracking-[0.2em] font-sans font-medium">
+                Arc Media Sacred Hospitality & Infrastructure Group · Est. 2001
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function LuxuryFooter() {
         {/* Bottom Legal & Accreditations */}
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-stone-500">
           <div className="flex items-center gap-2">
-            <span>© 2001–2027 TheKumbhCottages™. All Rights Reserved.</span>
+            <span>© 2001–2027 The Kumbh Cottages · An Arc Media Enterprise. All Rights Reserved.</span>
             <span>•</span>
             <span>ISO 9001:2015 & HACCP Compliant</span>
           </div>

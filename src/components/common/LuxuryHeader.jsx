@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, ExternalLink } from 'lucide-react';
+import { Menu, X, ChevronDown, ExternalLink, Phone } from 'lucide-react';
 import { TRANSLATIONS } from '../../data/translationsData';
 
 export default function LuxuryHeader({
@@ -14,10 +14,11 @@ export default function LuxuryHeader({
   const [directoryDropdown, setDirectoryDropdown] = useState(false);
   const location = useLocation();
   const t = TRANSLATIONS[lang] || TRANSLATIONS.en;
+  const isHome = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 30);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
@@ -31,48 +32,66 @@ export default function LuxuryHeader({
 
   return (
     <header
-      className={`sticky top-0 z-40 py-3.5 transition-all duration-500 ease-out ${
-        isScrolled
-          ? 'bg-black/45 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.35)]'
-          : 'bg-gradient-to-b from-black/50 via-black/20 to-transparent backdrop-blur-md border-b border-white/[0.06]'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
+        isScrolled || !isHome
+          ? 'bg-[#0B0907]/95 backdrop-blur-xl border-b border-white/10 shadow-2xl py-3'
+          : 'bg-gradient-to-b from-black/80 via-black/35 to-transparent backdrop-blur-[1px] border-b border-white/[0.04] py-3.5 sm:py-4'
       }`}
     >
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-6">
+      {/* Top Integrated Micro-Ribbon (Only in top state on desktop) */}
+      {(!isScrolled && isHome) && (
+        <div className="hidden lg:block border-b border-white/10 pb-2 mb-2.5 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto flex items-center justify-between text-[10px] font-sans text-stone-300">
+            <div className="flex items-center gap-3 tracking-[0.2em] uppercase text-[9px] text-white/90">
+              <span className="font-semibold text-swarna-300">Arc Media Group</span>
+              <span className="text-white/30">|</span>
+              <span className="text-stone-300">Sacred Hospitality & Infrastructure</span>
+              <span className="text-white/30">|</span>
+              <span className="font-serif italic text-swarna-400 capitalize">Est. 2001</span>
+            </div>
+
+            <div className="flex items-center gap-4 text-[10px]">
+              <span className="tracking-[0.14em] uppercase text-stone-300 font-light text-[9px]">
+                Nashik 2027 · Ujjain 2028 · Haridwar · Prayagraj
+              </span>
+              <span className="text-white/20">|</span>
+              <a
+                href="tel:+919889933333"
+                className="inline-flex items-center gap-1.5 text-stone-200 hover:text-swarna-300 transition-colors font-mono tracking-wider"
+              >
+                <Phone className="w-2.5 h-2.5 text-swarna-400 flex-shrink-0" />
+                <span>+91 98899 33333</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Main Navigation Bar Container */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-4 xl:gap-8">
           
           {/* Brand Seal & Parent Title */}
-          <Link to="/" className="flex items-center gap-3 group text-left flex-shrink-0">
+          <Link to="/" className="flex items-center gap-3 group text-left shrink-0">
             <img
               src="/assets/brand/emblem.webp"
               alt="The Kumbh Cottages Seal"
-              className="w-8 h-8 rounded-full border border-swarna-400/50 object-cover flex-shrink-0 group-hover:border-swarna-300 transition-colors shadow-xs"
+              className="w-8 h-8 rounded-full border border-swarna-400/60 object-cover shrink-0 group-hover:border-swarna-300 transition-colors shadow-xs"
             />
             <div>
-              <span className="block font-serif text-sm sm:text-base font-normal tracking-wide text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)] group-hover:text-swarna-200 transition-colors">
+              <span className="block font-serif text-base sm:text-lg font-normal tracking-[0.03em] text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)] group-hover:text-swarna-200 transition-colors leading-tight">
                 The Kumbh Cottages
               </span>
-              <span className="block text-[8px] sm:text-[9px] font-sans text-stone-200 font-medium tracking-[0.2em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
-                Est. 2001 · Parent Group
+              <span className="block text-[8px] sm:text-[9px] font-sans text-stone-300 font-medium tracking-[0.2em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
+                An Arc Media Enterprise · Est. 2001
               </span>
             </div>
           </Link>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-[11px] xl:text-xs font-sans tracking-[0.14em] uppercase font-medium text-stone-200">
+          {/* Desktop Navigation Links (5 Curated Items) */}
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-[11px] xl:text-[12px] font-sans tracking-[0.16em] uppercase font-medium text-stone-200">
             
-            {/* Overview */}
-            <Link
-              to="/"
-              className={`transition-colors py-1.5 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
-                location.pathname === '/'
-                  ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
-                  : 'hover:text-white'
-              }`}
-            >
-              Overview
-            </Link>
-
-            {/* Destinations Dropdown */}
+            {/* 1. Destinations Dropdown */}
             <div
               className="relative py-1.5"
               onMouseEnter={() => setDestinationsDropdown(true)}
@@ -80,9 +99,9 @@ export default function LuxuryHeader({
             >
               <Link
                 to="/destinations"
-                className={`transition-colors flex items-center gap-1 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
+                className={`transition-colors flex items-center gap-1 whitespace-nowrap relative drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)] ${
                   location.pathname.startsWith('/destinations')
-                    ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
+                    ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-swarna-400'
                     : 'hover:text-white'
                 }`}
               >
@@ -91,12 +110,12 @@ export default function LuxuryHeader({
               </Link>
 
               {destinationsDropdown && (
-                <div className="absolute top-full left-0 w-64 bg-black/85 backdrop-blur-2xl border border-white/15 rounded-xl shadow-2xl p-2 z-50 animate-fadeIn normal-case tracking-normal">
+                <div className="absolute top-full left-0 w-64 bg-[#0E0C0A]/95 backdrop-blur-2xl border border-white/15 rounded-md shadow-2xl p-2 z-50 animate-fadeIn normal-case tracking-normal">
                   <a
                     href="https://kumbhcottagesnashik.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2.5 rounded-md hover:bg-white/10 transition-colors flex items-center justify-between text-xs text-swarna-300 hover:text-white font-serif"
+                    className="p-2.5 rounded hover:bg-white/10 transition-colors flex items-center justify-between text-xs text-swarna-300 hover:text-white font-serif"
                   >
                     <div>
                       <div className="font-medium text-swarna-200">Nashik Simhastha 2027</div>
@@ -107,19 +126,19 @@ export default function LuxuryHeader({
                   <div className="h-px bg-white/10 my-1" />
                   <Link
                     to="/destinations#ujjain"
-                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
+                    className="p-2 rounded hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
                   >
                     Ujjain (Shipra Riverfront)
                   </Link>
                   <Link
                     to="/destinations#haridwar"
-                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
+                    className="p-2 rounded hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
                   >
                     Haridwar (Ganga Sanctuary)
                   </Link>
                   <Link
                     to="/destinations#prayagraj"
-                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-300 hover:text-white border-t border-white/10 mt-1 pt-1.5"
+                    className="p-2 rounded hover:bg-white/10 transition-colors block text-xs text-stone-300 hover:text-white border-t border-white/10 mt-1 pt-1.5"
                   >
                     Prayagraj Foundation (Est. 2001)
                   </Link>
@@ -127,7 +146,31 @@ export default function LuxuryHeader({
               )}
             </div>
 
-            {/* Kumbh Directory Dropdown */}
+            {/* 2. Infrastructure & Capabilities */}
+            <Link
+              to="/capabilities-infrastructure"
+              className={`transition-colors py-1.5 whitespace-nowrap relative drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)] ${
+                location.pathname === '/capabilities-infrastructure'
+                  ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-swarna-400'
+                  : 'hover:text-white'
+              }`}
+            >
+              Infrastructure
+            </Link>
+
+            {/* 3. Heritage (25 Years Since 2001) */}
+            <Link
+              to="/heritage-since-2001"
+              className={`transition-colors py-1.5 whitespace-nowrap relative drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)] ${
+                location.pathname === '/heritage-since-2001'
+                  ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-swarna-400'
+                  : 'hover:text-white'
+              }`}
+            >
+              Heritage
+            </Link>
+
+            {/* 4. Almanac & Guides Dropdown */}
             <div
               className="relative py-1.5"
               onMouseEnter={() => setDirectoryDropdown(true)}
@@ -135,106 +178,65 @@ export default function LuxuryHeader({
             >
               <Link
                 to="/kumbh-directory"
-                className={`transition-colors flex items-center gap-1 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
-                  location.pathname.startsWith('/kumbh-directory')
-                    ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
+                className={`transition-colors flex items-center gap-1 whitespace-nowrap relative drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)] ${
+                  location.pathname.startsWith('/kumbh-directory') || location.pathname.startsWith('/sacred-travel') || location.pathname.startsWith('/guides')
+                    ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-swarna-400'
                     : 'hover:text-white'
                 }`}
               >
-                <span>Directory</span>
+                <span>Directory & Guides</span>
                 <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${directoryDropdown ? 'rotate-180 text-swarna-300' : 'text-stone-300'}`} />
               </Link>
 
               {directoryDropdown && (
-                <div className="absolute top-full left-0 w-72 bg-black/85 backdrop-blur-2xl border border-white/15 rounded-xl shadow-2xl p-2 z-50 animate-fadeIn normal-case tracking-normal">
+                <div className="absolute top-full left-0 w-72 bg-[#0E0C0A]/95 backdrop-blur-2xl border border-white/15 rounded-md shadow-2xl p-2 z-50 animate-fadeIn normal-case tracking-normal">
                   <Link
                     to="/kumbh-directory"
-                    className="p-2.5 rounded-md hover:bg-white/10 transition-colors block text-xs text-swarna-300 font-serif font-medium border-b border-white/10 mb-1"
+                    className="p-2.5 rounded hover:bg-white/10 transition-colors block text-xs text-swarna-300 font-serif font-medium border-b border-white/10 mb-1"
                   >
                     Universal Kumbh Almanac
                   </Link>
                   <Link
                     to="/kumbh-directory/prayagraj-maha-kumbh"
-                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
+                    className="p-2 rounded hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
                   >
                     Prayagraj Maha Kumbh Guide
                   </Link>
                   <Link
                     to="/kumbh-directory/nashik-simhastha-kumbh"
-                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
+                    className="p-2 rounded hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
                   >
                     Nashik Simhastha 2027 Guide
                   </Link>
                   <Link
-                    to="/kumbh-directory/haridwar-maha-kumbh"
-                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
-                  >
-                    Haridwar Maha Kumbh Guide
-                  </Link>
-                  <Link
                     to="/kumbh-directory/ujjain-simhastha-kumbh"
-                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
+                    className="p-2 rounded hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
                   >
                     Ujjain Simhastha Guide
                   </Link>
                   <Link
-                    to="/kumbh-directory/akharas-and-traditions"
-                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white border-t border-white/10 mt-1 pt-1.5"
+                    to="/kumbh-directory/haridwar-maha-kumbh"
+                    className="p-2 rounded hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
                   >
-                    The 13 Sacred Akharas
+                    Haridwar Maha Kumbh Guide
                   </Link>
+                  <div className="h-px bg-white/10 my-1" />
                   <Link
-                    to="/kumbh-directory/shahi-snan-rituals-guide"
-                    className="p-2 rounded-md hover:bg-white/10 transition-colors block text-xs text-stone-200 hover:text-white"
+                    to="/sacred-travel-and-kumbh-guides"
+                    className="p-2 rounded hover:bg-white/10 transition-colors block text-xs text-stone-300 hover:text-white"
                   >
-                    Shahi Snan Rituals & Science
+                    Sacred Travel in India Journal ↗
                   </Link>
                 </div>
               )}
             </div>
 
-            {/* Capabilities */}
-            <Link
-              to="/capabilities-infrastructure"
-              className={`transition-colors py-1.5 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
-                location.pathname === '/capabilities-infrastructure'
-                  ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
-                  : 'hover:text-white'
-              }`}
-            >
-              Capabilities
-            </Link>
-
-            {/* Heritage */}
-            <Link
-              to="/heritage-since-2001"
-              className={`transition-colors py-1.5 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
-                location.pathname === '/heritage-since-2001'
-                  ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
-                  : 'hover:text-white'
-              }`}
-            >
-              Heritage
-            </Link>
-
-            {/* Guides & Journal */}
-            <Link
-              to="/sacred-travel-and-kumbh-guides"
-              className={`transition-colors py-1.5 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
-                location.pathname.startsWith('/sacred-travel-and-kumbh-guides') || location.pathname.startsWith('/guides')
-                  ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
-                  : 'hover:text-white'
-              }`}
-            >
-              Guides & Journal
-            </Link>
-
-            {/* Contact */}
+            {/* 5. Contact */}
             <Link
               to="/corporate-contact"
-              className={`transition-colors py-1.5 whitespace-nowrap relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] ${
+              className={`transition-colors py-1.5 whitespace-nowrap relative drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)] ${
                 location.pathname === '/corporate-contact'
-                  ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-swarna-400 after:shadow-[0_0_8px_rgba(234,179,8,0.8)]'
+                  ? 'text-swarna-300 font-semibold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-swarna-400'
                   : 'hover:text-white'
               }`}
             >
@@ -242,28 +244,28 @@ export default function LuxuryHeader({
             </Link>
           </nav>
 
-          {/* Right Controls */}
-          <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
+          {/* Right Controls (Guaranteed to NEVER overflow) */}
+          <div className="hidden lg:flex items-center gap-4 xl:gap-5 shrink-0">
             
             {/* Language Switcher Pill */}
-            <div className="flex items-center border border-white/20 bg-black/30 backdrop-blur-md rounded-full px-2 py-1 text-[10px] font-sans tracking-wider text-stone-200 shadow-xs">
+            <div className="flex items-center border border-white/20 bg-black/40 backdrop-blur-md rounded-xs px-2.5 py-1 text-[10px] font-sans tracking-widest text-stone-300">
               <button
                 onClick={() => setLang('en')}
-                className={`px-1.5 py-0.5 rounded-full transition-colors cursor-pointer ${lang === 'en' ? 'text-swarna-300 font-bold bg-white/10' : 'hover:text-white'}`}
+                className={`px-1 py-0.5 transition-colors cursor-pointer ${lang === 'en' ? 'text-swarna-300 font-bold' : 'hover:text-white'}`}
               >
                 EN
               </button>
-              <span className="text-white/30 mx-0.5">|</span>
+              <span className="text-white/25 mx-1">/</span>
               <button
                 onClick={() => setLang('hi')}
-                className={`px-1.5 py-0.5 rounded-full transition-colors cursor-pointer ${lang === 'hi' ? 'text-swarna-300 font-bold bg-white/10' : 'hover:text-white'}`}
+                className={`px-1 py-0.5 transition-colors cursor-pointer ${lang === 'hi' ? 'text-swarna-300 font-bold' : 'hover:text-white'}`}
               >
                 हिं
               </button>
-              <span className="text-white/30 mx-0.5">|</span>
+              <span className="text-white/25 mx-1">/</span>
               <button
                 onClick={() => setLang('mr')}
-                className={`px-1.5 py-0.5 rounded-full transition-colors cursor-pointer ${lang === 'mr' ? 'text-swarna-300 font-bold bg-white/10' : 'hover:text-white'}`}
+                className={`px-1 py-0.5 transition-colors cursor-pointer ${lang === 'mr' ? 'text-swarna-300 font-bold' : 'hover:text-white'}`}
               >
                 मरा
               </button>
@@ -272,17 +274,17 @@ export default function LuxuryHeader({
             {/* Inquire Button */}
             <button
               onClick={() => onOpenInquiry()}
-              className="px-4 xl:px-5 py-2 rounded-full border border-swarna-400/80 bg-swarna-400/20 hover:bg-swarna-400 hover:text-stone-950 text-swarna-200 hover:text-stone-950 text-[11px] uppercase tracking-[0.14em] font-semibold transition-all duration-300 backdrop-blur-sm shadow-[0_2px_12px_rgba(217,170,74,0.25)] hover:shadow-[0_4px_20px_rgba(217,170,74,0.5)] cursor-pointer whitespace-nowrap"
+              className="px-4 py-1.5 xl:px-5 xl:py-2 rounded-xs border border-swarna-400 bg-swarna-400 text-stone-950 hover:bg-swarna-300 hover:border-swarna-300 text-[11px] uppercase tracking-[0.16em] font-medium transition-all duration-300 cursor-pointer whitespace-nowrap shadow-sm"
             >
               Inquire
             </button>
           </div>
 
           {/* Mobile Right Controls */}
-          <div className="flex lg:hidden items-center gap-2">
+          <div className="flex lg:hidden items-center gap-2 shrink-0">
             <button
               onClick={() => onOpenInquiry()}
-              className="px-3 py-1.5 rounded-full border border-swarna-400/80 bg-swarna-400/20 text-swarna-200 text-[10px] uppercase tracking-wider font-semibold shadow-xs"
+              className="px-3 py-1.5 rounded-xs border border-swarna-400 bg-swarna-400 text-stone-950 text-[10px] uppercase tracking-wider font-semibold"
             >
               Inquire
             </button>
@@ -300,7 +302,7 @@ export default function LuxuryHeader({
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-black/90 backdrop-blur-2xl border-b border-white/10 px-6 py-6 space-y-3.5 text-xs animate-fadeIn font-light shadow-2xl">
+        <div className="lg:hidden bg-[#0B0907]/95 backdrop-blur-2xl border-b border-white/10 px-6 py-6 space-y-3.5 text-xs animate-fadeIn font-light shadow-2xl mt-3">
           
           {/* Mobile Language Switcher */}
           <div className="flex items-center justify-between pb-3 border-b border-white/10 text-stone-400">
@@ -344,14 +346,14 @@ export default function LuxuryHeader({
           <Link to="/destinations" className="block text-stone-300 hover:text-white py-1.5">
             Destinations (Ujjain, Haridwar, Prayagraj)
           </Link>
-          <Link to="/kumbh-directory" className="block text-stone-300 hover:text-white py-1.5">
-            Kumbh Directory & Almanac
-          </Link>
           <Link to="/capabilities-infrastructure" className="block text-stone-300 hover:text-white py-1.5">
             Capabilities & Infrastructure
           </Link>
           <Link to="/heritage-since-2001" className="block text-stone-300 hover:text-white py-1.5">
             Heritage Since 2001
+          </Link>
+          <Link to="/kumbh-directory" className="block text-stone-300 hover:text-white py-1.5">
+            Kumbh Directory & Almanac
           </Link>
           <Link to="/sacred-travel-and-kumbh-guides" className="block text-stone-300 hover:text-white py-1.5">
             Sacred Travel & Kumbh Guides
@@ -363,7 +365,7 @@ export default function LuxuryHeader({
           <div className="pt-3 border-t border-white/10 flex items-center justify-between gap-2">
             <a
               href="tel:+919889933333"
-              className="flex-1 py-2 px-3 rounded-lg bg-white/5 border border-white/10 text-stone-200 text-center font-mono text-[11px]"
+              className="flex-1 py-2 px-3 rounded bg-white/5 border border-white/10 text-stone-200 text-center font-mono text-[11px]"
             >
               📞 +91 98899 33333
             </a>
@@ -372,7 +374,7 @@ export default function LuxuryHeader({
                 setMobileMenuOpen(false);
                 onOpenInquiry();
               }}
-              className="flex-1 py-2 px-3 rounded-lg bg-swarna-400 text-stone-950 text-center font-serif text-xs font-bold"
+              className="flex-1 py-2 px-3 rounded bg-swarna-400 text-stone-950 text-center font-serif text-xs font-bold"
             >
               Inquire
             </button>
@@ -382,4 +384,3 @@ export default function LuxuryHeader({
     </header>
   );
 }
-

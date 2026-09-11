@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import AuspiciousTopRibbon from './components/common/AuspiciousTopRibbon';
 import LuxuryHeader from './components/common/LuxuryHeader';
 import LuxuryFooter from './components/common/LuxuryFooter';
 import CorporateInquiryModal from './components/common/CorporateInquiryModal';
@@ -58,6 +57,9 @@ export default function App() {
     }
   }, []);
 
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
   const handleOpenInquiry = (dest = 'Nashik Simhastha 2027') => {
     setDefaultInquiryDestination(dest);
     setIsInquiryModalOpen(true);
@@ -71,18 +73,15 @@ export default function App() {
     <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-espresso-950 font-sans selection:bg-swarna-500/30 selection:text-espresso-950">
       <ScrollToTop />
 
-      {/* 1. Auspicious Top Micro-Ribbon */}
-      <AuspiciousTopRibbon lang={lang} />
-
-      {/* 2. Parent Group Architectural Header */}
+      {/* 1. Parent Group Architectural Header */}
       <LuxuryHeader
         lang={lang}
         setLang={setLang}
         onOpenInquiry={handleOpenInquiry}
       />
 
-      {/* 3. Main Route Content Area */}
-      <div className="flex-1">
+      {/* 2. Main Route Content Area */}
+      <div className={`flex-1 ${isHome ? '' : 'pt-20 sm:pt-24'}`}>
         <Routes>
           {/* Core Corporate Routes */}
           <Route

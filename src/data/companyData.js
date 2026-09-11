@@ -35,73 +35,139 @@ export const COMPANY_PROFILE = {
 
 export const MILESTONES_CHRONOLOGY = [
   {
-    year: "2001",
-    event: "The Inaugural Sacred Foundation",
-    location: "Prayagraj Maha Kumbh",
-    description: "Established our inaugural 20-cottage riverfront retreat on the sacred sands of Triveni Sangam, setting the gold standard for hygienic pilgrimage lodging.",
-    scale: "20 Swiss Cottages · 1,200 Devotees"
+    year: "2000–2001",
+    shortYear: "2000-01",
+    melaType: "Maha Kumbh",
+    circuit: "Prayagraj",
+    location: "Prayagraj Maha Kumbh (Triveni Sangam)",
+    event: "Ram Janmabhoomi Temple Event & Inaugural Camp",
+    description: "Organised the landmark Ram Janmabhoomi Temple event on the sacred sands of Triveni Sangam, establishing our inaugural camp and hosting the historic architectural model exhibition of the temple, welcoming millions of devotees, revered saints, and national dignitaries.",
+    highlights: [
+      "Organised Ram Janmabhoomi Temple Event (Camp + Model)",
+      "Inaugural foundation of The Kumbh Cottages under Arc Media",
+      "Historical architectural model exhibition on the Sangam sands"
+    ],
+    badge: "Ram Janmabhoomi Camp & Model",
+    scale: "Inaugural Camp + Architectural Model",
+    image: "/assets/cottages/godavari-villa.webp"
   },
   {
-    year: "2004",
-    event: "Shipra Riverside Expansion",
-    location: "Ujjain Simhastha",
-    description: "Deployed specialized heat-reflective insulated double-fly canvas suites to combat intense Malwa summer temperatures during holy snan.",
-    scale: "45 Luxury Suites · 2,800 Devotees"
+    year: "2006–2007",
+    shortYear: "2006-07",
+    melaType: "Ardh Kumbh",
+    circuit: "Prayagraj",
+    location: "Prayagraj Ardh Kumbh (Sangam Grounds)",
+    event: "Prayag Sole Rights for Luxury Cottages & Master Restaurant",
+    description: "Awarded the exclusive sole right across the entire Prayag Kumbh grounds for establishing turnkey riverfront luxury cottages and the master restaurant/fooding campus, setting the gold standard for hygienic, consecrated pilgrimage hospitality.",
+    highlights: [
+      "Awarded Prayag Sole Right for Cottages & Fooding",
+      "Master Sattvic Restaurant & Consecrated Dining Operations",
+      "Pioneered riverfront luxury tented infrastructure standards"
+    ],
+    badge: "Prayag Sole Right Holder",
+    scale: "Exclusive Cottage & Restaurant Rights",
+    image: "/assets/cottages/sattvic-dining.webp"
   },
   {
-    year: "2006",
-    event: "Godavari Sanctum Launch",
-    location: "Nashik Simhastha",
-    description: "Pioneered the first dedicated senior citizen golf-cart transit corridor directly connecting cottage verandas to the Ramkund bathing ghats.",
-    scale: "60 Heritage Cottages · 4,200 Devotees"
-  },
-  {
-    year: "2010",
-    event: "Himalayan Foothills Retreat",
-    location: "Haridwar Maha Kumbh",
-    description: "Constructed an integrated Vedic wellness and hawan pavilion on the banks of Maa Ganga with daily yoga, pranayama, and private ghat escorts.",
-    scale: "80 Riverside Cottages · 6,800 Devotees"
+    year: "2011–2012",
+    shortYear: "2011-12",
+    melaType: "Maha Kumbh",
+    circuit: "Prayagraj",
+    location: "Prayagraj Maha Kumbh (Triveni Sangam)",
+    event: "First Wi-Fi Corporate Camp · Covered by BBC & National Geographic",
+    description: "Pioneered India's first fully organized luxury camp site equipped with high-speed Wi-Fi and executive workstations tailored for multinational corporate companies, CEOs, and international media. The campus received global acclaim and was prominently covered and broadcast worldwide by the BBC and National Geographic.",
+    highlights: [
+      "First fully organized camp site with Wi-Fi for multinational corporations",
+      "Covered globally by BBC and National Geographic",
+      "Executive suites, digital connectivity & corporate retreats on the Sangam"
+    ],
+    badge: "Covered by BBC & National Geographic",
+    scale: "First Wi-Fi Corporate Camp · Global Media Broadcast",
+    image: "/assets/cottages/maharaja-suite.webp"
   },
   {
     year: "2015",
-    event: "Simhastha Sovereign Village",
-    location: "Nashik Trimbak Corridor",
-    description: "Engineered a 20-acre turnkey township featuring underground water filtration, Italian marble en-suites, and a 1,000-seat A2 Desi Ghee Annakshetra.",
-    scale: "120 Royal Suites · 12,500 Devotees"
+    shortYear: "2015",
+    melaType: "Simhastha Maha Kumbh",
+    circuit: "Nashik",
+    location: "Nashik Simhastha Maha Kumbh (Godavari Riverfront)",
+    event: "Godavari Riverfront Sovereign Camp",
+    description: "Arranged a premier luxury camp site at the sacred Nashik Simhastha Maha Kumbh along the Godavari riverfront. Engineered VIP canvas suites, Annakshetra dining, and direct snan facilitation—establishing our enduring footprint on the Godavari, where we proudly return after 12 years.",
+    highlights: [
+      "Arranged landmark camp site at Nashik Maha Kumbh",
+      "Turnkey riverfront suites & elder transit along Godavari",
+      "Established our foundation for the 12-year cyclic return in 2027"
+    ],
+    badge: "Godavari Riverfront Camp",
+    scale: "Nashik Simhastha Maha Kumbh Site",
+    image: "/assets/cottages/godavari-villa-living.webp"
   },
   {
     year: "2016",
-    event: "Mahakal Sanctum Campus",
-    location: "Ujjain Simhastha",
-    description: "Successfully operated high-security VIP camps for state guests, international cultural delegations, and revered akhara mahants.",
-    scale: "150 Luxury Suites · 16,000 Devotees"
+    shortYear: "2016",
+    melaType: "Ardh Kumbh",
+    circuit: "Haridwar",
+    location: "Haridwar Ardh Kumbh (Ganga Riverfront)",
+    event: "Sacred Haridwar Ardh Kumbh Sanctuary",
+    description: "Successfully conducted the Haridwar Ardh Kumbh Mela luxury campus on the sacred banks of Maa Ganga. Engineered weather-resilient riverfront cottages, private snan platforms, Vedic hawan pavilions, and seamless elder mobility in the Himalayan foothills.",
+    highlights: [
+      "Haridwar Ardh Kumbh Mela campus successfully conducted",
+      "Private Ganga snan access & consecrated prayer pavilions",
+      "High-altitude weatherized canvas suites and dining seva"
+    ],
+    badge: "Haridwar Mela Conducted",
+    scale: "Haridwar Ardh Kumbh Campus",
+    image: "/assets/cottages/swiss-cottage.webp"
   },
   {
-    year: "2019",
-    event: "Zero-Discharge Environmental Milestone",
-    location: "Prayagraj Kumbh",
-    description: "Awarded environmental excellence for operating a 100% zero-river-runoff camp utilizing advanced self-contained aerobic bio-digester sanitation.",
-    scale: "200+ Luxury Suites · 24,000 Devotees"
+    year: "2018–2019",
+    shortYear: "2018-19",
+    melaType: "Ardh Kumbh / Kumbh",
+    circuit: "Prayagraj",
+    location: "Prayagraj Kumbh (Triveni Sangam)",
+    event: "Global Diplomatic Campus & International Media Coverage",
+    description: "Engineered high-security luxury sanctuaries hosting foreign embassies, international agencies, and state dignitaries. Extensively covered by global television networks and international agencies for zero-discharge bio-digester sanitation and royal Vedic hospitality.",
+    highlights: [
+      "Covered extensively by premier international media agencies",
+      "Hosting base for foreign delegations, ambassadors & NRI families",
+      "Pioneered closed-loop zero-river-runoff ecological sanitation"
+    ],
+    badge: "International Agencies Coverage",
+    scale: "Global Diplomatic & Media Campus",
+    image: "/assets/cottages/maharaja-suite-interior.webp"
   },
   {
-    year: "2021",
-    event: "Ganga Riverside Protocol Excellence",
-    location: "Haridwar Maha Kumbh",
-    description: "Delivered flawless bio-secure bubble hospitality with on-site RT-PCR laboratories and contactless sattvic dining delivery.",
-    scale: "100 Sanitized Suites · 8,000 Devotees"
-  },
-  {
-    year: "2024",
-    event: "Silver Jubilee Celebration",
-    location: "National Pilgrimage Circuits",
-    description: "Marking 24 consecutive years of continuous heritage hospitality service with an unprecedented 99.4% devotee satisfaction index.",
-    scale: "50,000+ Lifetime Devotees Hosted"
+    year: "2024–2025",
+    shortYear: "2024-25",
+    melaType: "Maha Kumbh",
+    circuit: "Prayagraj",
+    location: "Prayagraj Maha Kumbh (Triveni Sangam)",
+    event: "Sovereign Maha Kumbh Township & Annakshetra Seva",
+    description: "The grandest sacred congregation in human history. Deploying turnkey presidential canvas retreats, 100% pure A2 Gir cow desi ghee Annakshetra, private consecrated bathing ghat platforms, and comprehensive 24/7 medical and elder mobility corridors across the Sangam sands.",
+    highlights: [
+      "Turnkey presidential & royal canvas villa campus",
+      "100% pure A2 Gir cow bilona ghee Annakshetra seva",
+      "Consecrated private snan ghat platforms & step-free elder care"
+    ],
+    badge: "Historic Maha Kumbh Gathering",
+    scale: "Sovereign Riverfront Township",
+    image: "/assets/cottages/maharaja-bathroom.webp"
   },
   {
     year: "2027",
-    event: "The Sovereign Nashik Simhastha 2027",
-    location: "Nashik Simhastha 2027",
-    description: "Unveiling our ultra-luxury 28-acre sovereign riverfront sanctuary featuring presidential villas, private helipad transit, and VIP green corridor fast-tracks.",
-    scale: "28-Acre Sovereign Sanctuary Flagship"
+    shortYear: "2027",
+    melaType: "Simhastha Maha Kumbh",
+    circuit: "Nashik",
+    location: "Nashik Simhastha 2027 (kumbhcottagesnashik.com)",
+    event: "The Sovereign 12-Year Return to the Godavari",
+    description: "After 12 years since our celebrated 2015 Nashik Maha Kumbh operations, we return to the sacred Godavari. Introducing our 28-acre sovereign flagship campus with presidential canvas villas, VIP green corridors, and dedicated reservations at kumbhcottagesnashik.com.",
+    highlights: [
+      "Returning to the Godavari after 12 years of sacred heritage",
+      "Dedicated portal: kumbhcottagesnashik.com",
+      "28-Acre sovereign flagship sanctuary with private helipad & ghat access"
+    ],
+    badge: "Returning After 12 Years",
+    scale: "28-Acre Sovereign Flagship Campus",
+    image: "/assets/cottages/godavari-villa.webp"
   }
 ];
