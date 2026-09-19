@@ -10,7 +10,7 @@ export const DESTINATIONS_PORTFOLIO = [
     websiteDisplay: "kumbhcottagesnashik.com",
     isExternal: true,
     badge: "Active Flagship Property · Simhastha 2027",
-    image: "/assets/cottages/godavari-villa.webp",
+    image: "/assets/real_camps/kumbh-cottages-luxury-swiss-tents-boardwalk.webp",
     headline: "28-Acre Sovereign Riverfront Sanctuary Near Ramkund",
     tagline: "Dedicated VIP Green Corridor, Presidential Godavari Villas, and 100% Gir Cow A2 Ghee Annakshetra.",
     highlights: [
@@ -32,7 +32,7 @@ export const DESTINATIONS_PORTFOLIO = [
     websiteDisplay: "thekumbhcottages.com/ujjain",
     isExternal: false,
     badge: "Simhastha Campus & Spiritual Sanctorium",
-    image: "/assets/cottages/maharaja-suite.webp",
+    image: "/assets/cottages/royal-suite-double-bed-interior.webp",
     headline: "Insulated Riverfront Suites in the City of Mahakal",
     tagline: "Customized thermal insulation, early-morning Bhasma Aarti liaison, and strict Jain Chauvihar dining.",
     highlights: [
@@ -54,7 +54,7 @@ export const DESTINATIONS_PORTFOLIO = [
     websiteDisplay: "thekumbhcottages.com/haridwar",
     isExternal: false,
     badge: "Himalayan Sanctuary & Ganga Retreat",
-    image: "/assets/hero/snan-ghat-dawn.jpg",
+    image: "/assets/real_camps/kumbh-cottages-holy-river-boat-ride-sangam-snan.webp",
     headline: "Serene Riverside Sanctuary on the Holy Waters of Ganga",
     tagline: "Private bathing ghat access, morning pranayama pavilions, and direct VIP Har Ki Pauri Ganga Aarti transit.",
     highlights: [
@@ -76,7 +76,7 @@ export const DESTINATIONS_PORTFOLIO = [
     websiteDisplay: "thekumbhcottages.com/prayagraj",
     isExternal: false,
     badge: "Founding Base Since 2001",
-    image: "/assets/cottages/sattvic-dining.webp",
+    image: "/assets/real_camps/kumbh-cottages-riverfront-sanctuary-fountain.webp",
     headline: "Where Our Quarter-Century Legacy Began in 2001",
     tagline: "25 years of continuous Maha Kumbh operations on the sacred sands of Triveni Sangam.",
     highlights: [

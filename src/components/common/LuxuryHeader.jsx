@@ -43,7 +43,7 @@ export default function LuxuryHeader({
         <div className="hidden lg:block border-b border-white/10 pb-2 mb-2.5 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto flex items-center justify-between text-[10px] font-sans text-stone-300">
             <div className="flex items-center gap-3 tracking-[0.2em] uppercase text-[9px] text-white/90">
-              <span className="font-semibold text-swarna-300">Arc Media Group</span>
+              <span className="font-semibold text-swarna-300">Raamvan Retreats</span>
               <span className="text-white/30">|</span>
               <span className="text-stone-300">Sacred Hospitality & Infrastructure</span>
               <span className="text-white/30">|</span>
@@ -76,6 +76,9 @@ export default function LuxuryHeader({
             <img
               src="/assets/brand/emblem.webp"
               alt="The Kumbh Cottages Seal"
+              width="32"
+              height="32"
+              decoding="async"
               className="w-8 h-8 rounded-full border border-swarna-400/60 object-cover shrink-0 group-hover:border-swarna-300 transition-colors shadow-xs"
             />
             <div>
@@ -83,7 +86,7 @@ export default function LuxuryHeader({
                 The Kumbh Cottages
               </span>
               <span className="block text-[8px] sm:text-[9px] font-sans text-stone-300 font-medium tracking-[0.2em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
-                An Arc Media Enterprise · Est. 2001
+                A Raamvan Retreats Enterprise · Est. 2001
               </span>
             </div>
           </Link>

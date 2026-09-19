@@ -814,9 +814,92 @@ function prerender() {
     }
   });
 
-  // Copy llms.txt, llms-full.txt, robots.txt, sitemap.xml to dist
+function generateSitemap(routes) {
+  const today = new Date().toISOString().split('T')[0];
+  let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+  xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n`;
+  xml += `        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n`;
+
+  routes.forEach(route => {
+    const priority = route.priority || '0.8';
+    const changefreq = priority === '1.0' ? 'daily' : parseFloat(priority) >= 0.9 ? 'daily' : 'weekly';
+    const safeTitle = (route.title || 'TheKumbhCottages')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&apos;');
+
+    xml += `  <url>\n`;
+    xml += `    <loc>${route.canonical}</loc>\n`;
+    xml += `    <lastmod>${today}</lastmod>\n`;
+    xml += `    <changefreq>${changefreq}</changefreq>\n`;
+    xml += `    <priority>${priority}</priority>\n`;
+    xml += `    <image:image>\n`;
+    xml += `      <image:loc>https://thekumbhcottages.com/assets/real_camps/kumbh-cottages-riverfront-sanctuary-fountain.webp</image:loc>\n`;
+    xml += `      <image:title>${safeTitle}</image:title>\n`;
+    xml += `    </image:image>\n`;
+    xml += `  </url>\n`;
+  });
+
+  xml += `</urlset>\n`;
+  return xml;
+}
+
+function generateRssFeed(routes) {
+  const buildDate = new Date().toUTCString();
+  let feed = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+  feed += `<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n`;
+  feed += `  <channel>\n`;
+  feed += `    <title>TheKumbhCottages — Sovereign Heritage &amp; Sacred Infrastructure Group</title>\n`;
+  feed += `    <link>https://thekumbhcottages.com</link>\n`;
+  feed += `    <description>Authoritative pilgrimage updates, logistical transit manuals, and luxury riverfront sanctuary announcements by Raamvan Retreats (Est. 2001).</description>\n`;
+  feed += `    <language>en-IN</language>\n`;
+  feed += `    <lastBuildDate>${buildDate}</lastBuildDate>\n`;
+  feed += `    <atom:link href="https://thekumbhcottages.com/feed.xml" rel="self" type="application/rss+xml" />\n`;
+
+  routes.forEach(route => {
+    const safeTitle = (route.title || 'TheKumbhCottages')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&apos;');
+
+    const safeDesc = (route.description || 'Sovereign Heritage and Sacred Infrastructure Group')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&apos;');
+
+    feed += `    <item>\n`;
+    feed += `      <title>${safeTitle}</title>\n`;
+    feed += `      <link>${route.canonical}</link>\n`;
+    feed += `      <guid isPermaLink="true">${route.canonical}</guid>\n`;
+    feed += `      <pubDate>${buildDate}</pubDate>\n`;
+    feed += `      <description>${safeDesc}</description>\n`;
+    feed += `    </item>\n`;
+  });
+
+  feed += `  </channel>\n`;
+  feed += `</rss>\n`;
+  return feed;
+}
+
+  // 1. Automatically generate sitemap.xml
   const publicDir = path.resolve(__dirname, '../public');
-  const filesToCopy = ['llms.txt', 'llms-full.txt', 'robots.txt', 'sitemap.xml'];
+  const sitemapXml = generateSitemap(ROUTES);
+  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapXml, 'utf-8');
+  fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapXml, 'utf-8');
+
+  // 2. Automatically generate feed.xml (RSS 2.0 Feed)
+  const rssFeedXml = generateRssFeed(ROUTES);
+  fs.writeFileSync(path.join(publicDir, 'feed.xml'), rssFeedXml, 'utf-8');
+  fs.writeFileSync(path.join(distDir, 'feed.xml'), rssFeedXml, 'utf-8');
+
+  // 3. Copy static AI & bot files
+  const filesToCopy = ['llms.txt', 'llms-full.txt', 'robots.txt', 'e3d7a859b19f4a0c8b61c834a9e52c80.txt'];
   filesToCopy.forEach(file => {
     const src = path.join(publicDir, file);
     const dest = path.join(distDir, file);
@@ -825,7 +908,8 @@ function prerender() {
     }
   });
 
-  console.log(`✅ Static pre-rendering, full semantic HTML injection, Sitelinks Search Box schemas, sitemap.xml, robots.txt, and llms.txt successfully generated for all ${ROUTES.length} canonical routes!`);
+  console.log(`✅ Static pre-rendering, full semantic HTML injection, Sitelinks Search Box schemas, automatic sitemap.xml, feed.xml, robots.txt, and llms.txt successfully generated for all ${ROUTES.length} canonical routes!`);
 }
 
 prerender();
+

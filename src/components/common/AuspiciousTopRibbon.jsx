@@ -12,7 +12,7 @@ export default function AuspiciousTopRibbon({ lang = 'en' }) {
         {/* Corporate Group Attribution */}
         <div className="flex items-center justify-center gap-3">
           <span className="font-sans font-medium tracking-[0.2em] text-white/90 uppercase text-[9px] sm:text-[10px]">
-            Arc Media · Sacred Hospitality & Infrastructure Group
+            Raamvan Retreats · Sacred Hospitality & Infrastructure Group
           </span>
           <span className="hidden sm:inline text-stone-600">·</span>
           <span className="hidden sm:inline font-serif italic text-swarna-400 text-[11px]">

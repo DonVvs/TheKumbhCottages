@@ -30,6 +30,7 @@ User-agent: FacebookBot
 User-agent: Applebot
 Allow: /
 
-# Sitemaps & AI Index
+# Sitemaps & Auto-Discovery Feeds
 Sitemap: https://thekumbhcottages.com/sitemap.xml
+Feed: https://thekumbhcottages.com/feed.xml
 LLMs-Txt: https://thekumbhcottages.com/llms.txt

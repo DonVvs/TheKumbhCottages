@@ -10,11 +10,12 @@ export const STAYS_DATA = [
     capacity: "2-4 Devotees",
     view: "Direct Sacred Godavari Sangam View",
     badge: "Sovereign Heritage Flagship",
-    image: "/assets/cottages/maharaja-suite.webp",
+    image: "/assets/cottages/royal-suite-double-bed-interior.webp",
     gallery: [
-      "/assets/cottages/maharaja-suite.webp",
-      "/assets/cottages/maharaja-suite-interior.webp",
-      "/assets/cottages/maharaja-bathroom.webp"
+      "/assets/cottages/royal-suite-double-bed-interior.webp",
+      "/assets/cottages/luxury-cottage-master-suite-interior.webp",
+      "/assets/cottages/ensuite-western-bathroom-vanity.webp",
+      "/assets/cottages/private-bathroom-hot-water-plumbing.webp"
     ],
     features: [
       "Dual Inverter Climate Control HVAC",
@@ -39,10 +40,12 @@ export const STAYS_DATA = [
     capacity: "4-6 Devotees",
     view: "Panoramic Godavari Ghats & Temple Spires",
     badge: "Family Legacy Sanctuary",
-    image: "/assets/cottages/godavari-villa.webp",
+    image: "/assets/real_camps/kumbh-cottages-elevated-riverbank-canvas-villas.webp",
     gallery: [
-      "/assets/cottages/godavari-villa.webp",
-      "/assets/cottages/godavari-villa-living.webp"
+      "/assets/real_camps/kumbh-cottages-elevated-riverbank-canvas-villas.webp",
+      "/assets/cottages/luxury-cottage-master-suite-interior.webp",
+      "/assets/cottages/ensuite-western-bathroom-vanity.webp",
+      "/assets/real_camps/kumbh-cottages-riverfront-sanctuary-fountain.webp"
     ],
     features: [
       "Two Independent Master Suites with En-suite Baths",
@@ -67,10 +70,12 @@ export const STAYS_DATA = [
     capacity: "2 Devotees",
     view: "Lush Sandalwood Grove & Temple Garden",
     badge: "Most Cherished Stay",
-    image: "/assets/cottages/swiss-cottage.webp",
+    image: "/assets/cottages/deluxe-swiss-cottage-twin-interior.webp",
     gallery: [
-      "/assets/cottages/swiss-cottage.webp",
-      "/assets/cottages/swiss-cottage-bed.webp"
+      "/assets/cottages/deluxe-swiss-cottage-twin-interior.webp",
+      "/assets/real_camps/kumbh-cottages-luxury-swiss-tents-boardwalk.webp",
+      "/assets/cottages/ensuite-western-bathroom-vanity.webp",
+      "/assets/real_camps/kumbh-cottages-verandah-loungers-riverfront.webp"
     ],
     features: [
       "Insulated Double-Fly All-Weather Construction",
@@ -94,9 +99,12 @@ export const STAYS_DATA = [
     capacity: "2 Devotees",
     view: "Orchard & Vedic Hawan Shala Courtyard",
     badge: "Eco-Heritage Glamping",
-    image: "/assets/cottages/safari-tent.webp",
+    image: "/assets/real_camps/kumbh-cottages-luxury-swiss-tents-boardwalk.webp",
     gallery: [
-      "/assets/cottages/safari-tent.webp"
+      "/assets/real_camps/kumbh-cottages-luxury-swiss-tents-boardwalk.webp",
+      "/assets/cottages/deluxe-swiss-cottage-twin-interior.webp",
+      "/assets/cottages/ensuite-western-bathroom-vanity.webp",
+      "/assets/real_camps/kumbh-cottages-night-view-fairy-lit-campus.webp"
     ],
     features: [
       "Natural Breathable Heavy Canvas with Mosquito Screens",

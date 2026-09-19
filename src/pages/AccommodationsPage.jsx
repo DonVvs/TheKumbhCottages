@@ -3,6 +3,7 @@ import SEOHead from '../components/common/SEOHead';
 import { Sparkles, Maximize2, Bed, Users, Eye, Check, ShieldCheck, ArrowRight, Filter } from 'lucide-react';
 import { STAYS_DATA } from '../data/staysData';
 import { formatPrice } from '../utils/priceFormatter';
+import AuthenticCampGallery from '../components/sections/AuthenticCampGallery';
 
 export default function AccommodationsPage({
   currency = 'INR',
@@ -157,6 +158,11 @@ export default function AccommodationsPage({
           ))}
         </div>
 
+      </div>
+
+      {/* Real Photography Visual Catalog */}
+      <div className="mt-16">
+        <AuthenticCampGallery initialCategory="interiors" />
       </div>
     </main>
   );

@@ -67,9 +67,9 @@ export default function MilestoneChronology() {
               <button
                 key={item.year}
                 onClick={() => setSelectedYear(item.year)}
-                className={`px-4 py-2.5 rounded-sm font-sans text-xs transition-all shrink-0 cursor-pointer flex flex-col items-start gap-0.5 border text-left ${
+                className={`px-4 py-2.5 rounded-lg font-sans text-xs transition-all duration-300 shrink-0 cursor-pointer flex flex-col items-start gap-0.5 border text-left ${
                   isSelected
-                    ? 'bg-stone-900 text-white border-stone-900 shadow-sm'
+                    ? 'bg-stone-950 text-white border-swarna-500/60 shadow-md scale-[1.02]'
                     : 'bg-white text-stone-700 border-stone-200 hover:border-stone-400 hover:bg-stone-50'
                 }`}
               >
@@ -85,7 +85,7 @@ export default function MilestoneChronology() {
         </div>
 
         {/* Selected Milestone Detail Spread (Editorial Architectural Ledger) */}
-        <div className="bg-white rounded-lg border border-stone-200/90 shadow-sm overflow-hidden">
+        <div className="luxury-card rounded-xl sm:rounded-2xl border border-stone-200/90 shadow-md overflow-hidden transition-all duration-500">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 sm:p-10 items-center">
             
             {/* Left Column: Metadata & Prestige Badges */}
@@ -150,6 +150,8 @@ export default function MilestoneChronology() {
                 <img
                   src={currentMilestone.image}
                   alt={`${currentMilestone.event} - The Kumbh Cottages`}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
@@ -159,7 +161,7 @@ export default function MilestoneChronology() {
                 </div>
               </div>
               <div className="text-[10px] text-stone-400 font-serif italic text-center mt-2">
-                Documented historical campus operations · Arc Media
+                Documented historical campus operations · Raamvan Retreats
               </div>
             </div>
 

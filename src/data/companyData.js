@@ -1,12 +1,12 @@
 export const COMPANY_PROFILE = {
   name: "The Kumbh Cottages",
   legalName: "The Kumbh Cottages Hospitality & Infrastructure Group",
-  parentGroup: "Arc Media",
-  parentGroupName: "Arc Media Group",
+  parentGroup: "Raamvan Retreats",
+  parentGroupName: "Raamvan Retreats Group",
   foundedYear: "2001",
   experienceYears: "25+ Years",
   reachLocations: ["Nashik", "Ujjain", "Haridwar", "Prayagraj"],
-  tagline: "A Unit of Arc Media · Sovereign Heritage & Royal Pilgrimage Infrastructure Since 2001",
+  tagline: "A Unit of Raamvan Retreats · Sovereign Heritage & Royal Pilgrimage Infrastructure Since 2001",
   stats: [
     { value: "25+", label: "Years of Continuous Operations", detail: "Serving pilgrims across every Maha Kumbh cycle since 2001" },
     { value: "50,000+", label: "Esteemed Devotees Hosted", detail: "Dignitaries, acharyas, and multi-generational families" },
@@ -44,7 +44,7 @@ export const MILESTONES_CHRONOLOGY = [
     description: "Organised the landmark Ram Janmabhoomi Temple event on the sacred sands of Triveni Sangam, establishing our inaugural camp and hosting the historic architectural model exhibition of the temple, welcoming millions of devotees, revered saints, and national dignitaries.",
     highlights: [
       "Organised Ram Janmabhoomi Temple Event (Camp + Model)",
-      "Inaugural foundation of The Kumbh Cottages under Arc Media",
+      "Inaugural foundation of The Kumbh Cottages under Raamvan Retreats",
       "Historical architectural model exhibition on the Sangam sands"
     ],
     badge: "Ram Janmabhoomi Camp & Model",

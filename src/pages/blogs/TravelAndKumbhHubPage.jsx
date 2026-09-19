@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEOHead from '../../components/common/SEOHead';
-import { TRAVEL_AND_KUMBH_BLOGS } from '../../data/travelAndKumbhBlogsData';
+import { TRAVEL_AND_KUMBH_BLOGS_META } from '../../data/travelAndKumbhBlogsMeta';
 import { ArrowRight, Clock, BookOpen, Compass, ShieldCheck, ExternalLink, Search, X } from 'lucide-react';
 
 export default function TravelAndKumbhHubPage() {
@@ -16,7 +16,7 @@ export default function TravelAndKumbhHubPage() {
     'Kumbh Traditions & Monasticism'
   ];
 
-  const filteredBlogs = TRAVEL_AND_KUMBH_BLOGS.filter(blog => {
+  const filteredBlogs = TRAVEL_AND_KUMBH_BLOGS_META.filter(blog => {
     const matchesCategory = activeCategory === 'All' || blog.category === activeCategory;
     const matchesSearch = searchQuery.trim() === '' ||
       blog.title.toLowerCase().includes(searchQuery.toLowerCase()) ||

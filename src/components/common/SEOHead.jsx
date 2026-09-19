@@ -123,8 +123,8 @@ export default function SEOHead({
         "legalName": "TheKumbhCottages Sacred Infrastructure & Hospitality Group",
         "parentOrganization": {
           "@type": "Organization",
-          "name": "Arc Media",
-          "legalName": "Arc Media Group"
+          "name": "Raamvan Retreats",
+          "legalName": "Raamvan Retreats Group"
         },
         "foundingDate": "2001",
         "founder": {

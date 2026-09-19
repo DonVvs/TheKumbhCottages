@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Clock } from 'lucide-react';
-import { TRAVEL_AND_KUMBH_BLOGS } from '../../data/travelAndKumbhBlogsData';
+import { TRAVEL_AND_KUMBH_BLOGS_META } from '../../data/travelAndKumbhBlogsMeta';
 
 export default function RelatedGuidesWidget({
   category = null,
@@ -10,8 +10,8 @@ export default function RelatedGuidesWidget({
   subtitle = "Genuine practical transit manuals, elder accessibility guidelines, and ritual astronomy from our 25-year repository."
 }) {
   const filteredBlogs = category
-    ? TRAVEL_AND_KUMBH_BLOGS.filter(b => b.category === category).slice(0, limit)
-    : TRAVEL_AND_KUMBH_BLOGS.slice(0, limit);
+    ? TRAVEL_AND_KUMBH_BLOGS_META.filter(b => b.category === category).slice(0, limit)
+    : TRAVEL_AND_KUMBH_BLOGS_META.slice(0, limit);
 
   return (
     <section className="py-20 sm:py-24 bg-[#FAF8F5] border-t border-stone-200/80">

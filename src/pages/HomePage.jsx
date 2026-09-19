@@ -4,6 +4,7 @@ import CorporateHero from '../components/sections/CorporateHero';
 import TheLineageStory from '../components/sections/TheLineageStory';
 import DestinationShowcase from '../components/sections/DestinationShowcase';
 import InfrastructureMastery from '../components/sections/InfrastructureMastery';
+import AuthenticCampGallery from '../components/sections/AuthenticCampGallery';
 import InstitutionalAuthority from '../components/sections/InstitutionalAuthority';
 import MilestoneChronology from '../components/sections/MilestoneChronology';
 import RelatedGuidesWidget from '../components/common/RelatedGuidesWidget';
@@ -29,7 +30,10 @@ export default function HomePage({ lang = 'en', onOpenInquiry }) {
       {/* 4. Turnkey Infrastructure Mastery (The Work We Have Built) */}
       <InfrastructureMastery lang={lang} onOpenInquiry={onOpenInquiry} />
 
-      {/* 5. Institutional Authority & 25-Year Dignitary Trust */}
+      {/* 5. Authentic Real Camp Photography Gallery (Ground Proof & Devotee Seva) */}
+      <AuthenticCampGallery />
+
+      {/* 6. Institutional Authority & 25-Year Dignitary Trust */}
       <InstitutionalAuthority lang={lang} />
 
       {/* 6. 2001–2027 Milestone Chronology */}
