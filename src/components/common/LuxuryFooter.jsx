@@ -113,7 +113,7 @@ export default function LuxuryFooter() {
         {/* Bottom Legal & Accreditations */}
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-stone-500">
           <div className="flex items-center gap-2">
-            <span>© 2001–2027 The Kumbh Cottages · A Raamvan Retreats Enterprise. All Rights Reserved.</span>
+            <span>© 2001–2027 The Kumbh Cottages · A Raamvan Retreats Global Venture. All Rights Reserved.</span>
             <span>•</span>
             <span>ISO 9001:2015 & HACCP Compliant</span>
           </div>

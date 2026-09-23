@@ -86,7 +86,7 @@ export default function LuxuryHeader({
                 The Kumbh Cottages
               </span>
               <span className="block text-[8px] sm:text-[9px] font-sans text-stone-300 font-medium tracking-[0.2em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
-                A Raamvan Retreats Enterprise · Est. 2001
+                A Raamvan Retreats Global Venture · Est. 2001
               </span>
             </div>
           </Link>

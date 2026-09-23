@@ -299,7 +299,7 @@ export default function AuthenticCampGallery({ initialCategory = 'all', limit = 
                 {currentPhoto.caption}
               </p>
               <div className="mt-2 text-[10px] font-mono text-swarna-400 tracking-wider uppercase">
-                The Kumbh Cottages · A Raamvan Retreats Enterprise
+                The Kumbh Cottages · A Raamvan Retreats Global Venture
               </div>
             </div>
           </div>

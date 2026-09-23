@@ -135,7 +135,7 @@ export default function CorporateHero({ onOpenInquiry }) {
                 }}
                 draggable={false}
                 loading={idx === 0 ? 'eager' : 'lazy'}
-                fetchPriority={idx === 0 ? 'high' : 'low'}
+                fetchpriority={idx === 0 ? 'high' : 'low'}
                 decoding={idx === 0 ? 'sync' : 'async'}
               />
             )}
