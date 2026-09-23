@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SEOHead from '../components/common/SEOHead';
-import { MapPin, Phone, Mail, MessageSquare, Send, Check } from 'lucide-react';
+import { MapPin, Phone, Mail, MessageSquare, Send, Check, Globe } from 'lucide-react';
 
 export default function CorporateContactPage() {
   const [formData, setFormData] = useState({
@@ -71,7 +71,7 @@ export default function CorporateContactPage() {
                   <Mail className="w-3.5 h-3.5 text-stone-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <strong className="font-medium text-stone-900 block">Email</strong>
-                    <a href="mailto:corporate@thekumbhcottages.com" className="text-stone-900">corporate@thekumbhcottages.com</a>
+                    <a href="mailto:kumbhcottages@gmail.com" className="text-stone-900">kumbhcottages@gmail.com</a>
                   </div>
                 </div>
 
@@ -101,6 +101,22 @@ export default function CorporateContactPage() {
                       className="text-swarna-700 hover:underline inline-flex items-center gap-1 font-medium"
                     >
                       <span>View Google Maps & Reviews</span>
+                      <span>↗</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-2 pt-1 border-t border-stone-100">
+                  <Globe className="w-3.5 h-3.5 text-swarna-700 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <strong className="font-medium text-stone-900 block">Official Facebook Channel</strong>
+                    <a
+                      href="https://www.facebook.com/thekumbhcottage/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-swarna-700 hover:underline inline-flex items-center gap-1 font-medium"
+                    >
+                      <span>facebook.com/thekumbhcottage</span>
                       <span>↗</span>
                     </a>
                   </div>

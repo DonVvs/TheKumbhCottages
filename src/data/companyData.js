@@ -49,7 +49,12 @@ export const MILESTONES_CHRONOLOGY = [
     ],
     badge: "Ram Janmabhoomi Camp & Model",
     scale: "Inaugural Camp + Architectural Model",
-    image: "/assets/cottages/godavari-villa.webp"
+    image: "/assets/milestones/the-kumbh-cottages-2001-ram-janmabhoomi-triveni-sangam-camp.webp",
+    imageAlt: "Authentic archival photograph of The Kumbh Cottages 2000-2001 inaugural camp and Ram Janmabhoomi temple exhibition at Triveni Sangam Prayagraj",
+    imageCaption: "2000–2001 Prayagraj Maha Kumbh · Landmark Ram Janmabhoomi Temple Camp on Triveni Sangam sands",
+    license: "https://thekumbhcottages.com/corporate-contact#licensing",
+    credit: "The Kumbh Cottages · Raamvan Retreats Global Venture",
+    copyright: "© 2001–2027 The Kumbh Cottages · A Raamvan Retreats Global Venture. All Rights Reserved."
   },
   {
     year: "2006–2007",
@@ -66,7 +71,12 @@ export const MILESTONES_CHRONOLOGY = [
     ],
     badge: "Prayag Sole Right Holder",
     scale: "Exclusive Cottage & Restaurant Rights",
-    image: "/assets/cottages/sattvic-dining.webp"
+    image: "/assets/milestones/the-kumbh-cottages-2001-ram-janmabhoomi-triveni-sangam-camp.webp",
+    imageAlt: "Authentic archival riverfront canvas cottage camp operations at Prayagraj Ardh Kumbh 2006-2007 by The Kumbh Cottages",
+    imageCaption: "2006–2007 Prayagraj Ardh Kumbh · Master luxury camp and Annakshetra operations",
+    license: "https://thekumbhcottages.com/corporate-contact#licensing",
+    credit: "The Kumbh Cottages · Raamvan Retreats Global Venture",
+    copyright: "© 2001–2027 The Kumbh Cottages · A Raamvan Retreats Global Venture. All Rights Reserved."
   },
   {
     year: "2011–2012",
@@ -83,7 +93,12 @@ export const MILESTONES_CHRONOLOGY = [
     ],
     badge: "Covered by BBC & National Geographic",
     scale: "First Wi-Fi Corporate Camp · Global Media Broadcast",
-    image: "/assets/cottages/maharaja-suite.webp"
+    image: "/assets/milestones/the-kumbh-cottages-2012-prayagraj-maha-kumbh-corporate-camp.webp",
+    imageAlt: "Authentic historical photograph of India's first Wi-Fi enabled luxury corporate camp at Prayagraj Maha Kumbh 2011-2012, covered globally by BBC and National Geographic",
+    imageCaption: "2011–2012 Prayagraj Maha Kumbh · First Wi-Fi corporate camp, covered by BBC & National Geographic",
+    license: "https://thekumbhcottages.com/corporate-contact#licensing",
+    credit: "The Kumbh Cottages · Raamvan Retreats Global Venture",
+    copyright: "© 2001–2027 The Kumbh Cottages · A Raamvan Retreats Global Venture. All Rights Reserved."
   },
   {
     year: "2015",
@@ -100,7 +115,12 @@ export const MILESTONES_CHRONOLOGY = [
     ],
     badge: "Godavari Riverfront Camp",
     scale: "Nashik Simhastha Maha Kumbh Site",
-    image: "/assets/cottages/godavari-villa-living.webp"
+    image: "/assets/milestones/the-kumbh-cottages-2012-prayagraj-maha-kumbh-elevated-villas.webp",
+    imageAlt: "Authentic riverfront elevated canvas cottages and executive suites engineered by The Kumbh Cottages",
+    imageCaption: "2015 Nashik Simhastha Maha Kumbh · Godavari riverfront elevated luxury camp operations",
+    license: "https://thekumbhcottages.com/corporate-contact#licensing",
+    credit: "The Kumbh Cottages · Raamvan Retreats Global Venture",
+    copyright: "© 2001–2027 The Kumbh Cottages · A Raamvan Retreats Global Venture. All Rights Reserved."
   },
   {
     year: "2016",
@@ -117,7 +137,12 @@ export const MILESTONES_CHRONOLOGY = [
     ],
     badge: "Haridwar Mela Conducted",
     scale: "Haridwar Ardh Kumbh Campus",
-    image: "/assets/cottages/swiss-cottage.webp"
+    image: "/assets/milestones/the-kumbh-cottages-2001-ram-janmabhoomi-triveni-sangam-camp.webp",
+    imageAlt: "Archival riverbank canvas cottage camp operations engineered by The Kumbh Cottages",
+    imageCaption: "2016 Haridwar Ardh Kumbh · Consecrated riverfront canvas sanctuary",
+    license: "https://thekumbhcottages.com/corporate-contact#licensing",
+    credit: "The Kumbh Cottages · Raamvan Retreats Global Venture",
+    copyright: "© 2001–2027 The Kumbh Cottages · A Raamvan Retreats Global Venture. All Rights Reserved."
   },
   {
     year: "2018–2019",
@@ -134,7 +159,12 @@ export const MILESTONES_CHRONOLOGY = [
     ],
     badge: "International Agencies Coverage",
     scale: "Global Diplomatic & Media Campus",
-    image: "/assets/cottages/maharaja-suite-interior.webp"
+    image: "/assets/milestones/the-kumbh-cottages-2012-prayagraj-maha-kumbh-corporate-camp.webp",
+    imageAlt: "High-security luxury diplomatic campus and executive hospitality suites on the Triveni Sangam",
+    imageCaption: "2018–2019 Prayagraj Kumbh · Global diplomatic campus and media hospitality grounds",
+    license: "https://thekumbhcottages.com/corporate-contact#licensing",
+    credit: "The Kumbh Cottages · Raamvan Retreats Global Venture",
+    copyright: "© 2001–2027 The Kumbh Cottages · A Raamvan Retreats Global Venture. All Rights Reserved."
   },
   {
     year: "2024–2025",
@@ -151,7 +181,12 @@ export const MILESTONES_CHRONOLOGY = [
     ],
     badge: "Historic Maha Kumbh Gathering",
     scale: "Sovereign Riverfront Township",
-    image: "/assets/cottages/maharaja-bathroom.webp"
+    image: "/assets/milestones/the-kumbh-cottages-2012-prayagraj-maha-kumbh-elevated-villas.webp",
+    imageAlt: "Sovereign elevated canvas cottage township and pilgrim sanctuary engineered on the Sangam sands",
+    imageCaption: "2024–2025 Prayagraj Maha Kumbh · Consecrated riverfront canvas suites and Annakshetra",
+    license: "https://thekumbhcottages.com/corporate-contact#licensing",
+    credit: "The Kumbh Cottages · Raamvan Retreats Global Venture",
+    copyright: "© 2001–2027 The Kumbh Cottages · A Raamvan Retreats Global Venture. All Rights Reserved."
   },
   {
     year: "2027",
@@ -168,6 +203,11 @@ export const MILESTONES_CHRONOLOGY = [
     ],
     badge: "Returning After 12 Years",
     scale: "28-Acre Sovereign Flagship Campus",
-    image: "/assets/cottages/godavari-villa.webp"
+    image: "/assets/milestones/the-kumbh-cottages-2012-prayagraj-maha-kumbh-corporate-camp.webp",
+    imageAlt: "Flagship luxury riverfront canvas campus and VIP hospitality suites returning to Nashik Simhastha 2027",
+    imageCaption: "Nashik Simhastha 2027 · The Sovereign 12-Year Return to the Godavari riverfront",
+    license: "https://thekumbhcottages.com/corporate-contact#licensing",
+    credit: "The Kumbh Cottages · Raamvan Retreats Global Venture",
+    copyright: "© 2001–2027 The Kumbh Cottages · A Raamvan Retreats Global Venture. All Rights Reserved."
   }
 ];

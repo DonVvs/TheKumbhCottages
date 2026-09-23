@@ -559,7 +559,7 @@ export const TRAVEL_AND_KUMBH_BLOGS = [
     `,
     relatedLinks: [
       { label: 'Turnkey Infrastructure Capabilities', url: '/capabilities-infrastructure' },
-      { label: 'How to Book Kumbh Cottages & Avoid Fraud', url: '/guides/how-to-book-kumbh-cottages-pricing-and-avoiding-fraud' },
+      { label: 'How to Book The Kumbh Cottages & Avoid Fraud', url: '/guides/how-to-book-kumbh-cottages-pricing-and-avoiding-fraud' },
       { label: 'Corporate & Group Accommodation Inquiries', url: '/corporate-contact' }
     ]
   },
@@ -1041,7 +1041,7 @@ export const TRAVEL_AND_KUMBH_BLOGS = [
     `,
     relatedLinks: [
       { label: 'Master Accommodation Guide: Cottages vs Hotels', url: '/guides/kumbh-mela-accommodation-guide-luxury-tents-vs-hotels' },
-      { label: 'How to Book Kumbh Cottages & Avoid Fraud', url: '/guides/how-to-book-kumbh-cottages-pricing-and-avoiding-fraud' },
+      { label: 'How to Book The Kumbh Cottages & Avoid Fraud', url: '/guides/how-to-book-kumbh-cottages-pricing-and-avoiding-fraud' },
       { label: 'Corporate Directorate & Global Inquiries', url: '/corporate-contact' }
     ]
   },
@@ -1292,7 +1292,7 @@ export const TRAVEL_AND_KUMBH_BLOGS = [
       <p>For corporate leadership delegations, high-net-worth family offices, and elderly parents, TheKumbhCottages provides dedicated pilgrimage liaison officers who coordinate timing during off-peak muhurtas, ensuring that senior devotees experience holy bathing with complete peace, safety, and dignity.</p>
     `,
     relatedLinks: [
-      { label: 'How to Book Kumbh Cottages & Avoid Fraud', url: '/guides/how-to-book-kumbh-cottages-pricing-and-avoiding-fraud' },
+      { label: 'How to Book The Kumbh Cottages & Avoid Fraud', url: '/guides/how-to-book-kumbh-cottages-pricing-and-avoiding-fraud' },
       { label: 'Corporate & NRI Family Pilgrimage Protocols', url: '/guides/corporate-delegations-nri-family-pilgrimage-protocol' },
       { label: 'Corporate Directorate Contact', url: '/corporate-contact' }
     ]
@@ -1874,7 +1874,7 @@ export const TRAVEL_AND_KUMBH_BLOGS = [
     `,
     relatedLinks: [
       { label: 'Multi-Generational & Elder Pilgrimage Guide', url: '/guides/multi-generational-family-elder-pilgrimage-guide' },
-      { label: 'How to Book Kumbh Cottages & Avoid Fraud', url: '/guides/how-to-book-kumbh-cottages-pricing-and-avoiding-fraud' },
+      { label: 'How to Book The Kumbh Cottages & Avoid Fraud', url: '/guides/how-to-book-kumbh-cottages-pricing-and-avoiding-fraud' },
       { label: 'Kumbh Mela Packing List & Weather Guide', url: '/guides/complete-kumbh-mela-packing-list-and-weather-guide' }
     ]
   },
@@ -2439,7 +2439,7 @@ export const TRAVEL_AND_KUMBH_BLOGS = [
         <li>Group rates start from <strong>₹12,000 per person per night</strong> (Deluxe Swiss Cottage, all-inclusive meals).</li>
         <li>All packages include: climate-controlled accommodation, 100% A2 desi ghee satvik meals, golf-cart transport, VIP ghat access, 24/7 security, and Wi-Fi.</li>
         <li>Custom add-ons: private Vedic pandit, Trimbakeshwar Jyotirlinga VIP darshan, helicopter transfer, private Yajnashala.</li>
-        <li>Contact: <a href="mailto:corporate@thekumbhcottages.com" class="text-swarna-700 font-medium underline">corporate@thekumbhcottages.com</a> | +91 98899 33333</li>
+        <li>Contact: <a href="mailto:kumbhcottages@gmail.com" class="text-swarna-700 font-medium underline">kumbhcottages@gmail.com</a> | +91 98899 33333</li>
       </ul>
     `,
     relatedLinks: [

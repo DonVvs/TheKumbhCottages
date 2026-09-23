@@ -27,7 +27,7 @@ export default function HeroSection({ lang = 'en', onOpenBooking }) {
       <div className="absolute inset-0 z-0">
         <img
           src="/hero-poster.webp"
-          alt="Sovereign Kumbh Cottages Sanctuary"
+          alt="The Kumbh Cottages Sovereign Sanctuary"
           className="w-full h-full object-cover object-center scale-105 transform-gpu will-change-transform transition-transform duration-10000 ease-out"
         />
         

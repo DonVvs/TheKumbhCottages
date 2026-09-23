@@ -170,7 +170,7 @@ export function createLodgingSchema({
       "addressCountry": "IN"
     },
     "telephone": "+91-98899-33333",
-    "email": "corporate@thekumbhcottages.com",
+    "email": "kumbhcottages@gmail.com",
     "amenityFeature": amenities.map(a => ({
       "@type": "LocationFeatureSpecification",
       "name": a,

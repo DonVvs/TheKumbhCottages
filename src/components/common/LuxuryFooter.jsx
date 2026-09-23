@@ -103,8 +103,9 @@ export default function LuxuryFooter() {
             <div className="space-y-1 text-stone-400 font-light">
               <div>New Delhi & Nashik, India</div>
               <div>Tel: <a href="tel:+919889933333" className="hover:text-white font-mono">+91 98899 33333</a></div>
-              <div>Email: <a href="mailto:corporate@thekumbhcottages.com" className="hover:text-white">corporate@thekumbhcottages.com</a></div>
+              <div>Email: <a href="mailto:kumbhcottages@gmail.com" className="hover:text-white">kumbhcottages@gmail.com</a></div>
               <div><a href="https://share.google/cmaiQgwb1FsV2jdfj" target="_blank" rel="noopener noreferrer" className="hover:text-swarna-300 text-stone-400 inline-flex items-center gap-1"><span>Google Business Listing ↗</span></a></div>
+              <div><a href="https://www.facebook.com/thekumbhcottage/" target="_blank" rel="noopener noreferrer" className="hover:text-swarna-300 text-stone-400 inline-flex items-center gap-1"><span>Official Facebook ↗</span></a></div>
             </div>
           </div>
 

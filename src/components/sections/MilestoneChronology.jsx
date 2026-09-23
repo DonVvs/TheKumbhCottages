@@ -149,7 +149,10 @@ export default function MilestoneChronology() {
               <div className="relative rounded overflow-hidden aspect-[4/3] border border-stone-200 bg-stone-100 shadow-xs">
                 <img
                   src={currentMilestone.image}
-                  alt={`${currentMilestone.event} - The Kumbh Cottages`}
+                  alt={currentMilestone.imageAlt || `${currentMilestone.event} - The Kumbh Cottages`}
+                  title={currentMilestone.imageAlt || `${currentMilestone.event} · Authentic Archival Photograph`}
+                  width="640"
+                  height="480"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
@@ -160,9 +163,36 @@ export default function MilestoneChronology() {
                   <span className="font-mono text-swarna-300">{currentMilestone.shortYear}</span>
                 </div>
               </div>
-              <div className="text-[10px] text-stone-400 font-serif italic text-center mt-2">
-                Documented historical campus operations · Raamvan Retreats
+              <div className="text-[10px] text-stone-400 font-serif italic text-center mt-2 flex flex-col items-center gap-0.5">
+                <span>{currentMilestone.imageCaption || "Documented historical campus operations · Raamvan Retreats Global Venture"}</span>
+                <span className="text-[9px] font-sans text-stone-400 tracking-wider">
+                  © 2001–2027 The Kumbh Cottages · Licensed Archival Photography
+                </span>
               </div>
+
+              {/* Schema.org ImageObject for Google Licensable Image & SEO */}
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "ImageObject",
+                    "contentUrl": `https://thekumbhcottages.com${currentMilestone.image}`,
+                    "name": `${currentMilestone.event} (${currentMilestone.year})`,
+                    "description": currentMilestone.imageAlt || currentMilestone.description,
+                    "caption": currentMilestone.imageCaption || currentMilestone.event,
+                    "license": currentMilestone.license || "https://thekumbhcottages.com/corporate-contact#licensing",
+                    "acquireLicensePage": "https://thekumbhcottages.com/corporate-contact",
+                    "creditText": currentMilestone.credit || "The Kumbh Cottages · Raamvan Retreats Global Venture",
+                    "creator": {
+                      "@type": "Organization",
+                      "name": "The Kumbh Cottages",
+                      "url": "https://thekumbhcottages.com"
+                    },
+                    "copyrightNotice": currentMilestone.copyright || "© 2001–2027 The Kumbh Cottages · A Raamvan Retreats Global Venture. All Rights Reserved."
+                  })
+                }}
+              />
             </div>
 
           </div>

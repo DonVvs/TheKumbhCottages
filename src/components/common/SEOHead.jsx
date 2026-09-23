@@ -136,11 +136,12 @@ export default function SEOHead({
         "image": "https://thekumbhcottages.com/hero-poster.webp",
         "description": description,
         "telephone": "+91-98899-33333",
-        "email": "corporate@thekumbhcottages.com",
+        "email": "kumbhcottages@gmail.com",
         "sameAs": [
           "https://kumbhcottagesnashik.com",
           "https://share.google/cmaiQgwb1FsV2jdfj",
-          "https://www.wikidata.org/wiki/Q1028"
+          "https://www.wikidata.org/wiki/Q1028",
+          "https://www.facebook.com/thekumbhcottage/"
         ],
         "hasMap": "https://share.google/cmaiQgwb1FsV2jdfj",
         "areaServed": [
@@ -167,7 +168,7 @@ export default function SEOHead({
             "@type": "ContactPoint",
             "telephone": "+91-98899-33333",
             "contactType": "Corporate & Group Liaison",
-            "email": "corporate@thekumbhcottages.com",
+            "email": "kumbhcottages@gmail.com",
             "areaServed": "IN",
             "availableLanguage": ["English", "Hindi", "Marathi"]
           }

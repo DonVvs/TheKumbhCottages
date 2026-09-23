@@ -1,5 +1,5 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import LuxuryHeader from './components/common/LuxuryHeader';
 import LuxuryFooter from './components/common/LuxuryFooter';
 import FloatingConciergeButtons from './components/common/FloatingConciergeButtons';
@@ -160,7 +160,7 @@ export default function App() {
             />
             <Route
               path="/travel-india-guides"
-              element={<TravelAndKumbhHubPage />}
+              element={<Navigate to="/sacred-travel-and-kumbh-guides" replace />}
             />
             <Route
               path="/guides/:slug"

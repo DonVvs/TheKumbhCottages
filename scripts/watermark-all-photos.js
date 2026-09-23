@@ -11,14 +11,15 @@ const backupDir = path.join(projectRoot, 'assets_backup_unwatermarked');
 const targetFolders = [
   'public/assets/real_camps',
   'public/assets/cottages',
-  'public/assets/hero'
+  'public/assets/hero',
+  'public/assets/milestones'
 ];
 
 const singleFiles = [
   'public/hero-poster.webp'
 ];
 
-const WATERMARK_TEXT = "© The Kumbh Cottages | A Venture of Raamvan Retreats";
+const WATERMARK_TEXT = "© The Kumbh Cottages | Raamvan Retreats Global Venture";
 
 function ensureDir(dir) {
   if (!fs.existsSync(dir)) {

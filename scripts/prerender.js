@@ -1,10 +1,47 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { TRAVEL_AND_KUMBH_BLOGS } from '../src/data/travelAndKumbhBlogsData.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const distDir = path.resolve(__dirname, '../dist');
+
+function getRouteImage(routePath) {
+  if (routePath.startsWith('guides/')) {
+    const slug = routePath.replace('guides/', '');
+    const blog = TRAVEL_AND_KUMBH_BLOGS.find(b => b.slug === slug);
+    if (blog && blog.image) return blog.image;
+  }
+  if (routePath === 'heritage-since-2001') {
+    return '/assets/milestones/the-kumbh-cottages-2001-ram-janmabhoomi-triveni-sangam-camp.webp';
+  }
+  if (routePath === 'destinations') {
+    return '/assets/cottages/godavari-villa.webp';
+  }
+  if (routePath === 'capabilities-infrastructure') {
+    return '/assets/cottages/pure-sattvic-annakshetra-dining-hall.webp';
+  }
+  if (routePath === 'corporate-contact') {
+    return '/assets/real_camps/kumbh-cottages-vip-founders-delegation-lounge.webp';
+  }
+  if (routePath === 'kumbh-directory/nashik-simhastha-kumbh') {
+    return '/assets/hero/nashik-hero-1.webp';
+  }
+  if (routePath === 'kumbh-directory/haridwar-maha-kumbh') {
+    return '/assets/hero/kumbh-ghats-sunrise.jpg';
+  }
+  if (routePath === 'kumbh-directory/ujjain-simhastha-kumbh') {
+    return '/assets/hero/sanctuary-dusk.jpg';
+  }
+  if (routePath === 'kumbh-directory/akharas-and-traditions') {
+    return '/assets/hero/ramkund-godavari-maha-aarti.jpg';
+  }
+  if (routePath === 'kumbh-directory/shahi-snan-rituals-guide') {
+    return '/assets/real_camps/kumbh-cottages-sacred-sankalpa-puja-boat-snan.webp';
+  }
+  return '/assets/real_camps/kumbh-cottages-riverfront-sanctuary-fountain.webp';
+}
 
 const ROUTES = [
   // ─── CORE PARENT GROUP ROUTES ───
@@ -126,7 +163,7 @@ const ROUTES = [
         <h1>Corporate Directorate & Central Liaison</h1>
         <p>Executive coordination for corporate leadership retreats, institutional delegations, CSR Annadaan partnerships, and state protocol liaisons.</p>
         <p><strong>Corporate Liaison Wing:</strong> Connaught Place, New Delhi & Riverfront Sanctuary Directorate, Nashik, India</p>
-        <p><strong>Telephone:</strong> +91 98899 33333 | <strong>Email:</strong> corporate@thekumbhcottages.com</p>
+        <p><strong>Telephone:</strong> +91 98899 33333 | <strong>Email:</strong> kumbhcottages@gmail.com</p>
       </section>
     `
   },
@@ -784,11 +821,12 @@ function prerender() {
           "logo": "https://thekumbhcottages.com/assets/brand/emblem.webp",
           "description": route.description,
           "telephone": "+91-98899-33333",
-          "email": "corporate@thekumbhcottages.com",
+          "email": "kumbhcottages@gmail.com",
           "sameAs": [
             "https://kumbhcottagesnashik.com",
             "https://share.google/cmaiQgwb1FsV2jdfj",
-            "https://www.wikidata.org/wiki/Q1028"
+            "https://www.wikidata.org/wiki/Q1028",
+            "https://www.facebook.com/thekumbhcottage/"
           ],
           "hasMap": "https://share.google/cmaiQgwb1FsV2jdfj"
         }
@@ -796,7 +834,15 @@ function prerender() {
     });
 
     const schemaScript = `\n  <script type="application/ld+json" id="prerender-schema">${schemaJson}</script>\n`;
-    routeHtml = routeHtml.replace('</head>', `${schemaScript}</head>`);
+    
+    // Inject OpenGraph, Twitter, and canonical Social Metadata for first-wave bots
+    const routeImage = getRouteImage(route.path);
+    const ogImageUrl = `https://thekumbhcottages.com${routeImage}`;
+    const safeTitleAttr = route.title.replace(/"/g, '&quot;');
+    const safeDescAttr = route.description.replace(/"/g, '&quot;');
+    const socialTags = `  <meta property="og:title" content="${safeTitleAttr}" />\n  <meta property="og:description" content="${safeDescAttr}" />\n  <meta property="og:url" content="${route.canonical}" />\n  <meta property="og:image" content="${ogImageUrl}" />\n  <meta name="twitter:card" content="summary_large_image" />\n  <meta name="twitter:title" content="${safeTitleAttr}" />\n  <meta name="twitter:description" content="${safeDescAttr}" />\n  <meta name="twitter:image" content="${ogImageUrl}" />\n`;
+    
+    routeHtml = routeHtml.replace('</head>', `${schemaScript}${socialTags}</head>`);
 
     // Inject semantic content into <div id="root"> for 100% crawlability by search bots and AI
     const semanticPrerenderHtml = `<div id="root"><header><nav><a href="/">Overview</a> | <a href="/destinations">Destinations</a> | <a href="https://kumbhcottagesnashik.com">Nashik 2027</a> | <a href="/capabilities-infrastructure">Capabilities</a> | <a href="/heritage-since-2001">Heritage</a> | <a href="/kumbh-directory">Kumbh Directory</a> | <a href="/sacred-travel-and-kumbh-guides">Guides & Journal</a> | <a href="/corporate-contact">Contact</a></nav></header><main>${route.content}</main><footer><p>© 2001–2027 TheKumbhCottages™. All Rights Reserved. ISO 9001:2015 & HACCP Compliant.</p></footer></div>`;
@@ -829,6 +875,8 @@ function generateSitemap(routes) {
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&apos;');
+    const routeImage = getRouteImage(route.path);
+    const imageUrl = `https://thekumbhcottages.com${routeImage}`;
 
     xml += `  <url>\n`;
     xml += `    <loc>${route.canonical}</loc>\n`;
@@ -836,8 +884,9 @@ function generateSitemap(routes) {
     xml += `    <changefreq>${changefreq}</changefreq>\n`;
     xml += `    <priority>${priority}</priority>\n`;
     xml += `    <image:image>\n`;
-    xml += `      <image:loc>https://thekumbhcottages.com/assets/real_camps/kumbh-cottages-riverfront-sanctuary-fountain.webp</image:loc>\n`;
+    xml += `      <image:loc>${imageUrl}</image:loc>\n`;
     xml += `      <image:title>${safeTitle}</image:title>\n`;
+    xml += `      <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>\n`;
     xml += `    </image:image>\n`;
     xml += `  </url>\n`;
   });

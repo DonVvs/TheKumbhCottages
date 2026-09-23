@@ -85,7 +85,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-serif font-bold text-espresso-950">Direct Email:</h3>
                     <p className="text-xs font-mono text-espresso-800 mt-0.5">
-                      corporate@thekumbhcottages.com
+                      kumbhcottages@gmail.com
                     </p>
                   </div>
                 </div>

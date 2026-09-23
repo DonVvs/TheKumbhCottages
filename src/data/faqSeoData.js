@@ -165,7 +165,7 @@ export const UJJAIN_SIMHASTHA_FAQS = [
 export const ACCOMMODATION_FAQS = [
   { q: "What is the difference between luxury tents and Swiss cottages at Kumbh?", a: "Standard tents are fabric structures with shared facilities. Swiss cottages (as built by The Kumbh Cottages) are insulated modular homes with triple-layer weather-proofing, Italian-tiled private Western bathrooms, continuous hot water, air cooling, and ceramic flooring — closer to a 5-star hotel than a campsite." },
   { q: "Why should I stay on the floodplain instead of a city hotel?", a: "During Shahi Snan days, the government imposes 10-15 km traffic cordons around bathing ghats. City hotel guests are stranded, unable to reach the river. Floodplain camps like The Kumbh Cottages provide walk-out ghat access via private green corridors, bypassing all traffic." },
-  { q: "What amenities do luxury Kumbh cottages include?", a: "The Kumbh Cottages suites include climate-controlled interiors, Western-style bathrooms with 24/7 hot water, 100% pure Gir cow A2 desi ghee satvik dining, step-free boardwalks, battery golf-cart transport, Wi-Fi, 24/7 security, private puja arrangements, and VIP bathing access." },
+  { q: "What amenities do luxury suites at The Kumbh Cottages include?", a: "The Kumbh Cottages suites include climate-controlled interiors, Western-style bathrooms with 24/7 hot water, 100% pure Gir cow A2 desi ghee satvik dining, step-free boardwalks, battery golf-cart transport, Wi-Fi, 24/7 security, private puja arrangements, and VIP bathing access." },
   { q: "How far in advance should I book for Kumbh Mela?", a: "For peak Shahi Snan dates, book 6-12 months in advance. Premium categories (Maharaja Presidential Villas) sell out 12-18 months early. For non-peak dates during the Kumbh window, 3-6 months advance booking is recommended." }
 ];
 
@@ -178,6 +178,6 @@ export const INTERNATIONAL_VISITOR_FAQS = [
 
 export const CORPORATE_CSR_FAQS = [
   { q: "Can companies organize CSR activities at Kumbh Mela?", a: "Yes. Kumbh Mela offers high-impact CSR opportunities under India's Companies Act Section 135: community feeding (Annadaan/Bhandara), sanitation infrastructure, medical camps, and clean water distribution. The Kumbh Cottages provides turnkey CSR execution with compliance documentation." },
-  { q: "How to organize a corporate spiritual retreat at Kumbh?", a: "The Kumbh Cottages Corporate Wing arranges end-to-end executive spiritual retreats: private cottage blocks, boardroom setups, private Yajnashala, VIP bathing access, and meditation sessions with resident acharyas. Contact corporate@thekumbhcottages.com." },
+  { q: "How to organize a corporate spiritual retreat at Kumbh?", a: "The Kumbh Cottages Corporate Wing arranges end-to-end executive spiritual retreats: private cottage blocks, boardroom setups, private Yajnashala, VIP bathing access, and meditation sessions with resident acharyas. Contact kumbhcottages@gmail.com." },
   { q: "What is Annadaan/Bhandara at Kumbh Mela?", a: "Annadaan (sacred food donation) and Bhandara (mass community feeding) is one of the highest forms of seva at Kumbh. Organizations set up mega-kitchens serving thousands of pilgrims daily. The Kumbh Cottages operates HACCP-compliant mega-kitchens using 100% pure A2 desi ghee feeding 10,000+ devotees daily." }
 ];
