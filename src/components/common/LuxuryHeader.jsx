@@ -72,7 +72,7 @@ export default function LuxuryHeader({
         <div className="flex items-center justify-between gap-2 sm:gap-4 xl:gap-8 w-full min-w-0">
           
           {/* Brand Seal & Parent Title */}
-          <Link to="/" className="flex items-center gap-2 sm:gap-3 group text-left min-w-0 flex-1 sm:flex-initial">
+          <Link to="/" className="flex items-center gap-2 sm:gap-2.5 group text-left shrink-0">
             <img
               src="/assets/brand/emblem.webp"
               alt="The Kumbh Cottages Seal"
@@ -81,15 +81,12 @@ export default function LuxuryHeader({
               decoding="async"
               className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-swarna-400/60 object-cover shrink-0 group-hover:border-swarna-300 transition-colors shadow-xs"
             />
-            <div className="min-w-0">
-              <span className="block font-serif text-sm sm:text-base lg:text-lg font-normal tracking-[0.02em] text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)] group-hover:text-swarna-200 transition-colors leading-tight truncate">
+            <div className="shrink-0">
+              <span className="block font-serif text-sm sm:text-base lg:text-lg font-normal tracking-[0.02em] text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)] group-hover:text-swarna-200 transition-colors leading-tight whitespace-nowrap">
                 The Kumbh Cottages
               </span>
-              <span className="hidden sm:block text-[8px] sm:text-[9px] font-sans text-stone-300 font-medium tracking-[0.16em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] truncate">
-                A Raamvan Retreats Global Venture · Est. 2001
-              </span>
-              <span className="block sm:hidden text-[7.5px] font-sans text-stone-300 font-medium tracking-[0.1em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] truncate">
-                Raamvan Retreats · Est. 2001
+              <span className="block text-[7.5px] sm:text-[8.5px] lg:text-[9px] font-sans text-stone-300 font-medium tracking-[0.08em] sm:tracking-[0.1em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] whitespace-nowrap">
+                A Raamvan Retreats Global Venture
               </span>
             </div>
           </Link>

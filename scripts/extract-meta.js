@@ -15,7 +15,8 @@ const metaBlogs = TRAVEL_AND_KUMBH_BLOGS.map(blog => ({
   readTime: blog.readTime,
   publishedDate: blog.publishedDate,
   author: blog.author,
-  image: blog.image
+  image: blog.image,
+  relatedLinks: blog.relatedLinks || []
 }));
 
 const fileContent = `// Auto-generated lightweight metadata for Sacred Travel & Kumbh Guides

@@ -10,7 +10,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "11 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Prayagraj Directorate (Est. 2001)",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Prayagraj Maha Kumbh Encyclopedia",
+        "url": "/kumbh-directory/prayagraj-maha-kumbh"
+      },
+      {
+        "label": "The Sacred Vow of Kalpavas Guide",
+        "url": "/guides/kalpavas-discipline-spiritual-science-of-riverside-living"
+      },
+      {
+        "label": "Cottages vs City Hotels Accommodation Guide",
+        "url": "/guides/kumbh-mela-accommodation-guide-luxury-tents-vs-hotels"
+      }
+    ]
   },
   {
     "slug": "nashik-complete-pilgrimage-and-tourism-travel-guide",
@@ -21,7 +35,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "12 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Nashik Field Directorate",
-    "image": "/assets/cottages/godavari-villa.webp"
+    "image": "/assets/cottages/godavari-villa.webp",
+    "relatedLinks": [
+      {
+        "label": "Nashik Simhastha 2027 Official Booking Portal",
+        "url": "https://kumbhcottagesnashik.com"
+      },
+      {
+        "label": "Nashik-Trimbakeshwar Simhastha Directory",
+        "url": "/kumbh-directory/nashik-simhastha-kumbh"
+      },
+      {
+        "label": "Simhastha 2027 Pilgrim Preparation Guide",
+        "url": "/guides/nashik-simhastha-2027-pilgrim-preparation-and-guide"
+      }
+    ]
   },
   {
     "slug": "haridwar-rishikesh-complete-pilgrimage-travel-guide",
@@ -32,7 +60,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "11 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Himalayan Sanctuary Guild",
-    "image": "/assets/cottages/godavari-villa.webp"
+    "image": "/assets/cottages/godavari-villa.webp",
+    "relatedLinks": [
+      {
+        "label": "Haridwar Maha Kumbh Encyclopedia",
+        "url": "/kumbh-directory/haridwar-maha-kumbh"
+      },
+      {
+        "label": "Great Jyotirlinga & River Circuits Guide",
+        "url": "/guides/jyotirlinga-and-sacred-river-circuits-itinerary-guide"
+      },
+      {
+        "label": "First-Time Sacred Travel in India Guide",
+        "url": "/guides/first-time-sacred-travel-in-india-practical-guide"
+      }
+    ]
   },
   {
     "slug": "first-time-sacred-travel-in-india-practical-guide",
@@ -43,7 +85,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "8 min read",
     "publishedDate": "2026-09-01",
     "author": "TheKumbhCottages Pilgrimage Advisory Directorate",
-    "image": "/assets/cottages/godavari-villa.webp"
+    "image": "/assets/cottages/godavari-villa.webp",
+    "relatedLinks": [
+      {
+        "label": "Multi-Generational Elder Pilgrimage Guide",
+        "url": "/guides/multi-generational-family-elder-pilgrimage-guide"
+      },
+      {
+        "label": "Pure Sattvic & Ayurvedic Dining on the Road",
+        "url": "/guides/pure-sattvic-ayurvedic-dining-guide"
+      },
+      {
+        "label": "Nashik Simhastha 2027 Official Overview",
+        "url": "/kumbh-directory/nashik-simhastha-kumbh"
+      }
+    ]
   },
   {
     "slug": "multi-generational-family-elder-pilgrimage-guide",
@@ -54,7 +110,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "7 min read",
     "publishedDate": "2026-09-03",
     "author": "TheKumbhCottages Medical & Senior Seva Team",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Turnkey Infrastructure Capabilities",
+        "url": "/capabilities-infrastructure"
+      },
+      {
+        "label": "First-Time Sacred Travel in India Guide",
+        "url": "/guides/first-time-sacred-travel-in-india-practical-guide"
+      },
+      {
+        "label": "Corporate & Family Group Inquiries",
+        "url": "/corporate-contact"
+      }
+    ]
   },
   {
     "slug": "pure-sattvic-ayurvedic-dining-guide",
@@ -65,7 +135,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "6 min read",
     "publishedDate": "2026-09-05",
     "author": "TheKumbhCottages Annakshetra Culinary Council",
-    "image": "/assets/cottages/sattvic-dining.webp"
+    "image": "/assets/cottages/sattvic-dining.webp",
+    "relatedLinks": [
+      {
+        "label": "Capabilities: 100% Desi Ghee Annakshetra",
+        "url": "/capabilities-infrastructure"
+      },
+      {
+        "label": "First-Time Sacred Travel in India Guide",
+        "url": "/guides/first-time-sacred-travel-in-india-practical-guide"
+      },
+      {
+        "label": "Shahi Snan Rituals & Science Guide",
+        "url": "/kumbh-directory/shahi-snan-rituals-guide"
+      }
+    ]
   },
   {
     "slug": "complete-kumbh-mela-packing-list-and-weather-guide",
@@ -76,7 +160,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "8 min read",
     "publishedDate": "2026-09-06",
     "author": "TheKumbhCottages Field Logistics Directorate",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "First-Time Sacred Travel in India Guide",
+        "url": "/guides/first-time-sacred-travel-in-india-practical-guide"
+      },
+      {
+        "label": "Master Accommodation Guide: Cottages vs Hotels",
+        "url": "/guides/kumbh-mela-accommodation-guide-luxury-tents-vs-hotels"
+      },
+      {
+        "label": "Nashik Simhastha 2027 Official Overview",
+        "url": "/kumbh-directory/nashik-simhastha-kumbh"
+      }
+    ]
   },
   {
     "slug": "jyotirlinga-and-sacred-river-circuits-itinerary-guide",
@@ -87,7 +185,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "9 min read",
     "publishedDate": "2026-09-07",
     "author": "TheKumbhCottages Circuit Strategy Team",
-    "image": "/assets/cottages/godavari-villa.webp"
+    "image": "/assets/cottages/godavari-villa.webp",
+    "relatedLinks": [
+      {
+        "label": "Destinations Overview",
+        "url": "/destinations"
+      },
+      {
+        "label": "Nashik Simhastha 2027 Portal",
+        "url": "/kumbh-directory/nashik-simhastha-kumbh"
+      },
+      {
+        "label": "Prayagraj Maha Kumbh Guide",
+        "url": "/kumbh-directory/prayagraj-maha-kumbh"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-accommodation-guide-luxury-tents-vs-hotels",
@@ -98,7 +210,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "9 min read",
     "publishedDate": "2026-09-08",
     "author": "TheKumbhCottages Civil Infrastructure Team",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Turnkey Infrastructure Capabilities",
+        "url": "/capabilities-infrastructure"
+      },
+      {
+        "label": "How to Book The Kumbh Cottages & Avoid Fraud",
+        "url": "/guides/how-to-book-kumbh-cottages-pricing-and-avoiding-fraud"
+      },
+      {
+        "label": "Corporate & Group Accommodation Inquiries",
+        "url": "/corporate-contact"
+      }
+    ]
   },
   {
     "slug": "how-to-book-kumbh-cottages-pricing-and-avoiding-fraud",
@@ -109,7 +235,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "7 min read",
     "publishedDate": "2026-09-09",
     "author": "TheKumbhCottages Guest Assurance Directorate",
-    "image": "/assets/cottages/godavari-villa.webp"
+    "image": "/assets/cottages/godavari-villa.webp",
+    "relatedLinks": [
+      {
+        "label": "Master Accommodation Guide: Cottages vs Hotels",
+        "url": "/guides/kumbh-mela-accommodation-guide-luxury-tents-vs-hotels"
+      },
+      {
+        "label": "Corporate & NRI Family Pilgrimage Protocols",
+        "url": "/guides/corporate-delegations-nri-family-pilgrimage-protocol"
+      },
+      {
+        "label": "Corporate Contact & Direct Inquiry",
+        "url": "/corporate-contact"
+      }
+    ]
   },
   {
     "slug": "corporate-delegations-nri-family-pilgrimage-protocol",
@@ -120,7 +260,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "8 min read",
     "publishedDate": "2026-09-10",
     "author": "TheKumbhCottages Executive Concierge Guild",
-    "image": "/assets/cottages/sattvic-dining.webp"
+    "image": "/assets/cottages/sattvic-dining.webp",
+    "relatedLinks": [
+      {
+        "label": "Heritage: Serving Global Leaders Since 2001",
+        "url": "/heritage-since-2001"
+      },
+      {
+        "label": "Corporate Contact & Buyout Inquiry",
+        "url": "/corporate-contact"
+      },
+      {
+        "label": "Master Accommodation Guide",
+        "url": "/guides/kumbh-mela-accommodation-guide-luxury-tents-vs-hotels"
+      }
+    ]
   },
   {
     "slug": "astronomical-science-of-kumbh-mela-planetary-alignments",
@@ -131,7 +285,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "10 min read",
     "publishedDate": "2026-09-08",
     "author": "TheKumbhCottages Vedic Astronomy Guild",
-    "image": "/assets/cottages/godavari-villa.webp"
+    "image": "/assets/cottages/godavari-villa.webp",
+    "relatedLinks": [
+      {
+        "label": "Universal Kumbh Almanac Hub",
+        "url": "/kumbh-directory"
+      },
+      {
+        "label": "Shahi Snan Rituals & Science",
+        "url": "/kumbh-directory/shahi-snan-rituals-guide"
+      },
+      {
+        "label": "Nashik Simhastha 2027 Complete Guide",
+        "url": "/kumbh-directory/nashik-simhastha-kumbh"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-river-water-quality-and-safe-bathing-science",
@@ -142,7 +310,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "8 min read",
     "publishedDate": "2026-09-08",
     "author": "TheKumbhCottages Environmental Health Guild",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Shahi Snan Rituals & Procedures Guide",
+        "url": "/kumbh-directory/shahi-snan-rituals-guide"
+      },
+      {
+        "label": "Elder & Multi-Generational Safety Guide",
+        "url": "/guides/multi-generational-family-elder-pilgrimage-guide"
+      },
+      {
+        "label": "First-Time Sacred Travel Guide",
+        "url": "/guides/first-time-sacred-travel-in-india-practical-guide"
+      }
+    ]
   },
   {
     "slug": "simhastha-nashik-2027-vs-simhastha-ujjain-2028-comparison",
@@ -153,7 +335,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "9 min read",
     "publishedDate": "2026-09-09",
     "author": "TheKumbhCottages Almanac Research Directorate",
-    "image": "/assets/cottages/godavari-villa.webp"
+    "image": "/assets/cottages/godavari-villa.webp",
+    "relatedLinks": [
+      {
+        "label": "Nashik Simhastha 2027 Encyclopedia",
+        "url": "/kumbh-directory/nashik-simhastha-kumbh"
+      },
+      {
+        "label": "Ujjain Simhastha Directory",
+        "url": "/kumbh-directory/ujjain-simhastha-kumbh"
+      },
+      {
+        "label": "Corporate Inquiries & Multi-Year Portals",
+        "url": "/corporate-contact"
+      }
+    ]
   },
   {
     "slug": "complete-guide-to-thirteen-akharas-and-naga-sadhus",
@@ -164,7 +360,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "9 min read",
     "publishedDate": "2026-09-09",
     "author": "TheKumbhCottages Monastic Research Council",
-    "image": "/assets/cottages/sattvic-dining.webp"
+    "image": "/assets/cottages/sattvic-dining.webp",
+    "relatedLinks": [
+      {
+        "label": "The 13 Sacred Akharas Complete Directory",
+        "url": "/kumbh-directory/akharas-and-traditions"
+      },
+      {
+        "label": "Shahi Snan Rituals Guide",
+        "url": "/kumbh-directory/shahi-snan-rituals-guide"
+      },
+      {
+        "label": "Heritage Since 2001",
+        "url": "/heritage-since-2001"
+      }
+    ]
   },
   {
     "slug": "kalpavas-discipline-spiritual-science-of-riverside-living",
@@ -175,7 +385,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "8 min read",
     "publishedDate": "2026-09-10",
     "author": "TheKumbhCottages Kalpavas Seva Wing",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Heritage: 25 Years of Sacred Seva",
+        "url": "/heritage-since-2001"
+      },
+      {
+        "label": "Prayagraj Maha Kumbh Guide",
+        "url": "/kumbh-directory/prayagraj-maha-kumbh"
+      },
+      {
+        "label": "Corporate & Group Kalpavas Inquiries",
+        "url": "/corporate-contact"
+      }
+    ]
   },
   {
     "slug": "nashik-simhastha-2027-pilgrim-preparation-and-guide",
@@ -186,7 +410,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "8 min read",
     "publishedDate": "2026-09-11",
     "author": "TheKumbhCottages Nashik Directorate",
-    "image": "/assets/cottages/godavari-villa.webp"
+    "image": "/assets/cottages/godavari-villa.webp",
+    "relatedLinks": [
+      {
+        "label": "Nashik Simhastha 2027 Encyclopedia",
+        "url": "/kumbh-directory/nashik-simhastha-kumbh"
+      },
+      {
+        "label": "Official Nashik Booking Portal",
+        "url": "https://kumbhcottagesnashik.com"
+      },
+      {
+        "label": "Turnkey Infrastructure Capabilities",
+        "url": "/capabilities-infrastructure"
+      }
+    ]
   },
   {
     "slug": "nri-kumbh-mela-luxury-travel-vip-booking-guide",
@@ -197,7 +435,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "10 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Global Diaspora Directorate",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Master Accommodation Guide: Cottages vs Hotels",
+        "url": "/guides/kumbh-mela-accommodation-guide-luxury-tents-vs-hotels"
+      },
+      {
+        "label": "How to Book The Kumbh Cottages & Avoid Fraud",
+        "url": "/guides/how-to-book-kumbh-cottages-pricing-and-avoiding-fraud"
+      },
+      {
+        "label": "Corporate Directorate & Global Inquiries",
+        "url": "/corporate-contact"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-luxury-tents-cottages-booking-prices-packages-guide",
@@ -208,7 +460,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "9 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Tariffs & Allocations Desk",
-    "image": "/assets/cottages/godavari-villa.webp"
+    "image": "/assets/cottages/godavari-villa.webp",
+    "relatedLinks": [
+      {
+        "label": "NRI Kumbh Mela Luxury Travel Guide",
+        "url": "/guides/nri-kumbh-mela-luxury-travel-vip-booking-guide"
+      },
+      {
+        "label": "Turnkey Infrastructure Capabilities",
+        "url": "/capabilities-infrastructure"
+      },
+      {
+        "label": "Official Nashik Simhastha 2027 Portal",
+        "url": "https://kumbhcottagesnashik.com"
+      }
+    ]
   },
   {
     "slug": "nashik-simhastha-kumbh-2027-dates-shahi-snan-luxury-stays-guide",
@@ -219,7 +485,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "11 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Nashik Field Directorate",
-    "image": "/assets/cottages/godavari-villa.webp"
+    "image": "/assets/cottages/godavari-villa.webp",
+    "relatedLinks": [
+      {
+        "label": "Official Nashik Simhastha Portal",
+        "url": "https://kumbhcottagesnashik.com"
+      },
+      {
+        "label": "Nashik Complete Pilgrimage & Travel Guide",
+        "url": "/guides/nashik-complete-pilgrimage-and-tourism-travel-guide"
+      },
+      {
+        "label": "Accommodation Pricing & Packages Guide",
+        "url": "/guides/kumbh-mela-luxury-tents-cottages-booking-prices-packages-guide"
+      }
+    ]
   },
   {
     "slug": "ujjain-simhastha-kumbh-2028-dates-mahakaleshwar-tents-guide",
@@ -230,7 +510,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "10 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Malwa Sanctuary Directorate",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Ujjain Simhastha Directory Hub",
+        "url": "/kumbh-directory/ujjain-simhastha-kumbh"
+      },
+      {
+        "label": "Simhastha Nashik 2027 vs Ujjain 2028 Comparison",
+        "url": "/guides/simhastha-nashik-2027-vs-simhastha-ujjain-2028-comparison"
+      },
+      {
+        "label": "Corporate Directorate & Inquiries",
+        "url": "/corporate-contact"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-vip-passes-shahi-snan-protocol-green-corridor-guide",
@@ -241,7 +535,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "8 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Protocol & Liaison Guild",
-    "image": "/assets/cottages/godavari-villa.webp"
+    "image": "/assets/cottages/godavari-villa.webp",
+    "relatedLinks": [
+      {
+        "label": "How to Book The Kumbh Cottages & Avoid Fraud",
+        "url": "/guides/how-to-book-kumbh-cottages-pricing-and-avoiding-fraud"
+      },
+      {
+        "label": "Corporate & NRI Family Pilgrimage Protocols",
+        "url": "/guides/corporate-delegations-nri-family-pilgrimage-protocol"
+      },
+      {
+        "label": "Corporate Directorate Contact",
+        "url": "/corporate-contact"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-complete-cycle-four-dhams-dates-astrology-guide",
@@ -252,7 +560,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "9 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Jyotish Almanac Council",
-    "image": "/assets/cottages/sattvic-dining.webp"
+    "image": "/assets/cottages/sattvic-dining.webp",
+    "relatedLinks": [
+      {
+        "label": "Universal Kumbh Almanac Directory",
+        "url": "/kumbh-directory"
+      },
+      {
+        "label": "Astronomical Science of Kumbh Mela",
+        "url": "/guides/astronomical-science-of-kumbh-mela-planetary-alignments"
+      },
+      {
+        "label": "Nashik Simhastha 2027 Official Portal",
+        "url": "https://kumbhcottagesnashik.com"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-trip-cost-budget-luxury-pricing-complete-guide",
@@ -263,7 +585,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "8 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Pilgrim Advisory Desk",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Accommodation Pricing & Packages Guide",
+        "url": "/guides/kumbh-mela-luxury-tents-cottages-booking-prices-packages-guide"
+      },
+      {
+        "label": "NRI Kumbh Mela Luxury Travel Guide",
+        "url": "/guides/nri-kumbh-mela-luxury-travel-vip-booking-guide"
+      },
+      {
+        "label": "Nashik Simhastha 2027 Official Portal",
+        "url": "https://kumbhcottagesnashik.com"
+      }
+    ]
   },
   {
     "slug": "corporate-csr-annadaan-bhandara-organization-kumbh-mela-guide",
@@ -274,7 +610,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "9 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Institutional CSR Guild",
-    "image": "/assets/cottages/sattvic-dining.webp"
+    "image": "/assets/cottages/sattvic-dining.webp",
+    "relatedLinks": [
+      {
+        "label": "Corporate Directorate & Liaison",
+        "url": "/corporate-contact"
+      },
+      {
+        "label": "Turnkey Infrastructure & Capabilities",
+        "url": "/capabilities-infrastructure"
+      },
+      {
+        "label": "Heritage: 25 Years of Sacred Seva",
+        "url": "/heritage-since-2001"
+      }
+    ]
   },
   {
     "slug": "what-is-kumbh-mela-meaning-significance-explained",
@@ -285,7 +635,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "10 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Editorial Directorate (Est. 2001)",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Complete Kumbh Mela Directory & Encyclopedia",
+        "url": "/kumbh-directory"
+      },
+      {
+        "label": "12-Year Kumbh Cycle & Dates Matrix",
+        "url": "/guides/kumbh-mela-complete-cycle-four-dhams-dates-astrology-guide"
+      },
+      {
+        "label": "Samudra Manthan & Planetary Science",
+        "url": "/guides/astronomical-science-of-kumbh-mela-planetary-alignments"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-history-origin-samudra-manthan-complete-guide",
@@ -296,7 +660,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "14 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Editorial Directorate (Est. 2001)",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Kumbh Mela Encyclopedia & Directory",
+        "url": "/kumbh-directory"
+      },
+      {
+        "label": "The 13 Sacred Akharas Guide",
+        "url": "/guides/complete-guide-to-thirteen-akharas-and-naga-sadhus"
+      },
+      {
+        "label": "Astronomical Science of Kumbh",
+        "url": "/guides/astronomical-science-of-kumbh-mela-planetary-alignments"
+      }
+    ]
   },
   {
     "slug": "international-visitors-kumbh-mela-visa-currency-travel-guide",
@@ -307,7 +685,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "11 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages International Concierge",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "NRI Luxury Travel & VIP Booking Guide",
+        "url": "/guides/nri-kumbh-mela-luxury-travel-vip-booking-guide"
+      },
+      {
+        "label": "First-Time Sacred Travel in India",
+        "url": "/guides/first-time-sacred-travel-in-india-practical-guide"
+      },
+      {
+        "label": "Kumbh Trip Cost & Budget Planner",
+        "url": "/guides/kumbh-mela-trip-cost-budget-luxury-pricing-complete-guide"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-safety-tips-women-solo-travelers-families",
@@ -318,7 +710,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "10 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Safety & Logistics Division",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Multi-Generational & Elder Pilgrimage Guide",
+        "url": "/guides/multi-generational-family-elder-pilgrimage-guide"
+      },
+      {
+        "label": "How to Book The Kumbh Cottages & Avoid Fraud",
+        "url": "/guides/how-to-book-kumbh-cottages-pricing-and-avoiding-fraud"
+      },
+      {
+        "label": "Kumbh Mela Packing List & Weather Guide",
+        "url": "/guides/complete-kumbh-mela-packing-list-and-weather-guide"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-photo-guide-best-spots-camera-drone-rules",
@@ -329,7 +735,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "8 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Media Relations",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "What Is Kumbh Mela — Complete Guide",
+        "url": "/guides/what-is-kumbh-mela-meaning-significance-explained"
+      },
+      {
+        "label": "Inside the 13 Akharas & Naga Sadhus",
+        "url": "/guides/complete-guide-to-thirteen-akharas-and-naga-sadhus"
+      },
+      {
+        "label": "Kumbh Mela Safety Guide",
+        "url": "/guides/kumbh-mela-safety-tips-women-solo-travelers-families"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-volunteer-seva-ngo-guide",
@@ -340,7 +760,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "8 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Social Impact Division",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Corporate CSR & Annadaan at Kumbh",
+        "url": "/guides/corporate-csr-annadaan-bhandara-organization-kumbh-mela-guide"
+      },
+      {
+        "label": "What Is Kumbh Mela — Complete Explainer",
+        "url": "/guides/what-is-kumbh-mela-meaning-significance-explained"
+      },
+      {
+        "label": "Kumbh Safety Guide",
+        "url": "/guides/kumbh-mela-safety-tips-women-solo-travelers-families"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-digital-connectivity-wifi-sim-card-apps-guide",
@@ -351,7 +785,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "7 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Technology Division",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "First-Time Sacred Travel in India",
+        "url": "/guides/first-time-sacred-travel-in-india-practical-guide"
+      },
+      {
+        "label": "International Visitors Guide",
+        "url": "/guides/international-visitors-kumbh-mela-visa-currency-travel-guide"
+      },
+      {
+        "label": "Kumbh Mela Packing List",
+        "url": "/guides/complete-kumbh-mela-packing-list-and-weather-guide"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-health-medical-facilities-first-aid-guide",
@@ -362,7 +810,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "9 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Health & Safety Division",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Multi-Generational Elder Pilgrimage Guide",
+        "url": "/guides/multi-generational-family-elder-pilgrimage-guide"
+      },
+      {
+        "label": "Kumbh Mela Packing List & Weather Guide",
+        "url": "/guides/complete-kumbh-mela-packing-list-and-weather-guide"
+      },
+      {
+        "label": "Kumbh Mela Safety Guide",
+        "url": "/guides/kumbh-mela-safety-tips-women-solo-travelers-families"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-transport-local-auto-bus-train-schedule-guide",
@@ -373,7 +835,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "10 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Transit & Logistics Division",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Kumbh Accommodation: Tents vs Hotels",
+        "url": "/guides/kumbh-mela-accommodation-guide-luxury-tents-vs-hotels"
+      },
+      {
+        "label": "VIP Passes & Green Corridor Guide",
+        "url": "/guides/kumbh-mela-vip-passes-shahi-snan-protocol-green-corridor-guide"
+      },
+      {
+        "label": "First-Time Sacred Travel in India",
+        "url": "/guides/first-time-sacred-travel-in-india-practical-guide"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-2025-prayagraj-recap-highlights-learnings",
@@ -384,7 +860,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "9 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Editorial Directorate",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Prayagraj Maha Kumbh Encyclopedia",
+        "url": "/kumbh-directory/prayagraj-maha-kumbh"
+      },
+      {
+        "label": "Nashik Simhastha 2027 Complete Guide",
+        "url": "/guides/nashik-simhastha-kumbh-2027-dates-shahi-snan-luxury-stays-guide"
+      },
+      {
+        "label": "12-Year Kumbh Cycle & Dates Matrix",
+        "url": "/guides/kumbh-mela-complete-cycle-four-dhams-dates-astrology-guide"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-spiritual-significance-moksha-karma-vedas",
@@ -395,7 +885,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "10 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Spiritual Council",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Astronomical Science of Kumbh Mela",
+        "url": "/guides/astronomical-science-of-kumbh-mela-planetary-alignments"
+      },
+      {
+        "label": "Sacred Vow of Kalpavas Guide",
+        "url": "/guides/kalpavas-discipline-spiritual-science-of-riverside-living"
+      },
+      {
+        "label": "What Is Kumbh Mela — Complete Guide",
+        "url": "/guides/what-is-kumbh-mela-meaning-significance-explained"
+      }
+    ]
   },
   {
     "slug": "group-booking-kumbh-mela-family-reunion-large-parties-guide",
@@ -406,7 +910,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "8 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Group Reservations Division",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "Luxury Tent Booking & Pricing Guide",
+        "url": "/guides/kumbh-mela-luxury-tents-cottages-booking-prices-packages-guide"
+      },
+      {
+        "label": "Corporate Retreats & NRI Delegations",
+        "url": "/guides/corporate-delegations-nri-family-pilgrimage-protocol"
+      },
+      {
+        "label": "How to Book & Avoid Fraud",
+        "url": "/guides/how-to-book-kumbh-cottages-pricing-and-avoiding-fraud"
+      }
+    ]
   },
   {
     "slug": "kumbh-mela-eco-sustainability-green-pilgrimage-guide",
@@ -417,7 +935,21 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "8 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Environmental Division",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "River Water Quality & Safe Bathing Science",
+        "url": "/guides/kumbh-mela-river-water-quality-and-safe-bathing-science"
+      },
+      {
+        "label": "Turnkey Infrastructure Capabilities",
+        "url": "/capabilities-infrastructure"
+      },
+      {
+        "label": "Corporate CSR at Kumbh Mela",
+        "url": "/guides/corporate-csr-annadaan-bhandara-organization-kumbh-mela-guide"
+      }
+    ]
   },
   {
     "slug": "ardh-kumbh-mela-complete-guide-dates-significance",
@@ -428,6 +960,20 @@ export const TRAVEL_AND_KUMBH_BLOGS_META = [
     "readTime": "8 min read",
     "publishedDate": "2026-09-12",
     "author": "TheKumbhCottages Editorial Directorate",
-    "image": "/assets/cottages/maharaja-suite.webp"
+    "image": "/assets/cottages/maharaja-suite.webp",
+    "relatedLinks": [
+      {
+        "label": "12-Year Kumbh Cycle & Dates Matrix",
+        "url": "/guides/kumbh-mela-complete-cycle-four-dhams-dates-astrology-guide"
+      },
+      {
+        "label": "Prayagraj Maha Kumbh Guide",
+        "url": "/kumbh-directory/prayagraj-maha-kumbh"
+      },
+      {
+        "label": "Haridwar Kumbh Guide",
+        "url": "/kumbh-directory/haridwar-maha-kumbh"
+      }
+    ]
   }
 ];

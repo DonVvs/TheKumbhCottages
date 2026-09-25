@@ -16,7 +16,7 @@
     <loc>https://thekumbhcottages.com/destinations</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
       <image:title>Destinations &amp; Cottage Portfolios | TheKumbhCottages (Est. 2001)</image:title>
@@ -38,7 +38,7 @@
     <loc>https://thekumbhcottages.com/heritage-since-2001</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/milestones/the-kumbh-cottages-2001-ram-janmabhoomi-triveni-sangam-camp.webp</image:loc>
       <image:title>25 Years of Sacred Heritage (2001–2027) | TheKumbhCottages</image:title>
@@ -49,7 +49,7 @@
     <loc>https://thekumbhcottages.com/corporate-contact</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/real_camps/kumbh-cottages-vip-founders-delegation-lounge.webp</image:loc>
       <image:title>Corporate Directorate &amp; Central Liaison | TheKumbhCottages (Est. 2001)</image:title>
@@ -60,7 +60,7 @@
     <loc>https://thekumbhcottages.com/kumbh-directory</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/real_camps/kumbh-cottages-riverfront-sanctuary-fountain.webp</image:loc>
       <image:title>Complete Kumbh Mela Directory &amp; Universal Almanac | TheKumbhCottages</image:title>
@@ -71,7 +71,7 @@
     <loc>https://thekumbhcottages.com/kumbh-directory/prayagraj-maha-kumbh</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/real_camps/kumbh-cottages-riverfront-sanctuary-fountain.webp</image:loc>
       <image:title>Prayagraj Maha Kumbh Mela Complete Guide &amp; Directory | TheKumbhCottages</image:title>
@@ -115,7 +115,7 @@
     <loc>https://thekumbhcottages.com/kumbh-directory/akharas-and-traditions</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/hero/ramkund-godavari-maha-aarti.jpg</image:loc>
       <image:title>The 13 Sacred Akharas of Kumbh Mela Complete Directory | TheKumbhCottages</image:title>
@@ -126,7 +126,7 @@
     <loc>https://thekumbhcottages.com/kumbh-directory/shahi-snan-rituals-guide</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/real_camps/kumbh-cottages-sacred-sankalpa-puja-boat-snan.webp</image:loc>
       <image:title>Shahi Snan Rituals &amp; Vedic Pilgrimage Science | TheKumbhCottages</image:title>
@@ -137,7 +137,7 @@
     <loc>https://thekumbhcottages.com/sacred-travel-and-kumbh-guides</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/real_camps/kumbh-cottages-riverfront-sanctuary-fountain.webp</image:loc>
       <image:title>Sacred Travel in India &amp; Kumbh Mela Guides | TheKumbhCottages (Est. 2001)</image:title>
@@ -148,10 +148,10 @@
     <loc>https://thekumbhcottages.com/guides/prayagraj-allahabad-complete-pilgrimage-travel-guide</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.95</priority>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Prayagraj (Allahabad) Complete Pilgrimage &amp; Travel Guide | TheKumbhCottages</image:title>
+      <image:title>Prayagraj (Allahabad) Complete Pilgrimage &amp; Travel Guide: Triveni Sangam, Temples, Ghats &amp; Stays | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -159,10 +159,10 @@
     <loc>https://thekumbhcottages.com/guides/nashik-complete-pilgrimage-and-tourism-travel-guide</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.95</priority>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
-      <image:title>Nashik Complete Pilgrimage &amp; Tourism Guide | TheKumbhCottages</image:title>
+      <image:title>Nashik Complete Pilgrimage &amp; Tourism Guide: Panchavati, Trimbakeshwar Jyotirlinga, Godavari Ghats &amp; Simhastha | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -170,98 +170,65 @@
     <loc>https://thekumbhcottages.com/guides/haridwar-rishikesh-complete-pilgrimage-travel-guide</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.95</priority>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
-      <image:title>Haridwar &amp; Rishikesh Complete Pilgrimage &amp; Travel Guide | TheKumbhCottages</image:title>
+      <image:title>Haridwar &amp; Rishikesh Complete Pilgrimage &amp; Travel Guide: Har Ki Pauri, Ganga Aarti, Temples &amp; Himalayan Retreats | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/first-time-sacred-travel-in-india-practical-guide</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
-      <image:title>First-Time Sacred Travel in India: Practical Logistics, Temple Etiquette &amp; Health Guide | TheKumbhCottages</image:title>
+      <image:title>First-Time Sacred Travel in India: Practical Logistics, Temple Etiquette &amp; Health Guide | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/multi-generational-family-elder-pilgrimage-guide</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Multi-Generational &amp; Elder Pilgrimage in India: Step-Free Mobility, Medical Safety &amp; Comfort | TheKumbhCottages</image:title>
+      <image:title>Multi-Generational &amp; Elder Pilgrimage in India: Step-Free Mobility, Medical Safety &amp; Comfort | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/pure-sattvic-ayurvedic-dining-guide</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/sattvic-dining.webp</image:loc>
-      <image:title>Pure Sattvic &amp; Ayurvedic Dining on the Road in India: Sourcing, Ghee &amp; Digestion | TheKumbhCottages</image:title>
-      <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://thekumbhcottages.com/guides/jyotirlinga-and-sacred-river-circuits-itinerary-guide</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
-      <image:title>The Great Jyotirlinga &amp; Sacred River Circuits: Complete Itineraries &amp; Transit Guide | TheKumbhCottages</image:title>
-      <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://thekumbhcottages.com/guides/astronomical-science-of-kumbh-mela-planetary-alignments</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
-      <image:title>The Astronomical Science of Kumbh Mela: How Jupiter, Sun &amp; Moon Create Cosmic Amrit | TheKumbhCottages</image:title>
-      <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://thekumbhcottages.com/guides/complete-guide-to-thirteen-akharas-and-naga-sadhus</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://thekumbhcottages.com/assets/cottages/sattvic-dining.webp</image:loc>
-      <image:title>Inside the 13 Sacred Akharas: Monastic Hierarchy, Naga Sadhus &amp; Camp Etiquette | TheKumbhCottages</image:title>
-      <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://thekumbhcottages.com/guides/kalpavas-discipline-spiritual-science-of-riverside-living</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>The Sacred Vow of Kalpavas: 30 Days of Riverfront Tapasya, Silence &amp; Renewal | TheKumbhCottages</image:title>
+      <image:title>Pure Sattvic &amp; Ayurvedic Dining on the Road in India: Sourcing, Ghee &amp; Digestion | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/complete-kumbh-mela-packing-list-and-weather-guide</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>The Definitive Kumbh Mela Packing List: Weather Preparation, Clothing &amp; Tech | TheKumbhCottages</image:title>
+      <image:title>The Definitive Kumbh Mela Packing List: Weather Preparation, Clothing, Medicines &amp; Riverfront Tech | TheKumbhCottages (Est. 2001)</image:title>
+      <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://thekumbhcottages.com/guides/jyotirlinga-and-sacred-river-circuits-itinerary-guide</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
+      <image:title>The Great Jyotirlinga &amp; Sacred River Circuits: Complete Itineraries &amp; Transit Guide | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -272,7 +239,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Kumbh Mela Accommodation Master Guide: Luxury Swiss Cottages vs Hotels | TheKumbhCottages</image:title>
+      <image:title>Kumbh Mela Accommodation Master Guide: Luxury Swiss Cottages vs Temporary Tents vs City Hotels | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -283,40 +250,73 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
-      <image:title>How to Book Kumbh Mela Luxury Cottages: Timelines &amp; Avoiding Fraud | TheKumbhCottages</image:title>
+      <image:title>How to Book Kumbh Mela Luxury Cottages: Timelines, Verified Portals &amp; Avoiding Fraudulent Agents | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/corporate-delegations-nri-family-pilgrimage-protocol</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/sattvic-dining.webp</image:loc>
-      <image:title>Corporate Retreats &amp; NRI Family Pilgrimages at Kumbh Mela | TheKumbhCottages</image:title>
+      <image:title>Corporate Retreats &amp; NRI Family Pilgrimages at Kumbh Mela: Private Green Corridors, Helipads &amp; Yajnas | TheKumbhCottages (Est. 2001)</image:title>
+      <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://thekumbhcottages.com/guides/astronomical-science-of-kumbh-mela-planetary-alignments</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
+      <image:title>The Astronomical Science of Kumbh Mela: How Jupiter, Sun &amp; Moon Create Cosmic Amrit | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/kumbh-mela-river-water-quality-and-safe-bathing-science</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Kumbh Mela River Water Quality &amp; Safe Bathing Science | TheKumbhCottages</image:title>
+      <image:title>Kumbh Mela River Water Quality, Safety Protocols &amp; The Vedic Biophysics of Holy Dips | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/simhastha-nashik-2027-vs-simhastha-ujjain-2028-comparison</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
-      <image:title>Nashik Simhastha 2027 vs Ujjain Simhastha 2028 Comparison | TheKumbhCottages</image:title>
+      <image:title>Nashik Simhastha 2027 vs Ujjain Simhastha 2028: Astrological Differences, River Systems &amp; Pilgrim Itineraries | TheKumbhCottages (Est. 2001)</image:title>
+      <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://thekumbhcottages.com/guides/complete-guide-to-thirteen-akharas-and-naga-sadhus</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://thekumbhcottages.com/assets/cottages/sattvic-dining.webp</image:loc>
+      <image:title>Inside the 13 Sacred Akharas: Monastic Hierarchy, Naga Sadhus &amp; Camp Etiquette | TheKumbhCottages (Est. 2001)</image:title>
+      <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://thekumbhcottages.com/guides/kalpavas-discipline-spiritual-science-of-riverside-living</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
+      <image:title>The Sacred Vow of Kalpavas: 30 Days of Riverfront Tapasya, Silence &amp; Renewal | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -327,7 +327,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
-      <image:title>Nashik-Trimbakeshwar Simhastha 2027: Complete Pilgrim Preparation, Route &amp; Stay Guide | TheKumbhCottages</image:title>
+      <image:title>Nashik-Trimbakeshwar Simhastha 2027: Complete Pilgrim Preparation, Route &amp; Stay Guide | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -338,7 +338,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>NRI Kumbh Mela Luxury Travel Guide: VIP Concierge, Private Charter Flights &amp; Stays | TheKumbhCottages</image:title>
+      <image:title>NRI Kumbh Mela Luxury Travel Guide: VIP Concierge, Private Charter Flights, 5-Star Swiss Villas &amp; Gotra Yajnas | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -349,7 +349,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
-      <image:title>Kumbh Mela Luxury Tent Booking, Prices &amp; Packages Guide | TheKumbhCottages</image:title>
+      <image:title>Kumbh Mela Luxury Tent Booking, Prices &amp; Packages Guide: Swiss Cottages vs Hotels vs Budget Camps | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -357,10 +357,10 @@
     <loc>https://thekumbhcottages.com/guides/nashik-simhastha-kumbh-2027-dates-shahi-snan-luxury-stays-guide</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.95</priority>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
-      <image:title>Nashik Simhastha Kumbh Mela 2027: Shahi Snan Dates, VIP Passes &amp; Luxury Stays | TheKumbhCottages</image:title>
+      <image:title>Nashik Simhastha Kumbh Mela 2027: Shahi Snan Dates, Astrological Significance, VIP Passes &amp; Luxury Stays | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -371,7 +371,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Ujjain Simhastha Kumbh Mela 2028: Dates, Mahakaleshwar Bhasma Aarti &amp; Luxury Camps | TheKumbhCottages</image:title>
+      <image:title>Ujjain Simhastha Kumbh Mela 2028: Astrological Dates, Mahakaleshwar Bhasma Aarti, Shipra Snan &amp; Luxury Camps | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -382,7 +382,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/godavari-villa.webp</image:loc>
-      <image:title>Kumbh Mela VIP Passes &amp; Shahi Snan Protocol: The Truth About Passes &amp; Green Corridors | TheKumbhCottages</image:title>
+      <image:title>Kumbh Mela VIP Passes &amp; Shahi Snan Protocol: The Truth About Passes, Green Corridors &amp; Priority Access | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -393,29 +393,29 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/sattvic-dining.webp</image:loc>
-      <image:title>The 12-Year Kumbh Mela Cycle: 4 Sacred Dhams, Complete Dates Matrix &amp; Astrology | TheKumbhCottages</image:title>
+      <image:title>The 12-Year Kumbh Mela Cycle: 4 Sacred Dhams, Complete Dates Matrix &amp; Astrological Science Explained | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/kumbh-mela-trip-cost-budget-luxury-pricing-complete-guide</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Kumbh Mela Trip Cost &amp; Budget Planner: Budget to 5-Star Luxury Packages | TheKumbhCottages</image:title>
+      <image:title>Kumbh Mela Trip Cost &amp; Budget Planner: From Budget Pilgrim to 5-Star Luxury Cottage Packages | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/corporate-csr-annadaan-bhandara-organization-kumbh-mela-guide</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/sattvic-dining.webp</image:loc>
-      <image:title>Organizing Corporate CSR, Annadaan &amp; Bhandaras at Kumbh Mela | TheKumbhCottages</image:title>
+      <image:title>Organizing Corporate CSR, Annadaan &amp; Bhandaras at Kumbh Mela: Section 135 Compliance &amp; Logistics | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -423,10 +423,10 @@
     <loc>https://thekumbhcottages.com/guides/what-is-kumbh-mela-meaning-significance-explained</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.95</priority>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>What Is Kumbh Mela? Meaning, Significance, History &amp; Everything You Need to Know | TheKumbhCottages</image:title>
+      <image:title>What Is Kumbh Mela? Meaning, Significance, History &amp; Everything You Need to Know | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -437,7 +437,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Complete History of Kumbh Mela: From Samudra Manthan to Modern Times | TheKumbhCottages</image:title>
+      <image:title>Complete History of Kumbh Mela: From Samudra Manthan to Modern Times (3000+ Years) | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -448,7 +448,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>International Visitors&apos; Guide to Kumbh Mela: Visa, Currency &amp; Travel Tips | TheKumbhCottages</image:title>
+      <image:title>International Visitors&apos; Guide to Kumbh Mela: Visa, Currency, Travel &amp; Cultural Tips | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -459,51 +459,51 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Kumbh Mela Safety Guide: Tips for Women, Solo Travelers, Families &amp; Seniors | TheKumbhCottages</image:title>
+      <image:title>Kumbh Mela Safety Guide: Essential Tips for Women, Solo Travelers, Families &amp; Seniors | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/kumbh-mela-photo-guide-best-spots-camera-drone-rules</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Kumbh Mela Photography Guide: Best Spots, Drone Rules &amp; Camera Tips | TheKumbhCottages</image:title>
+      <image:title>Kumbh Mela Photography Guide: Best Spots, Camera Gear, Drone Rules &amp; Etiquette | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/kumbh-mela-volunteer-seva-ngo-guide</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Volunteering &amp; Seva at Kumbh Mela: NGO, Student &amp; Devotee Guide | TheKumbhCottages</image:title>
+      <image:title>Volunteering &amp; Seva at Kumbh Mela: How NGOs, Students &amp; Devotees Can Serve | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/kumbh-mela-digital-connectivity-wifi-sim-card-apps-guide</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Kumbh Mela Digital Guide: Wi-Fi, SIM Cards, Apps &amp; Connectivity | TheKumbhCottages</image:title>
+      <image:title>Kumbh Mela Digital Guide: Mobile Networks, Wi-Fi, SIM Cards, Apps &amp; Charging Stations | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/kumbh-mela-health-medical-facilities-first-aid-guide</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Kumbh Mela Health &amp; Medical Guide: Hospitals, First Aid &amp; Hygiene | TheKumbhCottages</image:title>
+      <image:title>Kumbh Mela Health &amp; Medical Guide: Hospitals, First Aid, Hygiene &amp; Wellness Tips | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -514,7 +514,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>How to Reach Kumbh Mela: Complete Transport Guide — Trains, Flights &amp; Roads | TheKumbhCottages</image:title>
+      <image:title>How to Reach Kumbh Mela: Complete Transport Guide — Trains, Flights, Roads &amp; Local Transit | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -525,18 +525,18 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Prayagraj Maha Kumbh 2025 Recap: Record Attendance &amp; Key Learnings | TheKumbhCottages</image:title>
+      <image:title>Prayagraj Maha Kumbh 2025 Recap: Record Attendance, Infrastructure Marvels &amp; Key Learnings | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/kumbh-mela-spiritual-significance-moksha-karma-vedas</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Spiritual Significance of Kumbh Mela: Moksha, Karma &amp; Vedic Science | TheKumbhCottages</image:title>
+      <image:title>The Spiritual Significance of Kumbh Mela: Moksha, Karma, Vedic Science &amp; Inner Transformation | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -547,18 +547,18 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Group Booking Guide for Kumbh Mela: Family Reunions &amp; Large Parties | TheKumbhCottages</image:title>
+      <image:title>Group Booking Guide for Kumbh Mela: Family Reunions, Large Parties &amp; Community Pilgrimages | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
   <url>
     <loc>https://thekumbhcottages.com/guides/kumbh-mela-eco-sustainability-green-pilgrimage-guide</loc>
     <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Eco-Friendly Kumbh Mela: Sustainability &amp; Green Pilgrimage | TheKumbhCottages</image:title>
+      <image:title>Eco-Friendly Kumbh Mela: Sustainability, River Conservation &amp; Green Pilgrimage Practices | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>
@@ -569,7 +569,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://thekumbhcottages.com/assets/cottages/maharaja-suite.webp</image:loc>
-      <image:title>Ardh Kumbh Mela Complete Guide: What Is Half Kumbh, Dates &amp; Significance | TheKumbhCottages</image:title>
+      <image:title>Ardh Kumbh Mela Complete Guide: What Is Half Kumbh, Dates, Significance &amp; How It Differs | TheKumbhCottages (Est. 2001)</image:title>
       <image:license>https://thekumbhcottages.com/corporate-contact#licensing</image:license>
     </image:image>
   </url>

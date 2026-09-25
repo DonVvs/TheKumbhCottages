@@ -138,6 +138,148 @@ export default function HaridwarKumbhPage() {
             </div>
           </section>
 
+          {/* Inter-Dham Consecrated Circuit */}
+          <section className="p-5 bg-white rounded-lg border border-stone-200/90 space-y-3">
+            <div className="text-[10px] uppercase font-mono text-swarna-700 font-medium">
+              Sanatan Network · The Four Sacred Kumbh Dhams
+            </div>
+            <h2 className="font-serif text-base font-normal text-stone-900">
+              Explore The Other Sacred Kumbh Dhams & Monastic Almanac
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+              <Link
+                to="/kumbh-directory/prayagraj-maha-kumbh"
+                className="p-3 rounded bg-stone-50 hover:bg-stone-100 border border-stone-200/70 transition-colors group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="text-[9px] font-mono text-swarna-700 uppercase">Tirtharaj Base</div>
+                  <strong className="font-serif text-stone-900 group-hover:text-swarna-700 block">Prayagraj Maha Kumbh</strong>
+                  <p className="text-[11px] text-stone-600 font-light mt-0.5">Triveni Sangam · Ganga, Yamuna & Saraswati</p>
+                </div>
+                <span className="text-[10px] text-stone-500 font-medium mt-2 flex items-center gap-1">Explore Directory →</span>
+              </Link>
+
+              <Link
+                to="/kumbh-directory/nashik-simhastha-kumbh"
+                className="p-3 rounded bg-stone-50 hover:bg-stone-100 border border-stone-200/70 transition-colors group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="text-[9px] font-mono text-swarna-700 uppercase">Upcoming 2027</div>
+                  <strong className="font-serif text-stone-900 group-hover:text-swarna-700 block">Nashik Simhastha</strong>
+                  <p className="text-[11px] text-stone-600 font-light mt-0.5">Godavari River · Ramkund & Trimbakeshwar</p>
+                </div>
+                <span className="text-[10px] text-stone-500 font-medium mt-2 flex items-center gap-1">Explore Directory →</span>
+              </Link>
+
+              <Link
+                to="/kumbh-directory/ujjain-simhastha-kumbh"
+                className="p-3 rounded bg-stone-50 hover:bg-stone-100 border border-stone-200/70 transition-colors group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="text-[9px] font-mono text-stone-500 uppercase">City of Mahakal</div>
+                  <strong className="font-serif text-stone-900 group-hover:text-swarna-700 block">Ujjain Simhastha</strong>
+                  <p className="text-[11px] text-stone-600 font-light mt-0.5">Shipra River · Ram Ghat & Mahakaleshwar</p>
+                </div>
+                <span className="text-[10px] text-stone-500 font-medium mt-2 flex items-center gap-1">Explore Directory →</span>
+              </Link>
+
+              <Link
+                to="/kumbh-directory/akharas-and-traditions"
+                className="p-3 rounded bg-stone-50 hover:bg-stone-100 border border-stone-200/70 transition-colors group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="text-[9px] font-mono text-stone-500 uppercase">Monastic Orders</div>
+                  <strong className="font-serif text-stone-900 group-hover:text-swarna-700 block">13 Sacred Akharas</strong>
+                  <p className="text-[11px] text-stone-600 font-light mt-0.5">Shaiva, Vaishnava & Udasin lineages</p>
+                </div>
+                <span className="text-[10px] text-stone-500 font-medium mt-2 flex items-center gap-1">View Monastic Almanac →</span>
+              </Link>
+
+              <Link
+                to="/kumbh-directory/shahi-snan-rituals-guide"
+                className="p-3 rounded bg-stone-50 hover:bg-stone-100 border border-stone-200/70 transition-colors group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="text-[9px] font-mono text-stone-500 uppercase">Vedic Physics</div>
+                  <strong className="font-serif text-stone-900 group-hover:text-swarna-700 block">Shahi Snan Science</strong>
+                  <p className="text-[11px] text-stone-600 font-light mt-0.5">Step-by-step royal bath procedures</p>
+                </div>
+                <span className="text-[10px] text-stone-500 font-medium mt-2 flex items-center gap-1">Read Snan Manual →</span>
+              </Link>
+
+              <Link
+                to="/destinations"
+                className="p-3 rounded bg-stone-50 hover:bg-stone-100 border border-stone-200/70 transition-colors group flex flex-col justify-between"
+              >
+                <div>
+                  <div className="text-[9px] font-mono text-stone-500 uppercase">The Kumbh Cottages</div>
+                  <strong className="font-serif text-stone-900 group-hover:text-swarna-700 block">All Cottage Campuses</strong>
+                  <p className="text-[11px] text-stone-600 font-light mt-0.5">Insulated Swiss riverfront sanctuaries</p>
+                </div>
+                <span className="text-[10px] text-stone-500 font-medium mt-2 flex items-center gap-1">Explore Portfolios →</span>
+              </Link>
+            </div>
+          </section>
+
+          {/* Related Authoritative Guides */}
+          <section className="p-5 bg-white rounded-lg border border-stone-200/90 space-y-3">
+            <div className="text-[10px] uppercase font-mono text-swarna-700 font-medium">
+              Curated Pilgrim Guides
+            </div>
+            <h2 className="font-serif text-base font-normal text-stone-900">
+              Authoritative Manuals for Haridwar & Himalayan Pilgrims
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <Link
+                to="/guides/haridwar-rishikesh-complete-pilgrimage-travel-guide"
+                className="p-3 rounded bg-stone-50 hover:bg-stone-100 border border-stone-200/70 transition-colors block group"
+              >
+                <strong className="font-serif text-stone-900 group-hover:text-swarna-700 block text-xs">
+                  Haridwar & Rishikesh Complete Travel Guide
+                </strong>
+                <p className="text-[11px] text-stone-600 font-light mt-1">
+                  Har Ki Pauri evening Aarti, Brahma Kund snan, Mansa Devi ropeway, and Rishikesh ashrams.
+                </p>
+              </Link>
+
+              <Link
+                to="/guides/ganga-aarti-haridwar-har-ki-pauri-timing-rituals-guide"
+                className="p-3 rounded bg-stone-50 hover:bg-stone-100 border border-stone-200/70 transition-colors block group"
+              >
+                <strong className="font-serif text-stone-900 group-hover:text-swarna-700 block text-xs">
+                  Ganga Aarti at Har Ki Pauri: Timings & Rituals Guide
+                </strong>
+                <p className="text-[11px] text-stone-600 font-light mt-1">
+                  VIP seating, diya floating protocols, best photography spots, and crowd navigation.
+                </p>
+              </Link>
+
+              <Link
+                to="/guides/kumbh-mela-shahi-snan-dates-rituals-spiritual-significance"
+                className="p-3 rounded bg-stone-50 hover:bg-stone-100 border border-stone-200/70 transition-colors block group"
+              >
+                <strong className="font-serif text-stone-900 group-hover:text-swarna-700 block text-xs">
+                  Shahi Snan Dates, Rituals & Spiritual Significance
+                </strong>
+                <p className="text-[11px] text-stone-600 font-light mt-1">
+                  Maha Shivaratri and Somvati Amavasya royal bath orders across the 13 Akharas.
+                </p>
+              </Link>
+
+              <Link
+                to="/guides/first-time-sacred-travel-in-india-practical-guide"
+                className="p-3 rounded bg-stone-50 hover:bg-stone-100 border border-stone-200/70 transition-colors block group"
+              >
+                <strong className="font-serif text-stone-900 group-hover:text-swarna-700 block text-xs">
+                  First-Time Sacred Travel in India Practical Guide
+                </strong>
+                <p className="text-[11px] text-stone-600 font-light mt-1">
+                  Transit, temple dress codes, VIP darshan passes, and health hydration.
+                </p>
+              </Link>
+            </div>
+          </section>
+
         </div>
 
       </article>

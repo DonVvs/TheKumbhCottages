@@ -3,7 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import SEOHead from '../../components/common/SEOHead';
 import DirectoryBreadcrumbs from '../../components/directory/DirectoryBreadcrumbs';
 import { TRAVEL_AND_KUMBH_BLOGS } from '../../data/travelAndKumbhBlogsData';
-import { Clock, Calendar, User, ArrowLeft, ArrowRight, ExternalLink, Share2, BookOpen } from 'lucide-react';
+import { Clock, Calendar, User, ArrowLeft, ArrowRight, ExternalLink, Share2, BookOpen, Link2 } from 'lucide-react';
 
 export default function BlogDetailPage() {
   const { slug } = useParams();
@@ -19,7 +19,14 @@ export default function BlogDetailPage() {
     { name: blog.title, url: `https://thekumbhcottages.com/guides/${blog.slug}` }
   ];
 
-  const otherBlogs = TRAVEL_AND_KUMBH_BLOGS.filter((b) => b.slug !== slug).slice(0, 2);
+  // Pick 4 contextually related guides (prioritizing same category)
+  const sameCategoryBlogs = TRAVEL_AND_KUMBH_BLOGS.filter(
+    (b) => b.slug !== slug && b.category === blog.category
+  );
+  const otherCategoryBlogs = TRAVEL_AND_KUMBH_BLOGS.filter(
+    (b) => b.slug !== slug && b.category !== blog.category
+  );
+  const otherBlogs = [...sameCategoryBlogs, ...otherCategoryBlogs].slice(0, 4);
 
   return (
     <main className="pb-16 bg-[#FAF8F5] text-stone-900">
@@ -105,8 +112,49 @@ export default function BlogDetailPage() {
           dangerouslySetInnerHTML={{ __html: blog.content }}
         />
 
+        {/* Dedicated In-Content Related Links Section */}
+        {blog.relatedLinks && blog.relatedLinks.length > 0 && (
+          <div className="mt-8 p-4 sm:p-5 bg-white rounded-lg border border-stone-200/90 shadow-sm">
+            <div className="text-[10px] uppercase font-mono text-swarna-700 font-medium mb-3 flex items-center gap-1.5">
+              <Link2 className="w-3.5 h-3.5" />
+              <span>Official Pilgrimage & Related Resources</span>
+            </div>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+              {blog.relatedLinks.map((link, idx) => (
+                <li key={idx}>
+                  {link.url.startsWith('http') ? (
+                    <a
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2.5 rounded bg-stone-50 hover:bg-stone-100 text-stone-800 hover:text-swarna-700 flex items-center justify-between font-medium group transition-colors border border-stone-200/60"
+                    >
+                      <span className="flex items-center gap-1.5">
+                        <span className="text-swarna-600 text-[10px]">✦</span>
+                        <span>{link.label}</span>
+                      </span>
+                      <ExternalLink className="w-3 h-3 text-stone-400 group-hover:text-swarna-700 flex-shrink-0" />
+                    </a>
+                  ) : (
+                    <Link
+                      to={link.url}
+                      className="p-2.5 rounded bg-stone-50 hover:bg-stone-100 text-stone-800 hover:text-swarna-700 flex items-center justify-between font-medium group transition-colors border border-stone-200/60"
+                    >
+                      <span className="flex items-center gap-1.5">
+                        <span className="text-swarna-600 text-[10px]">✦</span>
+                        <span>{link.label}</span>
+                      </span>
+                      <ArrowRight className="w-3 h-3 text-stone-400 group-hover:text-swarna-700 flex-shrink-0" />
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {/* Dedicated Contextual Destination Portal Callout */}
-        <div className="mt-10 p-5 bg-white rounded-lg border border-stone-200/90 space-y-3">
+        <div className="mt-8 p-5 bg-white rounded-lg border border-stone-200/90 space-y-3">
           <div className="text-[10px] uppercase font-mono text-swarna-700 font-medium">
             Active Sacred Destination Gateway
           </div>
@@ -127,6 +175,13 @@ export default function BlogDetailPage() {
               <span>Visit Nashik Portal (kumbhcottagesnashik.com)</span>
               <ExternalLink className="w-3 h-3" />
             </a>
+
+            <Link
+              to="/destinations"
+              className="px-3.5 py-1.5 rounded border border-stone-300 text-stone-700 hover:text-black hover:border-stone-400 text-[11px] uppercase tracking-wider font-normal transition-colors"
+            >
+              All Destination Portfolios
+            </Link>
 
             <Link
               to="/corporate-contact"
@@ -156,7 +211,7 @@ export default function BlogDetailPage() {
             {otherBlogs.map((b) => (
               <div
                 key={b.slug}
-                className="p-4 bg-white rounded-lg border border-stone-200/90 flex flex-col justify-between"
+                className="p-4 bg-white rounded-lg border border-stone-200/90 flex flex-col justify-between hover:border-stone-300 transition-colors shadow-sm"
               >
                 <div className="space-y-1.5">
                   <span className="text-[9px] uppercase font-mono text-swarna-700 bg-stone-50 px-1.5 py-0.5 rounded">

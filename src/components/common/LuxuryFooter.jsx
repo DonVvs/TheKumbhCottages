@@ -75,11 +75,13 @@ export default function LuxuryFooter() {
               Kumbh Directory
             </h4>
             <ul className="space-y-1 text-stone-400 font-light">
-              <li><Link to="/kumbh-directory" className="hover:text-white transition-colors">Universal Almanac</Link></li>
-              <li><Link to="/kumbh-directory/prayagraj-maha-kumbh" className="hover:text-white transition-colors">Prayagraj Guide</Link></li>
-              <li><Link to="/kumbh-directory/nashik-simhastha-kumbh" className="hover:text-white transition-colors">Nashik Simhastha Guide</Link></li>
-              <li><Link to="/kumbh-directory/haridwar-maha-kumbh" className="hover:text-white transition-colors">Haridwar Guide</Link></li>
-              <li><Link to="/kumbh-directory/ujjain-simhastha-kumbh" className="hover:text-white transition-colors">Ujjain Guide</Link></li>
+              <li><Link to="/kumbh-directory" className="hover:text-white transition-colors text-swarna-300">Universal Almanac</Link></li>
+              <li><Link to="/kumbh-directory/prayagraj-maha-kumbh" className="hover:text-white transition-colors">Prayagraj Maha Kumbh</Link></li>
+              <li><Link to="/kumbh-directory/nashik-simhastha-kumbh" className="hover:text-white transition-colors">Nashik Simhastha 2027</Link></li>
+              <li><Link to="/kumbh-directory/haridwar-maha-kumbh" className="hover:text-white transition-colors">Haridwar Maha Kumbh</Link></li>
+              <li><Link to="/kumbh-directory/ujjain-simhastha-kumbh" className="hover:text-white transition-colors">Ujjain Simhastha</Link></li>
+              <li><Link to="/kumbh-directory/akharas-and-traditions" className="hover:text-white transition-colors">13 Sacred Akharas</Link></li>
+              <li><Link to="/kumbh-directory/shahi-snan-rituals-guide" className="hover:text-white transition-colors">Shahi Snan Science</Link></li>
             </ul>
           </div>
 
@@ -88,11 +90,14 @@ export default function LuxuryFooter() {
               Travel & Kumbh Guides
             </h4>
             <ul className="space-y-1 text-stone-400 font-light">
-              <li><Link to="/sacred-travel-and-kumbh-guides" className="hover:text-white transition-colors text-swarna-300">All Guides Hub</Link></li>
-              <li><Link to="/guides/first-time-sacred-travel-in-india-practical-guide" className="hover:text-white transition-colors">First-Time Sacred Travel</Link></li>
+              <li><Link to="/sacred-travel-and-kumbh-guides" className="hover:text-white transition-colors text-swarna-300">All 39 Guides Hub</Link></li>
+              <li><Link to="/guides/prayagraj-allahabad-complete-pilgrimage-travel-guide" className="hover:text-white transition-colors">Prayagraj City Guide</Link></li>
+              <li><Link to="/guides/nashik-complete-pilgrimage-and-tourism-travel-guide" className="hover:text-white transition-colors">Nashik City Guide</Link></li>
+              <li><Link to="/guides/haridwar-rishikesh-complete-pilgrimage-travel-guide" className="hover:text-white transition-colors">Haridwar & Rishikesh Guide</Link></li>
+              <li><Link to="/guides/mahakaleshwar-ujjain-jyotirlinga-bhasma-aarti-simhastha-guide" className="hover:text-white transition-colors">Mahakaleshwar Ujjain</Link></li>
               <li><Link to="/guides/multi-generational-family-elder-pilgrimage-guide" className="hover:text-white transition-colors">Elder Pilgrimage Guide</Link></li>
-              <li><Link to="/guides/pure-sattvic-ayurvedic-dining-guide" className="hover:text-white transition-colors">Pure Sattvic Dining Science</Link></li>
-              <li><Link to="/guides/astronomical-science-of-kumbh-mela-planetary-alignments" className="hover:text-white transition-colors">Astronomical Amrit Snan</Link></li>
+              <li><Link to="/guides/pure-sattvic-ayurvedic-dining-guide" className="hover:text-white transition-colors">Pure Sattvic Dining</Link></li>
+              <li><Link to="/guides/astronomical-science-of-kumbh-mela-planetary-alignments" className="hover:text-white transition-colors">Astronomical Science</Link></li>
             </ul>
           </div>
 
@@ -109,6 +114,48 @@ export default function LuxuryFooter() {
             </div>
           </div>
 
+        </div>
+
+        {/* Thematic Quick Internal Linking Strip */}
+        <div className="py-4 border-b border-white/10 text-[10px] text-stone-400 space-y-2 font-sans font-light">
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <span className="font-serif text-stone-300 uppercase text-[9px] tracking-wider">City Guides:</span>
+            <Link to="/guides/prayagraj-allahabad-complete-pilgrimage-travel-guide" className="hover:text-white">Prayagraj</Link>
+            <span>·</span>
+            <Link to="/guides/nashik-complete-pilgrimage-and-tourism-travel-guide" className="hover:text-white">Nashik</Link>
+            <span>·</span>
+            <Link to="/guides/haridwar-rishikesh-complete-pilgrimage-travel-guide" className="hover:text-white">Haridwar</Link>
+            <span>·</span>
+            <Link to="/guides/mahakaleshwar-ujjain-jyotirlinga-bhasma-aarti-simhastha-guide" className="hover:text-white">Ujjain</Link>
+            <span>·</span>
+            <Link to="/guides/trimbakeshwar-jyotirlinga-temple-darshan-guide-rituals" className="hover:text-white">Trimbakeshwar</Link>
+            <span>·</span>
+            <Link to="/guides/panchavati-nashik-ramayana-sites-complete-pilgrimage-guide" className="hover:text-white">Panchavati</Link>
+            <span>·</span>
+            <Link to="/guides/godavari-river-nashik-kumbh-significance-ghats-parikrama" className="hover:text-white">Godavari River</Link>
+            <span>·</span>
+            <Link to="/guides/ganga-aarti-haridwar-har-ki-pauri-timing-rituals-guide" className="hover:text-white">Har Ki Pauri Ganga Aarti</Link>
+          </div>
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <span className="font-serif text-stone-300 uppercase text-[9px] tracking-wider">Spiritual & Logistics:</span>
+            <Link to="/guides/astronomical-science-of-kumbh-mela-planetary-alignments" className="hover:text-white">Planetary Astronomy</Link>
+            <span>·</span>
+            <Link to="/guides/kumbh-mela-shahi-snan-dates-rituals-spiritual-significance" className="hover:text-white">Shahi Snan Dates</Link>
+            <span>·</span>
+            <Link to="/guides/akhara-traditions-naga-sadhus-and-spiritual-lineages" className="hover:text-white">13 Akharas & Naga Sadhus</Link>
+            <span>·</span>
+            <Link to="/guides/kalpavas-discipline-spiritual-science-of-riverside-living" className="hover:text-white">Kalpavas 30-Day Vow</Link>
+            <span>·</span>
+            <Link to="/guides/kumbh-mela-accommodation-guide-luxury-tents-vs-hotels" className="hover:text-white">Cottages vs Hotels</Link>
+            <span>·</span>
+            <Link to="/guides/multi-generational-family-elder-pilgrimage-guide" className="hover:text-white">Elder Accessibility</Link>
+            <span>·</span>
+            <Link to="/guides/pure-sattvic-ayurvedic-dining-guide" className="hover:text-white">A2 Ghee Annakshetra</Link>
+            <span>·</span>
+            <Link to="/guides/first-time-sacred-travel-in-india-practical-guide" className="hover:text-white">First-Time Sacred Travel</Link>
+            <span>·</span>
+            <Link to="/guides/samruddhi-expressway-mumbai-pune-to-nashik-kumbh-transit-guide" className="hover:text-white">Samruddhi Expressway</Link>
+          </div>
         </div>
 
         {/* Bottom Legal & Accreditations */}

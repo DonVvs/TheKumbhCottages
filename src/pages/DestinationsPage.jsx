@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SEOHead from '../components/common/SEOHead';
-import { ExternalLink, ArrowRight } from 'lucide-react';
+import { ExternalLink, ArrowRight, BookOpen } from 'lucide-react';
 import { DESTINATIONS_PORTFOLIO } from '../data/destinationsData';
 import RelatedGuidesWidget from '../components/common/RelatedGuidesWidget';
 
@@ -74,6 +75,45 @@ export default function DestinationsPage({ onOpenInquiry }) {
                         <span>{h}</span>
                       </div>
                     ))}
+                  </div>
+
+                  {/* Contextual Internal Links */}
+                  <div className="pt-2 flex flex-wrap items-center gap-3 text-xs">
+                    <Link
+                      to={
+                        dest.id === 'nashik'
+                          ? '/kumbh-directory/nashik-simhastha-kumbh'
+                          : dest.id === 'ujjain'
+                          ? '/kumbh-directory/ujjain-simhastha-kumbh'
+                          : dest.id === 'haridwar'
+                          ? '/kumbh-directory/haridwar-maha-kumbh'
+                          : '/kumbh-directory/prayagraj-maha-kumbh'
+                      }
+                      className="text-stone-700 hover:text-swarna-700 font-medium inline-flex items-center gap-1 group"
+                    >
+                      <span className="text-swarna-600 text-[10px]">✦</span>
+                      <span className="group-hover:underline">Explore {dest.city} Kumbh Almanac</span>
+                      <ArrowRight className="w-2.5 h-2.5 text-stone-400 group-hover:text-swarna-700" />
+                    </Link>
+
+                    <span className="text-stone-300">•</span>
+
+                    <Link
+                      to={
+                        dest.id === 'nashik'
+                          ? '/guides/nashik-complete-pilgrimage-and-tourism-travel-guide'
+                          : dest.id === 'ujjain'
+                          ? '/guides/mahakaleshwar-ujjain-jyotirlinga-bhasma-aarti-simhastha-guide'
+                          : dest.id === 'haridwar'
+                          ? '/guides/haridwar-rishikesh-complete-pilgrimage-travel-guide'
+                          : '/guides/prayagraj-allahabad-complete-pilgrimage-travel-guide'
+                      }
+                      className="text-stone-700 hover:text-swarna-700 font-medium inline-flex items-center gap-1 group"
+                    >
+                      <BookOpen className="w-3 h-3 text-swarna-600" />
+                      <span className="group-hover:underline">{dest.city} Travel & Pilgrimage Manual</span>
+                      <ArrowRight className="w-2.5 h-2.5 text-stone-400 group-hover:text-swarna-700" />
+                    </Link>
                   </div>
 
                   {/* Actions */}
