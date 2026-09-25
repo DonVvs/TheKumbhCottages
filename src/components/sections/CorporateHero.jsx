@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
+import RefinedHeroAmbience from '../3d/RefinedHeroAmbience';
 
 const HERO_SLIDES = [
   {
@@ -101,7 +102,7 @@ export default function CorporateHero({ onOpenInquiry }) {
   return (
     <section
       className="relative w-full overflow-hidden bg-[#0A0806] text-white"
-      style={{ height: '100dvh', minHeight: 680 }}
+      style={{ height: '100dvh', minHeight: 580 }}
       onMouseEnter={() => { pausedRef.current = true; }}
       onMouseLeave={() => { pausedRef.current = false; }}
     >
@@ -160,6 +161,9 @@ export default function CorporateHero({ onOpenInquiry }) {
         }}
       />
 
+      {/* ── React Three Fiber WebGL Caustic & Ambient Swarna Bokeh Refinement ── */}
+      <RefinedHeroAmbience />
+
       {/* ── Left editorial counter (desktop only) ── */}
       <div
         className="absolute left-6 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center gap-3"
@@ -183,24 +187,24 @@ export default function CorporateHero({ onOpenInquiry }) {
       {/* ── Content ── */}
       <div
         className="relative w-full h-full flex flex-col justify-between"
-        style={{ zIndex: 30, paddingTop: 'calc(6rem + env(safe-area-inset-top, 0px))' }}
+        style={{ zIndex: 30, paddingTop: 'calc(4.75rem + env(safe-area-inset-top, 0px))' }}
       >
         {/* Center editorial block */}
-        <div className="flex-1 flex flex-col justify-center items-center text-center px-6 sm:px-10 max-w-5xl mx-auto w-full">
+        <div className="flex-1 flex flex-col justify-center items-center text-center px-4 sm:px-10 max-w-5xl mx-auto w-full my-auto py-2">
 
           {/* Badge */}
           <div
             key={`badge-${animKey}`}
-            className="inline-flex items-center gap-3 mb-5"
+            className="inline-flex items-center gap-2.5 sm:gap-3 mb-3.5 sm:mb-5"
             style={{ animation: 'heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both' }}
           >
-            <span style={{ width: 28, height: 1, background: 'linear-gradient(to right, transparent, rgba(197,160,89,0.9))' }} />
+            <span style={{ width: 22, height: 1, background: 'linear-gradient(to right, transparent, rgba(197,160,89,0.9))' }} />
             <span
               style={{
                 fontFamily: 'Inter, sans-serif',
-                fontSize: '0.6rem',
+                fontSize: 'clamp(0.52rem, 1.2vw, 0.6rem)',
                 fontWeight: 500,
-                letterSpacing: '0.32em',
+                letterSpacing: '0.28em',
                 textTransform: 'uppercase',
                 color: '#D6B265',
                 textShadow: '0 2px 8px rgba(0,0,0,0.9)',
@@ -208,15 +212,15 @@ export default function CorporateHero({ onOpenInquiry }) {
             >
               {slide.badge}
             </span>
-            <span style={{ width: 28, height: 1, background: 'linear-gradient(to left, transparent, rgba(197,160,89,0.9))' }} />
+            <span style={{ width: 22, height: 1, background: 'linear-gradient(to left, transparent, rgba(197,160,89,0.9))' }} />
           </div>
 
           {/* Headline */}
           <h1
             key={`h1-${animKey}`}
-            className="font-serif font-light text-white leading-[1.08] mb-4"
+            className="font-serif font-light text-white leading-[1.12] mb-3 sm:mb-4 px-2"
             style={{
-              fontSize: 'clamp(2rem, 5.5vw, 4rem)',
+              fontSize: 'clamp(1.75rem, 5.5vw, 4rem)',
               textShadow: '0 2px 20px rgba(0,0,0,0.95)',
               letterSpacing: '-0.01em',
               maxWidth: 780,
@@ -230,10 +234,10 @@ export default function CorporateHero({ onOpenInquiry }) {
           <div
             key={`div-${animKey}`}
             style={{
-              width: 44,
+              width: 40,
               height: 1,
               background: 'linear-gradient(90deg, transparent, rgba(197,160,89,0.85), transparent)',
-              marginBottom: '1.1rem',
+              marginBottom: '0.9rem',
               animation: 'heroFadeUp 0.75s 0.14s cubic-bezier(0.16, 1, 0.3, 1) both',
             }}
           />
@@ -241,9 +245,9 @@ export default function CorporateHero({ onOpenInquiry }) {
           {/* Subtitle */}
           <p
             key={`sub-${animKey}`}
-            className="font-sans font-light text-stone-300 leading-relaxed max-w-lg mx-auto mb-8"
+            className="font-sans font-light text-stone-300 leading-relaxed max-w-lg mx-auto mb-6 sm:mb-8 px-3"
             style={{
-              fontSize: 'clamp(0.78rem, 1.4vw, 0.92rem)',
+              fontSize: 'clamp(0.75rem, 1.3vw, 0.92rem)',
               textShadow: '0 1px 6px rgba(0,0,0,0.95)',
               animation: 'heroFadeUp 0.8s 0.18s cubic-bezier(0.16, 1, 0.3, 1) both',
             }}
@@ -254,19 +258,19 @@ export default function CorporateHero({ onOpenInquiry }) {
           {/* CTAs */}
           <div
             key={`cta-${animKey}`}
-            className="flex flex-wrap items-center justify-center gap-3"
+            className="flex flex-col xs:flex-row items-center justify-center gap-2.5 sm:gap-3 w-full max-w-xs xs:max-w-none"
             style={{ animation: 'heroFadeUp 0.85s 0.24s cubic-bezier(0.16, 1, 0.3, 1) both' }}
           >
             <a
               href="#destinations-showcase"
-              className="flex items-center gap-2.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
+              className="w-full xs:w-auto flex items-center justify-center gap-2.5 cursor-pointer transition-all duration-300 hover:-translate-y-0.5"
               style={{
                 fontFamily: 'Inter, sans-serif',
-                fontSize: '0.65rem',
-                fontWeight: 500,
-                letterSpacing: '0.22em',
+                fontSize: '0.62rem',
+                fontWeight: 600,
+                letterSpacing: '0.2em',
                 textTransform: 'uppercase',
-                padding: '0.7rem 1.6rem',
+                padding: '0.68rem 1.5rem',
                 borderRadius: 999,
                 background: '#C5A059',
                 color: '#0A0806',
@@ -280,14 +284,14 @@ export default function CorporateHero({ onOpenInquiry }) {
 
             <button
               onClick={onOpenInquiry}
-              className="cursor-pointer transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#0A0806]"
+              className="w-full xs:w-auto flex items-center justify-center cursor-pointer transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#0A0806]"
               style={{
                 fontFamily: 'Inter, sans-serif',
-                fontSize: '0.65rem',
+                fontSize: '0.62rem',
                 fontWeight: 500,
-                letterSpacing: '0.2em',
+                letterSpacing: '0.18em',
                 textTransform: 'uppercase',
-                padding: '0.7rem 1.4rem',
+                padding: '0.68rem 1.4rem',
                 borderRadius: 999,
                 border: '1px solid rgba(255,255,255,0.28)',
                 background: 'rgba(0,0,0,0.35)',
@@ -300,108 +304,109 @@ export default function CorporateHero({ onOpenInquiry }) {
           </div>
         </div>
 
-        {/* ── Bottom bar ── */}
+        {/* ── Bottom bar (Guaranteed zero collision with bottom floating concierge dock) ── */}
         <div
-          className="w-full px-6 sm:px-10 lg:px-16 pb-8 sm:pb-10 pt-4 flex flex-col sm:flex-row items-center justify-between gap-4"
+          className="w-full px-4 sm:px-10 lg:px-16 pb-16 sm:pb-8 lg:pb-10 pt-3 sm:pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 relative z-30"
           style={{ borderTop: '1px solid rgba(255,255,255,0.07)' }}
         >
           {/* Caption */}
           <p
             key={`cap-${animKey}`}
-            className="font-serif italic text-stone-400 truncate text-center sm:text-left"
+            className="font-serif italic text-stone-400 truncate text-center sm:text-left text-[0.62rem] sm:text-[0.67rem] max-w-[260px] sm:max-w-[320px]"
             style={{
-              fontSize: '0.67rem',
-              maxWidth: 320,
               animation: 'heroFadeUp 0.7s 0.1s both',
             }}
           >
             {slide.caption}
           </p>
 
-          {/* Progress bars */}
-          <div className="flex items-center gap-2.5">
-            {HERO_SLIDES.map((item, idx) => {
-              const isActive = idx === current;
-              return (
-                <button
-                  key={item.id}
-                  onClick={() => goTo(idx)}
-                  title={`Slide ${idx + 1}`}
-                  className="flex flex-col items-center gap-1 cursor-pointer py-1 group"
-                >
-                  <div
-                    style={{
-                      width: isActive ? 40 : 24,
-                      height: 2,
-                      borderRadius: 999,
-                      background: 'rgba(255,255,255,0.18)',
-                      position: 'relative',
-                      overflow: 'hidden',
-                      transition: 'width 0.4s ease',
-                    }}
-                  >
-                    {isActive && (
-                      <div
-                        key={`prog-${animKey}`}
-                        style={{
-                          position: 'absolute',
-                          inset: 0,
-                          background: '#C5A059',
-                          borderRadius: 999,
-                          animation: `slideProgress ${DURATION}ms linear forwards`,
-                        }}
-                      />
-                    )}
-                  </div>
-                  <span
-                    style={{
-                      fontSize: '0.55rem',
-                      fontFamily: 'Inter, monospace',
-                      letterSpacing: '0.15em',
-                      color: isActive ? '#D6B265' : 'rgba(255,255,255,0.3)',
-                      fontWeight: isActive ? 600 : 400,
-                      transition: 'color 0.3s',
-                    }}
-                  >
-                    {String(idx + 1).padStart(2, '0')}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Prev / Next */}
-          <div className="flex items-center gap-2">
+          {/* Unified Controls: [ ← ]  -- 01  -- 02  -- 03  -- 04  -- 05  [ → ] */}
+          <div className="flex items-center justify-center gap-2 sm:gap-3">
+            {/* Prev slide button */}
             <button
               onClick={() => goTo((currentRef.current - 1 + HERO_SLIDES.length) % HERO_SLIDES.length)}
               aria-label="Previous slide"
-              className="flex items-center justify-center cursor-pointer transition-all duration-200 hover:scale-110 hover:bg-white hover:text-[#0A0806]"
+              className="flex items-center justify-center cursor-pointer transition-all duration-200 hover:scale-110 active:scale-95 hover:bg-white hover:text-[#0A0806]"
               style={{
-                width: 34,
-                height: 34,
+                width: 30,
+                height: 30,
                 borderRadius: 999,
-                border: '1px solid rgba(255,255,255,0.18)',
-                background: 'rgba(0,0,0,0.45)',
-                color: 'rgba(255,255,255,0.75)',
+                border: '1px solid rgba(255,255,255,0.22)',
+                background: 'rgba(0,0,0,0.55)',
+                color: 'rgba(255,255,255,0.85)',
                 backdropFilter: 'blur(8px)',
-                fontSize: '0.9rem',
+                fontSize: '0.85rem',
               }}
             >
               ←
             </button>
+
+            {/* Progress indicators */}
+            <div className="flex items-center gap-1.5 sm:gap-2.5">
+              {HERO_SLIDES.map((item, idx) => {
+                const isActive = idx === current;
+                return (
+                  <button
+                    key={item.id}
+                    onClick={() => goTo(idx)}
+                    title={`Slide ${idx + 1}`}
+                    className="flex flex-col items-center gap-1 cursor-pointer py-1 group"
+                  >
+                    <div
+                      style={{
+                        width: isActive ? 30 : 16,
+                        height: 2,
+                        borderRadius: 999,
+                        background: 'rgba(255,255,255,0.18)',
+                        position: 'relative',
+                        overflow: 'hidden',
+                        transition: 'width 0.4s ease',
+                      }}
+                    >
+                      {isActive && (
+                        <div
+                          key={`prog-${animKey}`}
+                          style={{
+                            position: 'absolute',
+                            inset: 0,
+                            background: '#C5A059',
+                            borderRadius: 999,
+                            animation: `slideProgress ${DURATION}ms linear forwards`,
+                          }}
+                        />
+                      )}
+                    </div>
+                    <span
+                      style={{
+                        fontSize: '0.52rem',
+                        fontFamily: 'Inter, monospace',
+                        letterSpacing: '0.12em',
+                        color: isActive ? '#D6B265' : 'rgba(255,255,255,0.3)',
+                        fontWeight: isActive ? 600 : 400,
+                        transition: 'color 0.3s',
+                      }}
+                    >
+                      {String(idx + 1).padStart(2, '0')}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Next slide button */}
             <button
               onClick={() => goTo((currentRef.current + 1) % HERO_SLIDES.length)}
               aria-label="Next slide"
-              className="flex items-center justify-center cursor-pointer transition-all duration-200 hover:scale-110 hover:bg-white hover:text-[#0A0806]"
+              className="flex items-center justify-center cursor-pointer transition-all duration-200 hover:scale-110 active:scale-95 hover:bg-white hover:text-[#0A0806]"
               style={{
-                width: 34,
-                height: 34,
+                width: 30,
+                height: 30,
                 borderRadius: 999,
-                border: '1px solid rgba(255,255,255,0.18)',
-                background: 'rgba(0,0,0,0.45)',
-                color: 'rgba(255,255,255,0.75)',
+                border: '1px solid rgba(255,255,255,0.22)',
+                background: 'rgba(0,0,0,0.55)',
+                color: 'rgba(255,255,255,0.85)',
                 backdropFilter: 'blur(8px)',
-                fontSize: '0.9rem',
+                fontSize: '0.85rem',
               }}
             >
               →

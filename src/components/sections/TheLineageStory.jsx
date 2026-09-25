@@ -1,10 +1,14 @@
 import React from 'react';
 import { ShieldCheck, Compass, Sparkles, Award } from 'lucide-react';
 import { COMPANY_PROFILE } from '../../data/companyData';
+import RefinedLiquidImage from '../3d/RefinedLiquidImage';
+import SovereignAtmosphereCanvas from '../3d/SovereignAtmosphereCanvas';
 
 export default function TheLineageStory() {
   return (
     <section className="py-20 sm:py-28 bg-[#FAF8F5] text-stone-900 border-b border-stone-200/80 relative overflow-hidden">
+      {/* Background WebGL Ambient Sandstone Light Sheen */}
+      <SovereignAtmosphereCanvas />
       {/* Background Subtle Sandstone Grain Texture */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[radial-gradient(#8C7043_1px,transparent_1px)] [background-size:24px_24px]" />
       
@@ -100,24 +104,24 @@ export default function TheLineageStory() {
           <div className="lg:col-span-5">
             <div className="relative group p-2 bg-white rounded-lg border border-stone-200/80 shadow-[0_10px_30px_-15px_rgba(0,0,0,0.08)]">
               <div className="relative rounded-md overflow-hidden aspect-[4/3]">
-                <img
+                <RefinedLiquidImage
                   src="/assets/real_camps/kumbh-cottages-elevated-riverbank-canvas-villas.webp"
                   alt="The Kumbh Cottages Sanctuary Grounds"
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
-                
-                {/* Floating Gold Pill Badge */}
-                <div className="absolute top-3 left-3 bg-[#0C0A08]/85 backdrop-blur-md px-3 py-1 rounded border border-white/10 text-[10px] uppercase font-sans tracking-[0.16em] text-swarna-300">
-                  Turnkey Canvas Enclave
-                </div>
+                  aspectRatio="4/3"
+                  className="rounded-md"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none" />
+                  
+                  {/* Floating Gold Pill Badge */}
+                  <div className="absolute top-3 left-3 bg-[#0C0A08]/85 backdrop-blur-md px-3 py-1 rounded border border-white/10 text-[10px] uppercase font-sans tracking-[0.16em] text-swarna-300">
+                    Turnkey Canvas Enclave
+                  </div>
 
-                <div className="absolute bottom-3.5 left-3.5 right-3.5 flex items-center justify-between text-[11px] text-stone-200 font-sans tracking-wide">
-                  <span className="font-serif">Riverfront Sanctuary Grounds</span>
-                  <span className="font-mono text-swarna-300">Continuous Seva Since 2001</span>
-                </div>
+                  <div className="absolute bottom-3.5 left-3.5 right-3.5 flex items-center justify-between text-[11px] text-stone-200 font-sans tracking-wide">
+                    <span className="font-serif">Riverfront Sanctuary Grounds</span>
+                    <span className="font-mono text-swarna-300">Continuous Seva Since 2001</span>
+                  </div>
+                </RefinedLiquidImage>
               </div>
             </div>
           </div>

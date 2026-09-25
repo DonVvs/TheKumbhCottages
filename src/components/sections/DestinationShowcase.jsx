@@ -1,10 +1,14 @@
 import React from 'react';
 import { ExternalLink, ArrowRight, Sparkles, MapPin } from 'lucide-react';
 import { DESTINATIONS_PORTFOLIO } from '../../data/destinationsData';
+import RefinedLiquidImage from '../3d/RefinedLiquidImage';
+import SovereignAtmosphereCanvas from '../3d/SovereignAtmosphereCanvas';
 
 export default function DestinationShowcase({ onOpenInquiry }) {
   return (
     <section id="destinations-showcase" className="py-20 sm:py-28 bg-[#FAF8F5] text-stone-900 border-b border-stone-200/80 relative">
+      {/* Background WebGL Ambient Sandstone Light Sheen */}
+      <SovereignAtmosphereCanvas />
       {/* Background Subtle Sandstone Grain Texture */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[radial-gradient(#8C7043_1px,transparent_1px)] [background-size:24px_24px]" />
 
@@ -36,34 +40,34 @@ export default function DestinationShowcase({ onOpenInquiry }) {
               >
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                   
-                  {/* Visual Frame */}
+                  {/* Visual Frame with WebGL Silk Wave Refinement */}
                   <div className={`lg:col-span-6 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
                     <div className="relative rounded-lg overflow-hidden aspect-[16/10] bg-stone-900 border border-stone-200/80 shadow-md">
-                      <img
+                      <RefinedLiquidImage
                         src={dest.image}
                         alt={dest.name}
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent pointer-events-none" />
-                      
-                      {/* Floating Gilded Glass Badges */}
-                      <div className="absolute top-4 left-4 flex items-center gap-2">
-                        <span className="text-[10px] uppercase tracking-[0.2em] font-sans font-medium bg-[#0E0C0A]/90 text-swarna-300 px-3 py-1 rounded-sm border border-white/15 backdrop-blur-md shadow-sm">
-                          {dest.badge}
-                        </span>
-                      </div>
+                        aspectRatio="16/10"
+                        className="rounded-lg"
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent pointer-events-none" />
+                        
+                        {/* Floating Gilded Glass Badges */}
+                        <div className="absolute top-4 left-4 flex items-center gap-2">
+                          <span className="text-[10px] uppercase tracking-[0.2em] font-sans font-medium bg-[#0E0C0A]/90 text-swarna-300 px-3 py-1 rounded-sm border border-white/15 backdrop-blur-md shadow-sm">
+                            {dest.badge}
+                          </span>
+                        </div>
 
-                      <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-stone-200 font-serif tracking-wide">
-                        <span className="inline-flex items-center gap-1.5 drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">
-                          <MapPin className="w-3.5 h-3.5 text-swarna-400" />
-                          {dest.river} · {dest.city}
-                        </span>
-                        <span className="font-mono text-[11px] text-swarna-300 drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">
-                          Cycle {dest.cycle}
-                        </span>
-                      </div>
+                        <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-stone-200 font-serif tracking-wide">
+                          <span className="inline-flex items-center gap-1.5 drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">
+                            <MapPin className="w-3.5 h-3.5 text-swarna-400" />
+                            {dest.river} · {dest.city}
+                          </span>
+                          <span className="font-mono text-[11px] text-swarna-300 drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">
+                            Cycle {dest.cycle}
+                          </span>
+                        </div>
+                      </RefinedLiquidImage>
                     </div>
                   </div>
 

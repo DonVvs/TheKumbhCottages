@@ -68,25 +68,28 @@ export default function LuxuryHeader({
       )}
 
       {/* Main Navigation Bar Container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-4 xl:gap-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-2 sm:gap-4 xl:gap-8 w-full min-w-0">
           
           {/* Brand Seal & Parent Title */}
-          <Link to="/" className="flex items-center gap-3 group text-left shrink-0">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 group text-left min-w-0 flex-1 sm:flex-initial">
             <img
               src="/assets/brand/emblem.webp"
               alt="The Kumbh Cottages Seal"
               width="32"
               height="32"
               decoding="async"
-              className="w-8 h-8 rounded-full border border-swarna-400/60 object-cover shrink-0 group-hover:border-swarna-300 transition-colors shadow-xs"
+              className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-swarna-400/60 object-cover shrink-0 group-hover:border-swarna-300 transition-colors shadow-xs"
             />
-            <div>
-              <span className="block font-serif text-base sm:text-lg font-normal tracking-[0.03em] text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)] group-hover:text-swarna-200 transition-colors leading-tight">
+            <div className="min-w-0">
+              <span className="block font-serif text-sm sm:text-base lg:text-lg font-normal tracking-[0.02em] text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)] group-hover:text-swarna-200 transition-colors leading-tight truncate">
                 The Kumbh Cottages
               </span>
-              <span className="block text-[8px] sm:text-[9px] font-sans text-stone-300 font-medium tracking-[0.2em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)]">
+              <span className="hidden sm:block text-[8px] sm:text-[9px] font-sans text-stone-300 font-medium tracking-[0.16em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] truncate">
                 A Raamvan Retreats Global Venture · Est. 2001
+              </span>
+              <span className="block sm:hidden text-[7.5px] font-sans text-stone-300 font-medium tracking-[0.1em] uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.9)] truncate">
+                Raamvan Retreats · Est. 2001
               </span>
             </div>
           </Link>
@@ -283,20 +286,20 @@ export default function LuxuryHeader({
             </button>
           </div>
 
-          {/* Mobile Right Controls */}
-          <div className="flex lg:hidden items-center gap-2 shrink-0">
+          {/* Mobile Right Controls (Guaranteed to be fully visible on all mobile screens) */}
+          <div className="flex lg:hidden items-center gap-1.5 sm:gap-2 shrink-0 ml-1 sm:ml-2">
             <button
               onClick={() => onOpenInquiry()}
-              className="px-3 py-1.5 rounded-xs border border-swarna-400 bg-swarna-400 text-stone-950 text-[10px] uppercase tracking-wider font-semibold"
+              className="px-2.5 py-1.5 sm:px-3.5 sm:py-1.5 rounded-xs border border-swarna-400 bg-swarna-400 text-stone-950 text-[10px] sm:text-[11px] uppercase tracking-wider font-semibold active:scale-95 transition-transform whitespace-nowrap shadow-xs"
             >
               Inquire
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-1.5 text-stone-200 hover:text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]"
+              className="p-1.5 rounded-xs text-stone-200 hover:text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] active:scale-95 transition-transform"
               aria-label="Toggle Menu"
             >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileMenuOpen ? <X className="w-5 h-5 text-swarna-300" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
 
